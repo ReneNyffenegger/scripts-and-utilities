@@ -36,7 +36,7 @@ $repos{'perl-Win32-OLE'              } = {url => 'https://github.com/ReneNyffene
 $repos{'js-keyboard-coordinates'     } = {url => 'https://github.com/ReneNyffenegger/js-keyboard-coordinates'      , dir => $lib_dir   };
 $repos{'js-vector-matrix'            } = {url => 'https://github.com/ReneNyffenegger/js-vector-matrix'             , dir => $lib_dir   };
 $repos{'SendDirectoryWithMail'       } = {url => 'https://github.com/ReneNyffenegger/SendDirectoryWithMail'        , dir => $lib_dir   };
-$repos{'Scripts'                     } = {url => 'https://github.com/ReneNyffenegger/scripts-and-utilities'        , dir => $lib_dir   };
+$repos{'scripts'                     } = {url => 'https://github.com/ReneNyffenegger/scripts-and-utilities'        , dir => $lib_dir   };
 
 #                                      = {url => 'https://github.com/ReneNyffenegger/Windows-Pixel-Ruler'          , dir               };
 $repos{'Document-Object-Model'       } = {url => 'https://github.com/ReneNyffenegger/about-Document-Object-Model'  , dir => $about_dir };
