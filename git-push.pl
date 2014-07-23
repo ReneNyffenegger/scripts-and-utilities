@@ -1,5 +1,12 @@
 #!/usr/bin/perl
 
+#
+#   In Windows (cmd.exe), the script gitp.bat
+#   should be used. This bat file asks for
+#   the password of TQ84_GITHUB_PW if it
+#   is not already set.
+#
+
 use warnings;
 use strict;
 
