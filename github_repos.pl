@@ -49,6 +49,7 @@ $repos{'perl'                        } = {url => 'https://github.com/ReneNyffene
 $repos{'php'                         } = {url => 'https://github.com/ReneNyffenegger/about-php'                    , dir => $about_dir };
 $repos{'Pig'                         } = {url => 'https://github.com/ReneNyffenegger/about-Pig'                    , dir => $about_dir };
 $repos{'powershell'                  } = {url => 'https://github.com/ReneNyffenegger/about-powershell'             , dir => $about_dir };
+$repos{'python'                      } = {url => 'https://github.com/ReneNyffenegger/about-python'                 , dir => $about_dir };
 $repos{'README.md'                   } = {url => 'https://github.com/ReneNyffenegger/about-README.md'              , dir => $about_dir };
 $repos{'Windows-Registry'            } = {url => 'https://github.com/ReneNyffenegger/about-Windows-Registry'       , dir => $about_dir };
 
