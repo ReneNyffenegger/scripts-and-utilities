@@ -51,6 +51,7 @@ $repos{'Pig'                         } = {url => 'https://github.com/ReneNyffene
 $repos{'powershell'                  } = {url => 'https://github.com/ReneNyffenegger/about-powershell'             , dir => $about_dir };
 $repos{'python'                      } = {url => 'https://github.com/ReneNyffenegger/about-python'                 , dir => $about_dir };
 $repos{'README.md'                   } = {url => 'https://github.com/ReneNyffenegger/about-README.md'              , dir => $about_dir };
+$repos{'r'                           } = {url => 'https://github.com/ReneNyffenegger/about-r'                      , dir => $about_dir };
 $repos{'Windows-Registry'            } = {url => 'https://github.com/ReneNyffenegger/about-Windows-Registry'       , dir => $about_dir };
 
 $repos{'browser-object-model'        } = {url => 'https://github.com/ReneNyffenegger/Browser-Object-Model'         , dir => $github_dir};
