@@ -40,6 +40,7 @@ $repos{'scripts'                     } = {url => 'https://github.com/ReneNyffene
 $repos{'runVBAFilesInOffice'         } = {url => 'https://github.com/ReneNyffenegger/runVBAFilesInOffice'          , dir => $lib_dir   };
 
 #                                      = {url => 'https://github.com/ReneNyffenegger/Windows-Pixel-Ruler'          , dir               };
+$repos{'adodb'                       } = {url => 'https://github.com/ReneNyffenegger/about-adodb'                  , dir => $about_dir };
 $repos{'Document-Object-Model'       } = {url => 'https://github.com/ReneNyffenegger/about-Document-Object-Model'  , dir => $about_dir };
 $repos{'css'                         } = {url => 'https://github.com/ReneNyffenegger/about-css'                    , dir => $about_dir };
 $repos{'html'                        } = {url => 'https://github.com/ReneNyffenegger/about-html'                   , dir => $about_dir };
