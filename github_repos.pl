@@ -59,6 +59,7 @@ $repos{'Windows-Registry'            } = {url => 'https://github.com/ReneNyffene
 $repos{'browser-object-model'        } = {url => 'https://github.com/ReneNyffenegger/Browser-Object-Model'         , dir => $github_dir};
 $repos{'data-visualization'          } = {url => 'https://github.com/ReneNyffenegger/data-visualization'           , dir => $github_dir};
 $repos{'PerlModules'                 } = {url => 'https://github.com/ReneNyffenegger/PerlModules'                  , dir => $github_dir};
+$repos{'kaggle'                      } = {url => 'https://github.com/ReneNyffenegger/kaggle'                       , dir => $github_dir};
 
 mkdir $lib_dir    unless -d $lib_dir;
 mkdir $about_dir  unless -d $about_dir;
