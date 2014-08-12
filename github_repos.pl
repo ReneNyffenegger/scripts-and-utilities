@@ -47,6 +47,7 @@ $repos{'css'                         } = {url => 'https://github.com/ReneNyffene
 $repos{'html'                        } = {url => 'https://github.com/ReneNyffenegger/about-html'                   , dir => $about_dir };
 $repos{'javascript'                  } = {url => 'https://github.com/ReneNyffenegger/about-javascript'             , dir => $about_dir };
 $repos{'MapReduce'                   } = {url => 'https://github.com/ReneNyffenegger/about-MapReduce'              , dir => $about_dir };
+$repos{'jQuery'                      } = {url => 'https://github.com/ReneNyffenegger/about-jQuery'                 , dir => $about_dir };
 $repos{'perl'                        } = {url => 'https://github.com/ReneNyffenegger/about-perl'                   , dir => $about_dir };
 $repos{'php'                         } = {url => 'https://github.com/ReneNyffenegger/about-php'                    , dir => $about_dir };
 $repos{'Pig'                         } = {url => 'https://github.com/ReneNyffenegger/about-Pig'                    , dir => $about_dir };
@@ -57,6 +58,7 @@ $repos{'r'                           } = {url => 'https://github.com/ReneNyffene
 $repos{'Windows-Registry'            } = {url => 'https://github.com/ReneNyffenegger/about-Windows-Registry'       , dir => $about_dir };
 $repos{'vim'                         } = {url => 'https://github.com/ReneNyffenegger/about-vim'                    , dir => $about_dir };
 
+$repos{'oracle-patterns'             } = {url => 'https://github.com/ReneNyffenegger/oracle-patterns'              , dir => $github_dir};
 $repos{'browser-object-model'        } = {url => 'https://github.com/ReneNyffenegger/Browser-Object-Model'         , dir => $github_dir};
 $repos{'data-visualization'          } = {url => 'https://github.com/ReneNyffenegger/data-visualization'           , dir => $github_dir};
 $repos{'PerlModules'                 } = {url => 'https://github.com/ReneNyffenegger/PerlModules'                  , dir => $github_dir};
