@@ -59,6 +59,7 @@ $repos{'Windows-Registry'            } = {url => 'https://github.com/ReneNyffene
 $repos{'vim'                         } = {url => 'https://github.com/ReneNyffenegger/about-vim'                    , dir => $about_dir };
 
 $repos{'oracle-patterns'             } = {url => 'https://github.com/ReneNyffenegger/oracle-patterns'              , dir => $github_dir};
+$repos{'oracle_scriptlets'           } = {url => 'https://github.com/ReneNyffenegger/oracle_scriptlets'            , dir => $github_dir};
 $repos{'browser-object-model'        } = {url => 'https://github.com/ReneNyffenegger/Browser-Object-Model'         , dir => $github_dir};
 $repos{'data-visualization'          } = {url => 'https://github.com/ReneNyffenegger/data-visualization'           , dir => $github_dir};
 $repos{'PerlModules'                 } = {url => 'https://github.com/ReneNyffenegger/PerlModules'                  , dir => $github_dir};
