@@ -55,8 +55,9 @@ $repos{'powershell'                  } = {url => 'https://github.com/ReneNyffene
 $repos{'python'                      } = {url => 'https://github.com/ReneNyffenegger/about-python'                 , dir => $about_dir };
 $repos{'README.md'                   } = {url => 'https://github.com/ReneNyffenegger/about-README.md'              , dir => $about_dir };
 $repos{'r'                           } = {url => 'https://github.com/ReneNyffenegger/about-r'                      , dir => $about_dir };
-$repos{'Windows-Registry'            } = {url => 'https://github.com/ReneNyffenegger/about-Windows-Registry'       , dir => $about_dir };
+$repos{'three.js'                    } = {url => 'https://github.com/ReneNyffenegger/about-three.js'               , dir => $about_dir };
 $repos{'vim'                         } = {url => 'https://github.com/ReneNyffenegger/about-vim'                    , dir => $about_dir };
+$repos{'Windows-Registry'            } = {url => 'https://github.com/ReneNyffenegger/about-Windows-Registry'       , dir => $about_dir };
 
 $repos{'oracle-patterns'             } = {url => 'https://github.com/ReneNyffenegger/oracle-patterns'              , dir => $github_dir};
 $repos{'oracle_scriptlets'           } = {url => 'https://github.com/ReneNyffenegger/oracle_scriptlets'            , dir => $github_dir};
