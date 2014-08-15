@@ -38,8 +38,7 @@ $repos{'js-vector-matrix'            } = {url => 'https://github.com/ReneNyffene
 $repos{'SendDirectoryWithMail'       } = {url => 'https://github.com/ReneNyffenegger/SendDirectoryWithMail'        , dir => $lib_dir   };
 $repos{'scripts'                     } = {url => 'https://github.com/ReneNyffenegger/scripts-and-utilities'        , dir => $lib_dir   };
 $repos{'runVBAFilesInOffice'         } = {url => 'https://github.com/ReneNyffenegger/runVBAFilesInOffice'          , dir => $lib_dir   };
-$repos{'perl-tcp-proxy'              } = {url => 'https://github.com/ReneNyffenegger/perl-tcp-proxy'               , dir => $lib_dir   };
-$repos{'perl-tcp-server'             } = {url => 'https://github.com/ReneNyffenegger/perl-tcp-server'              , dir => $lib_dir   };
+$repos{'perl-tcp'                    } = {url => 'https://github.com/ReneNyffenegger/perl-tcp'                     , dir => $lib_dir   };
 
 #                                      = {url => 'https://github.com/ReneNyffenegger/Windows-Pixel-Ruler'          , dir               };
 $repos{'adodb'                       } = {url => 'https://github.com/ReneNyffenegger/about-adodb'                  , dir => $about_dir };
