@@ -5,7 +5,7 @@
 #   files that match «regexp».
 #   Each file can be selected for update by pressing
 #  «y» or «j». A «q» prematurly exits the script. Every
-#   other key exits the script.
+#   other key skips the file.
 #
 
 use warnings; use strict;
