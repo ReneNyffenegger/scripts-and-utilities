@@ -15,3 +15,7 @@ be used (on *cmd.exe*, that is).
 [`hex_dump.pl`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/hex_dump.pl) (currently) shows the line
 endings of text files. So, in that respect, it is *not yet a real hex dumper*!. Compare with [Data::HexDump](https://github.com/ReneNyffenegger/PerlModules/tree/master/Data/HexDump).
 
+[`svnlu.pl`](https://github.com/ReneNyffenegger/scripts-and-utilities/blob/master/svnlu.pl), to be exectued like so: `svnlu.pl  regexp`  basically issues an `svn list` and finds the files that match `regexp`.
+Each file can be selected for update by pressing «y» or «j». A «q» prematurly exits the script. Every
+other key skips the file.
+
