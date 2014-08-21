@@ -47,6 +47,7 @@ $repos{'css'                         } = {url => 'https://github.com/ReneNyffene
 $repos{'html'                        } = {url => 'https://github.com/ReneNyffenegger/about-html'                   , dir => $about_dir };
 $repos{'javascript'                  } = {url => 'https://github.com/ReneNyffenegger/about-javascript'             , dir => $about_dir };
 $repos{'MapReduce'                   } = {url => 'https://github.com/ReneNyffenegger/about-MapReduce'              , dir => $about_dir };
+$repos{'jqGrid'                      } = {url => 'https://github.com/ReneNyffenegger/about-jqGrid'                 , dir => $about_dir };
 $repos{'jQuery'                      } = {url => 'https://github.com/ReneNyffenegger/about-jQuery'                 , dir => $about_dir };
 $repos{'perl'                        } = {url => 'https://github.com/ReneNyffenegger/about-perl'                   , dir => $about_dir };
 $repos{'php'                         } = {url => 'https://github.com/ReneNyffenegger/about-php'                    , dir => $about_dir };
