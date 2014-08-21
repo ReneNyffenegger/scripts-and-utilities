@@ -19,3 +19,6 @@ endings of text files. So, in that respect, it is *not yet a real hex dumper*!. 
 Each file can be selected for update by pressing «y» or «j». A «q» prematurly exits the script. Every
 other key skips the file.
 
+[`red.bat`](https://github.com/ReneNyffenegger/scripts-and-utilities/blob/master/red.bat), [`blue.bat`](https://github.com/ReneNyffenegger/scripts-and-utilities/blob/master/blue.bat),
+[`green.bat`](https://github.com/ReneNyffenegger/scripts-and-utilities/blob/master/green.bat) and
+[`black.bat`](https://github.com/ReneNyffenegger/scripts-and-utilities/blob/master/black.bat) set the color of `cmd.exe` accordingly.
