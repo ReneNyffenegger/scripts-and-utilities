@@ -67,6 +67,7 @@ $repos{'oracle-patterns'             } = {url => 'https://github.com/ReneNyffene
 $repos{'oracle_scriptlets'           } = {url => 'https://github.com/ReneNyffenegger/oracle_scriptlets'            , dir => $github_dir};
 $repos{'browser-object-model'        } = {url => 'https://github.com/ReneNyffenegger/Browser-Object-Model'         , dir => $github_dir};
 $repos{'data-visualization'          } = {url => 'https://github.com/ReneNyffenegger/data-visualization'           , dir => $github_dir};
+$repos{'Fonts'                       } = {url => 'https://github.com/ReneNyffenegger/Fonts'                        , dir => $github_dir};
 $repos{'PerlModules'                 } = {url => 'https://github.com/ReneNyffenegger/PerlModules'                  , dir => $github_dir};
 $repos{'kaggle'                      } = {url => 'https://github.com/ReneNyffenegger/kaggle'                       , dir => $github_dir};
 $repos{'Sprachen'                    } = {url => 'https://github.com/ReneNyffenegger/Sprachen'                     , dir => $github_dir};
