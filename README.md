@@ -22,3 +22,7 @@ other key skips the file.
 [`red.bat`](https://github.com/ReneNyffenegger/scripts-and-utilities/blob/master/red.bat), [`blue.bat`](https://github.com/ReneNyffenegger/scripts-and-utilities/blob/master/blue.bat),
 [`green.bat`](https://github.com/ReneNyffenegger/scripts-and-utilities/blob/master/green.bat) and
 [`black.bat`](https://github.com/ReneNyffenegger/scripts-and-utilities/blob/master/black.bat) set the color of `cmd.exe` accordingly.
+
+[`ff_ftp.bat`](https://github.com/ReneNyffenegger/scripts-and-utilities/blob/master/ff_ftp.bat) opens fire fox with a `ftp://` url and a *username-password* tuble.
+The username, password and host need to be stored in the env variables `tq84_XYZ_ftp_user`, `tq84_XYZ_ftp_pw` and `tq84_XYZ_ftp_host`, respectively. When the script
+is called, it expects a parameter that is expanded to a value (in example above: `XYZ`).
