@@ -12,6 +12,8 @@ server. Requires the *envorinment variable* `TQ84_GITHUB_PW` to be set with the 
 automatically set this password, [`gitp.bat`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/gitp.bat) can
 be used (on *cmd.exe*, that is).
 
+[`dc.bat`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/dc.bat) `cd`s into the director and then also does a `dir`.
+
 [`hex_dump.pl`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/hex_dump.pl) (currently) shows the line
 endings of text files. So, in that respect, it is *not yet a real hex dumper*!. Compare with [Data::HexDump](https://github.com/ReneNyffenegger/PerlModules/tree/master/Data/HexDump).
 
