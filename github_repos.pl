@@ -63,6 +63,7 @@ $repos{'README.md'                   } = {url => 'https://github.com/ReneNyffene
 $repos{'r'                           } = {url => 'https://github.com/ReneNyffenegger/about-r'                      , dir => $about_dir };
 $repos{'sqlite'                      } = {url => 'https://github.com/ReneNyffenegger/about-sqlite'                 , dir => $about_dir };
 $repos{'three.js'                    } = {url => 'https://github.com/ReneNyffenegger/about-three.js'               , dir => $about_dir };
+$repos{'TopoJSON'                    } = {url => 'https://github.com/ReneNyffenegger/about-TopoJSON'               , dir => $about_dir };
 $repos{'vim'                         } = {url => 'https://github.com/ReneNyffenegger/about-vim'                    , dir => $about_dir };
 $repos{'Windows-Registry'            } = {url => 'https://github.com/ReneNyffenegger/about-Windows-Registry'       , dir => $about_dir };
 
