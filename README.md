@@ -12,6 +12,8 @@ server. Requires the *envorinment variable* `TQ84_GITHUB_PW` to be set with the 
 automatically set this password, [`gitp.bat`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/gitp.bat) can
 be used (on *cmd.exe*, that is).
 
+[`cv.pl`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/cv.pl) prints the content of the clipboard. Mnemonic: <b>C</b>trl-<b>V</b>.
+
 [`dc.bat`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/dc.bat) `cd`s into the directory given and then also does a `dir`.
 
 [`hex_dump.pl`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/hex_dump.pl) (currently) shows the line
