@@ -69,6 +69,7 @@ $repos{'TopoJSON'                    } = {url => 'https://github.com/ReneNyffene
 $repos{'vim'                         } = {url => 'https://github.com/ReneNyffenegger/about-vim'                    , dir => $about_dir };
 $repos{'Windows-Registry'            } = {url => 'https://github.com/ReneNyffenegger/about-Windows-Registry'       , dir => $about_dir };
 
+$repos{'Ausfluege-Touren-etc'        } = {url => 'https://github.com/ReneNyffenegger/Ausfluege-Touren-etc'         , dir => $github_dir};
 $repos{'development_misc'            } = {url => 'https://github.com/ReneNyffenegger/development_misc'             , dir => $github_dir};
 $repos{'oracle-patterns'             } = {url => 'https://github.com/ReneNyffenegger/oracle-patterns'              , dir => $github_dir};
 $repos{'oracle_scriptlets'           } = {url => 'https://github.com/ReneNyffenegger/oracle_scriptlets'            , dir => $github_dir};
