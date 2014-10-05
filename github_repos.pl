@@ -80,6 +80,7 @@ $repos{'Fonts'                       } = {url => 'https://github.com/ReneNyffene
 $repos{'PerlModules'                 } = {url => 'https://github.com/ReneNyffenegger/PerlModules'                  , dir => $github_dir};
 $repos{'kaggle'                      } = {url => 'https://github.com/ReneNyffenegger/kaggle'                       , dir => $github_dir};
 $repos{'Sprachen'                    } = {url => 'https://github.com/ReneNyffenegger/Sprachen'                     , dir => $github_dir};
+$repos{'Zefix'                       } = {url => 'https://github.com/ReneNyffenegger/Zefix'                        , dir => $github_dir};
 
 mkdir $lib_dir    unless -d $lib_dir;
 mkdir $about_dir  unless -d $about_dir;
