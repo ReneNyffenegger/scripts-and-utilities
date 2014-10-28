@@ -24,7 +24,8 @@ Each file can be selected for update by pressing «y» or «j». A «q» prematu
 other key skips the file.
 
 [`red.bat`](https://github.com/ReneNyffenegger/scripts-and-utilities/blob/master/red.bat), [`blue.bat`](https://github.com/ReneNyffenegger/scripts-and-utilities/blob/master/blue.bat),
-[`green.bat`](https://github.com/ReneNyffenegger/scripts-and-utilities/blob/master/green.bat) and
+[`green.bat`](https://github.com/ReneNyffenegger/scripts-and-utilities/blob/master/green.bat),
+[`black.bat`](https://github.com/ReneNyffenegger/scripts-and-utilities/blob/master/black.bat) and
 [`black.bat`](https://github.com/ReneNyffenegger/scripts-and-utilities/blob/master/black.bat) set the color of `cmd.exe` accordingly.
 
 [`rec.pl`](https://github.com/ReneNyffenegger/scripts-and-utilities/blob/master/rec.pl) is a Perl script that recursively does <i>stuff</i> that I frequently need. <i>stuff</i> is
