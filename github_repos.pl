@@ -73,6 +73,7 @@ $repos{'css'                         } = {url => 'https://github.com/ReneNyffene
 $repos{'dat.GUI'                     } = {url => 'https://github.com/ReneNyffenegger/about-dat.GUI'                , dir => $about_dir };
 $repos{'Document-Object-Model'       } = {url => 'https://github.com/ReneNyffenegger/about-Document-Object-Model'  , dir => $about_dir };
 $repos{'d3.js'                       } = {url => 'https://github.com/ReneNyffenegger/about-d3.js'                  , dir => $about_dir };
+$repos{'GoogleEarth'                 } = {url => 'https://github.com/ReneNyffenegger/about-GoogleEarth'            , dir => $about_dir };
 $repos{'html'                        } = {url => 'https://github.com/ReneNyffenegger/about-html'                   , dir => $about_dir };
 $repos{'javascript'                  } = {url => 'https://github.com/ReneNyffenegger/about-javascript'             , dir => $about_dir };
 $repos{'jqGrid'                      } = {url => 'https://github.com/ReneNyffenegger/about-jqGrid'                 , dir => $about_dir };
