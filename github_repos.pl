@@ -75,11 +75,11 @@ $repos{'Document-Object-Model'       } = {url => 'https://github.com/ReneNyffene
 $repos{'d3.js'                       } = {url => 'https://github.com/ReneNyffenegger/about-d3.js'                  , dir => $about_dir };
 $repos{'html'                        } = {url => 'https://github.com/ReneNyffenegger/about-html'                   , dir => $about_dir };
 $repos{'javascript'                  } = {url => 'https://github.com/ReneNyffenegger/about-javascript'             , dir => $about_dir };
-$repos{'MapReduce'                   } = {url => 'https://github.com/ReneNyffenegger/about-MapReduce'              , dir => $about_dir };
 $repos{'jqGrid'                      } = {url => 'https://github.com/ReneNyffenegger/about-jqGrid'                 , dir => $about_dir };
 $repos{'jQuery'                      } = {url => 'https://github.com/ReneNyffenegger/about-jQuery'                 , dir => $about_dir };
 $repos{'jQuery-UI'                   } = {url => 'https://github.com/ReneNyffenegger/about-jQuery-UI'              , dir => $about_dir };
 $repos{'node.js'                     } = {url => 'https://github.com/ReneNyffenegger/about-node.js'                , dir => $about_dir };
+$repos{'MapReduce'                   } = {url => 'https://github.com/ReneNyffenegger/about-MapReduce'              , dir => $about_dir };
 $repos{'Open-Street-Map'             } = {url => 'https://github.com/ReneNyffenegger/about-Open-Street-Map'        , dir => $about_dir };
 $repos{'perl'                        } = {url => 'https://github.com/ReneNyffenegger/about-perl'                   , dir => $about_dir };
 $repos{'php'                         } = {url => 'https://github.com/ReneNyffenegger/about-php'                    , dir => $about_dir };
