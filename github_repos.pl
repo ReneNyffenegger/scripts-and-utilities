@@ -7,11 +7,18 @@ use File::HomeDir;
 use Getopt::Long;
 
 my $match = '';
+my $help  = '';
 
 GetOptions(
-   'match=s' => \$match
+   'match=s' => \$match,
+   'help'    => \$help
 );
 
+
+if ($help) {
+   usage();
+   exit;
+}
 
 my $lib_dir    ;
 my $about_dir  ;
@@ -28,6 +35,24 @@ else {
   $github_dir  = File::HomeDir -> my_home . '/github';
 }
 
+my $exact = '';
+if (@ARGV == 1) {
+
+  if ($match) {
+
+    usage();
+    exit;
+  
+  }
+
+  $exact = shift @ARGV;
+}
+elsif (@ARGV > 1) {
+
+  usage();
+  exit;
+
+}
 
 my %repos;
 
@@ -92,6 +117,9 @@ for my $repo (keys %repos) {
   if ($match and $repo !~ /$match/i) {
      next;
   }
+  if ($exact and $repo ne $exact) {
+     next;
+  }
 
   if (-d "$repos{$repo}{dir}/$repo") {
      print "\n\nRepo $repos{$repo}{dir}/$repo exists, updating it\n";
@@ -114,3 +142,11 @@ for my $repo (keys %repos) {
   }
 }
 
+
+sub usage {
+  print "\n";
+  print "  $0 exact-expression\n";
+  print "  $0 --match regular-expression\n";
+  print "  $0 --help\n";
+  print "\n";
+}
