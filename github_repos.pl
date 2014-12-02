@@ -101,6 +101,7 @@ $repos{'Ausfluege-Touren-etc'        } = {url => 'https://github.com/ReneNyffene
 $repos{'development_misc'            } = {url => 'https://github.com/ReneNyffenegger/development_misc'             , dir => $github_dir};
 $repos{'oracle-patterns'             } = {url => 'https://github.com/ReneNyffenegger/oracle-patterns'              , dir => $github_dir};
 $repos{'oracle_scriptlets'           } = {url => 'https://github.com/ReneNyffenegger/oracle_scriptlets'            , dir => $github_dir};
+$repos{'OracleTool'                  } = {url => 'https://github.com/ReneNyffenegger/OracleTool'                   , dir => $github_dir};
 $repos{'browser-object-model'        } = {url => 'https://github.com/ReneNyffenegger/Browser-Object-Model'         , dir => $github_dir};
 $repos{'data-visualization'          } = {url => 'https://github.com/ReneNyffenegger/data-visualization'           , dir => $github_dir};
 $repos{'Fonts'                       } = {url => 'https://github.com/ReneNyffenegger/Fonts'                        , dir => $github_dir};
