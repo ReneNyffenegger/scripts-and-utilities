@@ -1,3 +1,10 @@
+@rem
+@rem      cdm SomeTag
+@rem
+@rem      cd into the direcotry in which
+@rem      was called
+@rem
+@rem
 @setlocal enabledelayedexpansion
 
 @set mark=%1
