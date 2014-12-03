@@ -16,6 +16,10 @@ be used (on *cmd.exe*, that is).
 
 [`dc.bat`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/dc.bat) `cd`s into the directory given and then also does a `dir`.
 
+[`cdms.bat`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/cdms.bat), called as `cmds SomeName` assigns *SomeName* with the current directory.
+Later, [`cdm.bat`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/cdm.bat) allows to cd back to this directory (`cdm SomeName`).
+cdm stands for *cd to mark*, cdms stands for *cd mark set*.
+
 [`hex_dump.pl`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/hex_dump.pl) (currently) shows the line
 endings of text files. So, in that respect, it is *not yet a real hex dumper*!. Compare with [Data::HexDump](https://github.com/ReneNyffenegger/PerlModules/tree/master/Data/HexDump).
 
