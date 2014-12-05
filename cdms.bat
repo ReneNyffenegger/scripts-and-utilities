@@ -7,11 +7,11 @@
 @rem       cmd SomeTag
 @rem
 @rem
-@set mark=%1
+@set tq84_mark=%1
 
-@if not defined mark (
+@if not defined tq84_mark (
   @echo you must specify a mark
   @exit /b
 )
 
-@set cd_mark_%mark%=%cd%
+@set tq84_cd_mark_%tq84_mark%=%cd%

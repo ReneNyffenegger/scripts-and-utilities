@@ -7,16 +7,16 @@
 @rem
 @setlocal enabledelayedexpansion
 
-@set mark=%1
+@set tq84_mark=%1
 
-@if not defined mark (
+@if not defined tq84_mark (
   @echo you must specify a mark
   @exit /b
 )
 
 @rem This is why «setlocal enabledelayedexpansion» is the
 @rem script's first line...
-@set path_to_go=!cd_mark_%mark%!
+@set path_to_go=!tq84_cd_mark_%tq84_mark%!
 
 @rem http://stackoverflow.com/a/3262891/180275
 @endlocal && set path_to_go=%path_to_go%
