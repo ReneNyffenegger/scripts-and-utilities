@@ -41,3 +41,6 @@ indicated by the option-flags given to the script.
 [`ff_ftp.bat`](https://github.com/ReneNyffenegger/scripts-and-utilities/blob/master/ff_ftp.bat) opens fire fox with a `ftp://` url and a *username-password* tuple.
 The username, password and host need to be stored in the env variables `tq84_XYZ_ftp_user`, `tq84_XYZ_ftp_pw` and `tq84_XYZ_ftp_host`, respectively. When the script
 is called, it expects a parameter that is expanded to a value (in example above: `XYZ`).
+
+[`profile.ps1`](https://github.com/ReneNyffenegger/scripts-and-utilities/blob/master/profile.ps1) is my startup script
+for [powershell](https://github.com/ReneNyffenegger/about-powershell).
