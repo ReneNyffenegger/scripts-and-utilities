@@ -99,15 +99,16 @@ $repos{'Windows-Registry'            } = {url => 'https://github.com/ReneNyffene
 $repos{'wsh'                         } = {url => 'https://github.com/ReneNyffenegger/about-wsh'                    , dir => $about_dir };
 
 $repos{'Ausfluege-Touren-etc'        } = {url => 'https://github.com/ReneNyffenegger/Ausfluege-Touren-etc'         , dir => $github_dir};
+$repos{'browser-object-model'        } = {url => 'https://github.com/ReneNyffenegger/Browser-Object-Model'         , dir => $github_dir};
+$repos{'data-visualization'          } = {url => 'https://github.com/ReneNyffenegger/data-visualization'           , dir => $github_dir};
 $repos{'development_misc'            } = {url => 'https://github.com/ReneNyffenegger/development_misc'             , dir => $github_dir};
+$repos{'Fonts'                       } = {url => 'https://github.com/ReneNyffenegger/Fonts'                        , dir => $github_dir};
+$repos{'kaggle'                      } = {url => 'https://github.com/ReneNyffenegger/kaggle'                       , dir => $github_dir};
 $repos{'oracle-patterns'             } = {url => 'https://github.com/ReneNyffenegger/oracle-patterns'              , dir => $github_dir};
 $repos{'oracle_scriptlets'           } = {url => 'https://github.com/ReneNyffenegger/oracle_scriptlets'            , dir => $github_dir};
 $repos{'OracleTool'                  } = {url => 'https://github.com/ReneNyffenegger/OracleTool'                   , dir => $github_dir};
-$repos{'browser-object-model'        } = {url => 'https://github.com/ReneNyffenegger/Browser-Object-Model'         , dir => $github_dir};
-$repos{'data-visualization'          } = {url => 'https://github.com/ReneNyffenegger/data-visualization'           , dir => $github_dir};
-$repos{'Fonts'                       } = {url => 'https://github.com/ReneNyffenegger/Fonts'                        , dir => $github_dir};
 $repos{'PerlModules'                 } = {url => 'https://github.com/ReneNyffenegger/PerlModules'                  , dir => $github_dir};
-$repos{'kaggle'                      } = {url => 'https://github.com/ReneNyffenegger/kaggle'                       , dir => $github_dir};
+$repos{'printing'                    } = {url => 'https://github.com/ReneNyffenegger/printing'                     , dir => $github_dir};
 $repos{'Sprachen'                    } = {url => 'https://github.com/ReneNyffenegger/Sprachen'                     , dir => $github_dir};
 $repos{'Zefix'                       } = {url => 'https://github.com/ReneNyffenegger/Zefix'                        , dir => $github_dir};
 
