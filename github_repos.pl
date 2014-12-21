@@ -110,6 +110,7 @@ $repos{'OracleTool'                  } = {url => 'https://github.com/ReneNyffene
 $repos{'PerlModules'                 } = {url => 'https://github.com/ReneNyffenegger/PerlModules'                  , dir => $github_dir};
 $repos{'printing'                    } = {url => 'https://github.com/ReneNyffenegger/printing'                     , dir => $github_dir};
 $repos{'Sprachen'                    } = {url => 'https://github.com/ReneNyffenegger/Sprachen'                     , dir => $github_dir};
+$repos{'tq84.css'                    } = {url => 'https://github.com/ReneNyffenegger/tq84.css'                     , dir => $github_dir};
 $repos{'Zefix'                       } = {url => 'https://github.com/ReneNyffenegger/Zefix'                        , dir => $github_dir};
 
 mkdir $lib_dir    unless -d $lib_dir;
