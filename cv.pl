@@ -4,6 +4,8 @@
 #   Mnemonic: Ctrl-V
 #             -    -
 #
+#   Compare with -> paste.pl
+#
 use strict;
 use warnings;
 
