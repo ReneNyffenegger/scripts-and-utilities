@@ -109,7 +109,7 @@ sub wanted { # {{{
     } # }}}
 
     if ($grep_pattern) {
-        grep_($file_name);
+        grep_($file_name) if -f $file_name;
         return;
     }
 
