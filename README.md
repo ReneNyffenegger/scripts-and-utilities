@@ -20,6 +20,11 @@ be used (on *cmd.exe*, that is).
 Later, [`cdm.bat`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/cdm.bat) allows to cd back to this directory (`cdm SomeName`).
 cdm stands for *cd to mark*, cdms stands for *cd mark set*.
 
+[`find_large_directories.pl`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/find_large_directories.pl) iterates the sub directories of a given
+directory and prints the sizes of these subdirectories. Can be used to find directories that occupy large portions on a file system. See
+[`find_large_directories.test/find_large_directories.test.pl`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/find_large_directories.test/find_large_directories.test.pl)
+for a test case and some command line options.
+
 [`hex_dump.pl`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/hex_dump.pl) (currently) shows the line
 endings of text files. So, in that respect, it is *not yet a real hex dumper*!. Compare with [Data::HexDump](https://github.com/ReneNyffenegger/PerlModules/tree/master/Data/HexDump).
 
