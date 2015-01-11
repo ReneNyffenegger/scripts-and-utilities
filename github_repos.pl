@@ -99,6 +99,7 @@ $repos{'vim'                         } = {url => 'https://github.com/ReneNyffene
 $repos{'Windows-Registry'            } = {url => 'https://github.com/ReneNyffenegger/about-Windows-Registry'       , dir => $about_dir };
 $repos{'wsh'                         } = {url => 'https://github.com/ReneNyffenegger/about-wsh'                    , dir => $about_dir };
 
+$repos{'Astronomie'                  } = {url => 'https://github.com/ReneNyffenegger/Astronomie'                   , dir => $github_dir};
 $repos{'Ausfluege-Touren-etc'        } = {url => 'https://github.com/ReneNyffenegger/Ausfluege-Touren-etc'         , dir => $github_dir};
 $repos{'browser-object-model'        } = {url => 'https://github.com/ReneNyffenegger/Browser-Object-Model'         , dir => $github_dir};
 $repos{'data-visualization'          } = {url => 'https://github.com/ReneNyffenegger/data-visualization'           , dir => $github_dir};
