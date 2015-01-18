@@ -112,7 +112,6 @@ $repos{'OracleTool'                   } = {url => 'https://github.com/ReneNyffen
 $repos{'PerlModules'                  } = {url => 'https://github.com/ReneNyffenegger/PerlModules'                  , dir => $github_dir};
 $repos{'printing'                     } = {url => 'https://github.com/ReneNyffenegger/printing'                     , dir => $github_dir};
 $repos{'Sprachen'                     } = {url => 'https://github.com/ReneNyffenegger/Sprachen'                     , dir => $github_dir};
-$repos{'synthetic-pictures'           } = {url => 'https://github.com/ReneNyffenegger/synthetic-pictures'           , dir => $github_dir};
 $repos{'tq84.css'                     } = {url => 'https://github.com/ReneNyffenegger/tq84.css'                     , dir => $github_dir};
 $repos{'wissenschaftliche-Experimente'} = {url => 'https://github.com/ReneNyffenegger/wissenschaftliche-Experimente', dir => $github_dir};
 $repos{'Zefix'                        } = {url => 'https://github.com/ReneNyffenegger/Zefix'                        , dir => $github_dir};
