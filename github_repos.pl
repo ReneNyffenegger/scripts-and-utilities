@@ -115,7 +115,6 @@ $repos{'printing'                     } = {url => 'https://github.com/ReneNyffen
 $repos{'Sprachen'                     } = {url => 'https://github.com/ReneNyffenegger/Sprachen'                     , dir => $github_dir};
 $repos{'tq84.css'                     } = {url => 'https://github.com/ReneNyffenegger/tq84.css'                     , dir => $github_dir};
 $repos{'vimruntime'                   } = {url => 'https://github.com/ReneNyffenegger/vimruntime'                   , dir => $github_dir};
-$repos{'wissenschaftliche-Experimente'} = {url => 'https://github.com/ReneNyffenegger/wissenschaftliche-Experimente', dir => $github_dir};
 $repos{'Geschichte-der-Wissenschaft'  } = {url => 'https://github.com/ReneNyffenegger/Geschichte-der-Wissenschaft'  , dir => $github_dir};
 $repos{'Zefix'                        } = {url => 'https://github.com/ReneNyffenegger/Zefix'                        , dir => $github_dir};
 
