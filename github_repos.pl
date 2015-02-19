@@ -57,14 +57,15 @@ elsif (@ARGV > 1) {
 my %repos;
 
 # $repos{'d3-threeD'     } = 'https://github.com/asutherland/d3-threeD';
-$repos{'perl-Win32-OLE'               } = {url => 'https://github.com/ReneNyffenegger/perl-Win32-OLE'               , dir => $lib_dir   };
 $repos{'js-keyboard-coordinates'      } = {url => 'https://github.com/ReneNyffenegger/js-keyboard-coordinates'      , dir => $lib_dir   };
 $repos{'js-tablator'                  } = {url => 'https://github.com/ReneNyffenegger/js-tablator'                  , dir => $lib_dir   };
 $repos{'js-vector-matrix'             } = {url => 'https://github.com/ReneNyffenegger/js-vector-matrix'             , dir => $lib_dir   };
+$repos{'notes2html'                   } = {url => 'https://github.com/ReneNyffenegger/notes2html'                   , dir => $lib_dir   };
+$repos{'perl-tcp'                     } = {url => 'https://github.com/ReneNyffenegger/perl-tcp'                     , dir => $lib_dir   };
+$repos{'perl-Win32-OLE'               } = {url => 'https://github.com/ReneNyffenegger/perl-Win32-OLE'               , dir => $lib_dir   };
+$repos{'runVBAFilesInOffice'          } = {url => 'https://github.com/ReneNyffenegger/runVBAFilesInOffice'          , dir => $lib_dir   };
 $repos{'SendDirectoryWithMail'        } = {url => 'https://github.com/ReneNyffenegger/SendDirectoryWithMail'        , dir => $lib_dir   };
 $repos{'scripts'                      } = {url => 'https://github.com/ReneNyffenegger/scripts-and-utilities'        , dir => $lib_dir   };
-$repos{'runVBAFilesInOffice'          } = {url => 'https://github.com/ReneNyffenegger/runVBAFilesInOffice'          , dir => $lib_dir   };
-$repos{'perl-tcp'                     } = {url => 'https://github.com/ReneNyffenegger/perl-tcp'                     , dir => $lib_dir   };
 
 #                                      = {url => 'https://github.com/ReneNyffenegger/Windows-Pixel-Ruler'          , dir                };
 $repos{'adodb'                        } = {url => 'https://github.com/ReneNyffenegger/about-adodb'                  , dir => $about_dir };
