@@ -57,6 +57,7 @@ elsif (@ARGV > 1) {
 my %repos;
 
 # $repos{'d3-threeD'     } = 'https://github.com/asutherland/d3-threeD';
+$repos{'Access.pm'                    } = {url => 'https://github.com/ReneNyffenegger/Access.pm'                    , dir => $lib_dir   };
 $repos{'js-keyboard-coordinates'      } = {url => 'https://github.com/ReneNyffenegger/js-keyboard-coordinates'      , dir => $lib_dir   };
 $repos{'js-tablator'                  } = {url => 'https://github.com/ReneNyffenegger/js-tablator'                  , dir => $lib_dir   };
 $repos{'js-vector-matrix'             } = {url => 'https://github.com/ReneNyffenegger/js-vector-matrix'             , dir => $lib_dir   };
