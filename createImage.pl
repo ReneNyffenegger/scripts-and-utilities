@@ -22,7 +22,7 @@ die unless GetOptions (
 
 my $image = new GD::Image($width, $height);
 
-my $bgColor = $image->colorAllocateAlpha($bgColor_r, $bgColor_g, $bgColor_g, $bgAlpha);
+my $bgColor = $image->colorAllocateAlpha($bgColor_r, $bgColor_g, $bgColor_b, $bgAlpha);
 $image -> fill(0, 0, $bgColor);
 
 my $filename = "img_${width}x${height}_${bgColor_r}_${bgColor_g}_${bgColor_b}_${bgAlpha}.png";

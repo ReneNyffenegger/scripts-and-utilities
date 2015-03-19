@@ -14,6 +14,10 @@ be used (on *cmd.exe*, that is).
 
 [`cv.pl`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/cv.pl) prints the content of the clipboard. Mnemonic: <b>C</b>trl-<b>V</b>.
 
+[`createImage.pl`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/createImage.pl) can be used to create simple images. For example
+`createImage.pl -width=300 -height=150 -red=20 -green=40 -blue=200` create an 300x150 px image with an RGB background of #1428c8. The name of the
+image is determined by its parameters: `img_300x150_20_40_200.png`.
+
 [`dc.bat`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/dc.bat) `cd`s into the directory given and then also does a `dir`.
 
 [`cdms.bat`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/cdms.bat), called as `cmds SomeName`, assigns *SomeName* with the current directory.
