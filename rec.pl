@@ -1,10 +1,12 @@
 use warnings;
 use strict;
 
+use File::Copy;
 use File::Find;
 use File::Slurp;
 use File::Basename;
 use File::Spec;
+use File::Temp qw/tempfile/;
 use Getopt::Long;
 use Sys::Hostname;
 use Cwd;              # TODO Really used
@@ -41,6 +43,7 @@ GetOptions(
       'prune=s'  => \@directories_to_prune,
       'rm'       => \$remove_file,
       'svnst'    => \$print_svn_st,
+      'dos2unix' => \my $dos2unix,
       'v'        => \$verbose
 );
 
@@ -58,15 +61,14 @@ if (@ARGV) {
 }
 
 
-
-if (defined $newer_than_n_days) {
+if (defined $newer_than_n_days) { # {{{
 
   $newer_than_n_days = 1 if $newer_than_n_days eq '';
 
   if ($verbose) {
     print "find files newer than $newer_than_n_days days\n";
   }
-}
+} # }}}
 
 
 find(\&wanted, $root_dir);
@@ -108,10 +110,15 @@ sub wanted { # {{{
       return unless map { $file_name =~ /$_/ } @files_to_match;
     } # }}}
 
-    if ($grep_pattern) {
+    if ($grep_pattern) { # {{{
         grep_($file_name) if -f $file_name;
         return;
-    }
+    } # }}}
+
+    if ($dos2unix) { # {{{
+        convertFileFormat($file_name, 'dos2unix') if -f $file_name;
+        return;
+    } # }}}
 
     if ($exec) { # {{{
 
@@ -199,7 +206,7 @@ sub grep_ { # {{{
   close $file;
 } # }}}
 
-sub exec_ {
+sub exec_ { # {{{
 
    my $cmd      = shift;
    my $filename = shift;
@@ -208,7 +215,7 @@ sub exec_ {
 
    print readpipe($cmd);
 
-}
+} # }}}
 
 sub svn_st { # {{{
 
@@ -226,21 +233,70 @@ sub svn_st { # {{{
 
 } # }}}
 
+sub convertFileFormat { # {{{
+  my $filename = shift;
+  my $direction = shift;
+
+  if ($direction eq 'dos2unix') {
+
+  }
+  else {
+    die;
+  }
+
+
+  if (-B $filename) { # {{{
+    print "$filename is binary, no converstion $direction will take place\n" if $verbose;
+    return;
+  } # }}}
+
+  my $file;
+  unless (open $file, '<', $filename) { # {{{
+
+     if ($^E == 0x20) { # http://stackoverflow.com/questions/3220206/determine-whether-a-file-is-in-use-in-perl-on-windows/3220688#322068c
+       print STDERR "$filename is used by another process\n";
+       return;
+     }
+     
+     print "could not open $filename in $File::Find::dir $^E / $!";
+  } # }}}
+
+  my ($tempfile_fh, $tempfile_name) = tempfile;
+
+  while (my $line = <$file>) { # {{{
+
+    $line =~ s/\x0d\x0a/\x0a/;
+    print $tempfile_fh $line;
+
+  } # }}}
+
+  close $tempfile_fh;
+  close $file;
+
+  unlink $filename;
+  move($tempfile_name, $filename);
+
+
+  close $file;
+    
+} # }}}
+
 sub help { # {{{
 
 print <<"E"
 
-  -d       <root dir>
-  -f       file_pattern_1 file_pattern_2 .. file_pattern_n
-  -g [-m]  grep pattern
-  -h       This help
+  -d          <root dir>
+  -f          file_pattern_1 file_pattern_2 .. file_pattern_n
+  -g [-m]     grep pattern
+  -h          This help
 
-  -day [n] print files newer than n days (default: 1)
-  -exec    program, substitutes ! with \$filename
-  -prune   directory_pattern_1 directory_pattern_2 ... directory_pattern_n
-  -rm      delete (remove, unlink) file
-  -svnst   print svn status of matched files
-  -v       verbose (TODO)
+  -day [n]    print files newer than n days (default: 1)
+  -exec       program, substitutes ! with \$filename
+  -prune      directory_pattern_1 directory_pattern_2 ... directory_pattern_n
+  -rm         delete (remove, unlink) file
+  -svnst      print svn status of matched files
+  -dos2unix   Convert files from dos format to unix format
+  -v          verbose (TODO)
   
 E
 
