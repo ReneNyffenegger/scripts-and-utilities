@@ -110,6 +110,7 @@ $repos{'data-visualization'           } = {url => 'https://github.com/ReneNyffen
 $repos{'development_misc'             } = {url => 'https://github.com/ReneNyffenegger/development_misc'                , dir => $github_dir};
 $repos{'EGG'                          } = {url => 'https://github.com/ReneNyffenegger/EGG-Explosion-Graphics-Generator', dir => $github_dir};
 $repos{'Fonts'                        } = {url => 'https://github.com/ReneNyffenegger/Fonts'                           , dir => $github_dir};
+$repos{'Graphic-Design-Fonts'         } = {url => 'https://github.com/ReneNyffenegger/Graphic-Design-and-Font'         , dir => $github_dir};
 $repos{'kaggle'                       } = {url => 'https://github.com/ReneNyffenegger/kaggle'                          , dir => $github_dir};
 $repos{'Meta-Oracle'                  } = {url => 'https://github.com/ReneNyffenegger/Meta-Oracle'                     , dir => $github_dir};
 $repos{'oracle-patterns'              } = {url => 'https://github.com/ReneNyffenegger/oracle-patterns'                 , dir => $github_dir};
