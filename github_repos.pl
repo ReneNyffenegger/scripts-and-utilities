@@ -104,6 +104,7 @@ $repos{'wsh'                          } = {url => 'https://github.com/ReneNyffen
 
 $repos{'Astronomie'                   } = {url => 'https://github.com/ReneNyffenegger/Astronomie'                      , dir => $github_dir};
 $repos{'Ausfluege-Touren-etc'         } = {url => 'https://github.com/ReneNyffenegger/Ausfluege-Touren-etc'            , dir => $github_dir};
+$repos{'Biblisches'                   } = {url => 'https://github.com/ReneNyffenegger/Biblisches'                      , dir => $github_dir};
 $repos{'browser-object-model'         } = {url => 'https://github.com/ReneNyffenegger/Browser-Object-Model'            , dir => $github_dir};
 $repos{'Csound'                       } = {url => 'https://github.com/ReneNyffenegger/Csound'                          , dir => $github_dir};
 $repos{'data-visualization'           } = {url => 'https://github.com/ReneNyffenegger/data-visualization'              , dir => $github_dir};
@@ -121,7 +122,7 @@ $repos{'printing'                     } = {url => 'https://github.com/ReneNyffen
 $repos{'Skizzen'                      } = {url => 'https://github.com/ReneNyffenegger/Skizzen'                         , dir => $github_dir};
 $repos{'Sprachen'                     } = {url => 'https://github.com/ReneNyffenegger/Sprachen'                        , dir => $github_dir};
 $repos{'tq84.css'                     } = {url => 'https://github.com/ReneNyffenegger/tq84.css'                        , dir => $github_dir};
-$repos{'vimruntime'                   } = {url => 'https://github.com/ReneNyffenegger/vimruntime'                      , dir => $github_dir};
+$repos{'vim'                          } = {url => 'https://github.com/ReneNyffenegger/vim'                             , dir => $github_dir};
 $repos{'Geschichte-der-Wissenschaft'  } = {url => 'https://github.com/ReneNyffenegger/Geschichte-der-Wissenschaft'     , dir => $github_dir};
 $repos{'Zefix'                        } = {url => 'https://github.com/ReneNyffenegger/Zefix'                           , dir => $github_dir};
 
