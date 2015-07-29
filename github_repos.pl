@@ -7,11 +7,11 @@ use File::HomeDir;
 use Getopt::Long;
 
 my $match = '';
-my $help  = '';
 
 GetOptions(
    'match=s' => \$match,
-   'help'    => \$help
+   'help'    => \my $help,
+   'debug'   => \my $debug
 );
 
 
@@ -134,6 +134,8 @@ mkdir $github_dir unless -d $github_dir;
 
 for my $repo (keys %repos) {
 
+  print "repo: $repo\n" if $debug;
+
   if ($match and $repo !~ /$match/i) {
      next;
   }
@@ -185,6 +187,7 @@ sub usage {
   print "\n";
   print "  $0 exact-expression\n";
   print "  $0 --match regular-expression\n";
+  print "  $0 --debug\n";
   print "  $0 --help\n";
   print "\n";
 }
