@@ -126,6 +126,8 @@ $repos{'vim'                          } = {url => 'https://github.com/ReneNyffen
 $repos{'Geschichte-der-Wissenschaft'  } = {url => 'https://github.com/ReneNyffenegger/Geschichte-der-Wissenschaft'     , dir => $github_dir};
 $repos{'Zefix'                        } = {url => 'https://github.com/ReneNyffenegger/Zefix'                           , dir => $github_dir};
 
+$repos{'.vim'                         } = {url => 'https://github.com/ReneNyffenegger/.vim'                            , dir =>'special .vim'};
+
 mkdir $lib_dir    unless -d $lib_dir;
 mkdir $about_dir  unless -d $about_dir;
 mkdir $github_dir unless -d $github_dir;
@@ -139,20 +141,38 @@ for my $repo (keys %repos) {
      next;
   }
 
-  if (-d "$repos{$repo}{dir}/$repo") {
-     print "\n\nRepo $repos{$repo}{dir}/$repo exists, updating it\n";
+  my $repository_path = "$repos{$repo}{dir}/$repo";
+  my $repo_parent     =  $repos{$repo}{dir};
+  my $repo_directory  =  $repo;
+
+  if ($repos{$repo}{dir} eq 'special .vim') {
+    $repo_parent     = File::HomeDir -> my_home;
+
+    if ($^O eq 'MSWin32' or $^O eq 'MSWin64') {
+      $repository_path = File::HomeDir -> my_home . '/vimfiles';
+      $repo_directory  = 'vimfiles';
+    }
+    else {
+      $repository_path = File::HomeDir -> my_home . '/.vim';
+      $repo_directory  = '.vim';
+    }
+
+  }
+
+  if (-d $repository_path ) {
+     print "\n\nRepo $repository_path exists, updating it\n";
     
-     chdir "$repos{$repo}{dir}/$repo";
+     chdir "$repository_path";
 
      my $git_response = readpipe("git pull");
      print $git_response;
   }
   else {
-     chdir $repos{$repo}{dir};
+     chdir $repo_parent;
 
-     my $command = "git clone $repos{$repo}{url} $repo";
+     my $command = "git clone $repos{$repo}{url} $repo_directory";
 
-     print "\n\nRepo $repos{$repo}{dir}/$repo does not exist, cloning it [$command]\n";
+     print "\n\nRepo $repository_path does not exist, cloning it [$command]\n";
 
      my $git_response = readpipe($command);
      print $git_response;
