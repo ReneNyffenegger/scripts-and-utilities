@@ -3,7 +3,7 @@
 
 Scripts and Utilities for cmd.exe and (ba)sh etc.
 
-[`github_repos.pl`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/github_repos.pl) is the script
+[`ghr.pl`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/ghr.pl) is the script
 I use to automatically pull or clone my [github repostiories](https://github.com/ReneNyffenegger?tab=repositories) when
 I use a new computer or a computer on which I haven't worked for time.
 
@@ -19,6 +19,8 @@ be used (on *cmd.exe*, that is).
 image is determined by its parameters: `img_300x150_20_40_200.png`.
 
 [`dc.bat`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/dc.bat) `cd`s into the directory given and then also does a `dir`.
+
+[`cdhom.bat`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/cdhom.bat) `cd` into the home directory (which is `%userprofile%` on Windows).
 
 [`cdms.bat`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/cdms.bat), called as `cmds SomeName`, assigns *SomeName* with the current directory.
 Later, [`cdm.bat`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/cdm.bat) allows to cd back to this directory (`cdm SomeName`).
