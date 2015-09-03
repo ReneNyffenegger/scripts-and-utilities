@@ -1,3 +1,7 @@
+#  Compare to mp3SetTag.py
+#  The python version seems a bit better as it
+#  allows to set album_artist.
+#
 use warnings;
 use strict;
 
