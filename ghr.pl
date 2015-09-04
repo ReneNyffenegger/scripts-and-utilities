@@ -11,6 +11,7 @@ my $match = '';
 GetOptions(
    'match=s' => \$match,
    'help'    => \my $help,
+   'todo'    => \my $todo,
    'debug'   => \my $debug
 );
 
@@ -162,14 +163,36 @@ for my $repo (keys %repos) {
   }
 
   if (-d $repository_path ) {
-     print "\n\nRepo $repository_path exists, updating it\n";
-    
-     chdir "$repository_path";
 
-     my $git_response = readpipe("git pull");
-     print $git_response;
+
+      
+     chdir "$repository_path";
+  
+     if (!$todo) {
+       print "\n\nRepo $repository_path exists, updating it\n";
+       my $git_response = readpipe("git pull");
+       print $git_response;
+     }
+     else {
+
+       #  Is there something to be pushed?
+       my $git_response = readpipe('git log @{u}..');
+       if ($git_response) {
+         print "\n\nRepo $repository_path should be pushed\n";
+       }
+
+       #  New files or uncommited files
+       my @git_response = readpipe('git status');
+       chomp($git_response[1]);
+       if ($git_response[1] ne 'nothing to commit, working directory clean') {
+         print "\n\nRepo $repository_path not clean [$git_response[1] ]\n";
+       }
+
+     }
   }
   else {
+     return if $todo; # In todo-mode, do nothing if the repository does not exist
+
      chdir $repo_parent;
 
      my $command = "git clone $repos{$repo}{url} $repo_directory";
@@ -188,6 +211,7 @@ sub usage {
   print "  $0 exact-expression\n";
   print "  $0 --match regular-expression\n";
   print "  $0 --debug\n";
+  print "  $0 --todo\n";
   print "  $0 --help\n";
   print "\n";
 }
