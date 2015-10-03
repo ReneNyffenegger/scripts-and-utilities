@@ -72,6 +72,7 @@ $repos{'VBAModules'                   } = {url => 'https://github.com/ReneNyffen
 
 #                                      = {url => 'https://github.com/ReneNyffenegger/Windows-Pixel-Ruler'              , dir                };
 $repos{'adodb'                        } = {url => 'https://github.com/ReneNyffenegger/about-adodb'                     , dir => $about_dir };
+$repos{'CGI'                          } = {url => 'https://github.com/ReneNyffenegger/about-cgi'                       , dir => $about_dir };
 $repos{'coffeescript'                 } = {url => 'https://github.com/ReneNyffenegger/about-coffeescript'              , dir => $about_dir };
 $repos{'css'                          } = {url => 'https://github.com/ReneNyffenegger/about-css'                       , dir => $about_dir };
 $repos{'cmd.exe'                      } = {url => 'https://github.com/ReneNyffenegger/about-cmd.exe'                   , dir => $about_dir };
