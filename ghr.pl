@@ -109,6 +109,7 @@ $repos{'wsh'                          } = {url => 'https://github.com/ReneNyffen
 $repos{'Astronomie'                   } = {url => 'https://github.com/ReneNyffenegger/Astronomie'                      , dir => $github_dir};
 $repos{'Ausfluege-Touren-etc'         } = {url => 'https://github.com/ReneNyffenegger/Ausfluege-Touren-etc'            , dir => $github_dir};
 $repos{'Bibeluebersetzungen'          } = {url => 'https://github.com/ReneNyffenegger/Bibeluebersetzungen'             , dir => $github_dir};
+$repos{'Bible-Text-Sources'           } = {url => 'https://github.com/ReneNyffenegger/Bible-Text-Sources'              , dir => $github_dir};
 $repos{'Biblisches'                   } = {url => 'https://github.com/ReneNyffenegger/Biblisches'                      , dir => $github_dir};
 $repos{'browser-object-model'         } = {url => 'https://github.com/ReneNyffenegger/Browser-Object-Model'            , dir => $github_dir};
 $repos{'Csound'                       } = {url => 'https://github.com/ReneNyffenegger/Csound'                          , dir => $github_dir};
