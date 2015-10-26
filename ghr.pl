@@ -69,6 +69,7 @@ $repos{'runVBAFilesInOffice'          } = {url => 'https://github.com/ReneNyffen
 $repos{'SendDirectoryWithMail'        } = {url => 'https://github.com/ReneNyffenegger/SendDirectoryWithMail'           , dir => $lib_dir   };
 $repos{'scripts'                      } = {url => 'https://github.com/ReneNyffenegger/scripts-and-utilities'           , dir => $lib_dir   };
 $repos{'VBAModules'                   } = {url => 'https://github.com/ReneNyffenegger/VBAModules'                      , dir => $lib_dir   };
+$repos{'xlsx_writer-Oracle'           } = {url => 'https://github.com/ReneNyffenegger/xlsx_writer-Oracle'              , dir => $lib_dir   };
 
 #                                      = {url => 'https://github.com/ReneNyffenegger/Windows-Pixel-Ruler'              , dir                };
 $repos{'adodb'                        } = {url => 'https://github.com/ReneNyffenegger/about-adodb'                     , dir => $about_dir };
