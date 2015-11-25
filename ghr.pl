@@ -81,6 +81,7 @@ $repos{'cmd.exe'                      } = {url => 'https://github.com/ReneNyffen
 $repos{'dat.GUI'                      } = {url => 'https://github.com/ReneNyffenegger/about-dat.GUI'                   , dir => $about_dir };
 $repos{'Document-Object-Model'        } = {url => 'https://github.com/ReneNyffenegger/about-Document-Object-Model'     , dir => $about_dir };
 $repos{'d3.js'                        } = {url => 'https://github.com/ReneNyffenegger/about-d3.js'                     , dir => $about_dir };
+$repos{'Excel'                        } = {url => 'https://github.com/ReneNyffenegger/about-Excel'                     , dir => $about_dir };
 $repos{'GoogleEarth'                  } = {url => 'https://github.com/ReneNyffenegger/about-GoogleEarth'               , dir => $about_dir };
 $repos{'html'                         } = {url => 'https://github.com/ReneNyffenegger/about-html'                      , dir => $about_dir };
 $repos{'javascript'                   } = {url => 'https://github.com/ReneNyffenegger/about-javascript'                , dir => $about_dir };
@@ -89,6 +90,7 @@ $repos{'jQuery'                       } = {url => 'https://github.com/ReneNyffen
 $repos{'jQuery-UI'                    } = {url => 'https://github.com/ReneNyffenegger/about-jQuery-UI'                 , dir => $about_dir };
 $repos{'node.js'                      } = {url => 'https://github.com/ReneNyffenegger/about-node.js'                   , dir => $about_dir };
 $repos{'MapReduce'                    } = {url => 'https://github.com/ReneNyffenegger/about-MapReduce'                 , dir => $about_dir };
+$repos{'MSSQL'                        } = {url => 'https://github.com/ReneNyffenegger/about-MSSQL'                     , dir => $about_dir };
 $repos{'Office-Open-XML'              } = {url => 'https://github.com/ReneNyffenegger/about-Office-Open-XML'           , dir => $about_dir };
 $repos{'Open-Street-Map'              } = {url => 'https://github.com/ReneNyffenegger/about-Open-Street-Map'           , dir => $about_dir };
 $repos{'perl'                         } = {url => 'https://github.com/ReneNyffenegger/about-perl'                      , dir => $about_dir };
