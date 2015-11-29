@@ -83,6 +83,7 @@ $repos{'Document-Object-Model'        } = {url => 'https://github.com/ReneNyffen
 $repos{'d3.js'                        } = {url => 'https://github.com/ReneNyffenegger/about-d3.js'                     , dir => $about_dir };
 $repos{'Excel'                        } = {url => 'https://github.com/ReneNyffenegger/about-Excel'                     , dir => $about_dir };
 $repos{'GoogleEarth'                  } = {url => 'https://github.com/ReneNyffenegger/about-GoogleEarth'               , dir => $about_dir };
+$repos{'Graphviz'                     } = {url => 'https://github.com/ReneNyffenegger/about-Graphviz'                  , dir => $about_dir };
 $repos{'html'                         } = {url => 'https://github.com/ReneNyffenegger/about-html'                      , dir => $about_dir };
 $repos{'javascript'                   } = {url => 'https://github.com/ReneNyffenegger/about-javascript'                , dir => $about_dir };
 $repos{'jqGrid'                       } = {url => 'https://github.com/ReneNyffenegger/about-jqGrid'                    , dir => $about_dir };
