@@ -107,6 +107,7 @@ $repos{'Stellarium'                   } = {url => 'https://github.com/ReneNyffen
 $repos{'svg'                          } = {url => 'https://github.com/ReneNyffenegger/about-svg'                       , dir => $about_dir };
 $repos{'three.js'                     } = {url => 'https://github.com/ReneNyffenegger/about-three.js'                  , dir => $about_dir };
 $repos{'TopoJSON'                     } = {url => 'https://github.com/ReneNyffenegger/about-TopoJSON'                  , dir => $about_dir };
+$repos{'Unicode'                      } = {url => 'https://github.com/ReneNyffenegger/about-Unicode'                   , dir => $about_dir };
 $repos{'vim'                          } = {url => 'https://github.com/ReneNyffenegger/about-vim'                       , dir => $about_dir };
 $repos{'Windows-Registry'             } = {url => 'https://github.com/ReneNyffenegger/about-Windows-Registry'          , dir => $about_dir };
 $repos{'wsh'                          } = {url => 'https://github.com/ReneNyffenegger/about-wsh'                       , dir => $about_dir };
