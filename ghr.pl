@@ -85,7 +85,6 @@ $repos{'Excel'                        } = {url => 'https://github.com/ReneNyffen
 $repos{'GoogleEarth'                  } = {url => 'https://github.com/ReneNyffenegger/about-GoogleEarth'               , dir => $about_dir };
 $repos{'Graphviz'                     } = {url => 'https://github.com/ReneNyffenegger/about-Graphviz'                  , dir => $about_dir };
 $repos{'html'                         } = {url => 'https://github.com/ReneNyffenegger/about-html'                      , dir => $about_dir };
-$repos{'iMacro'                       } = {url => 'https://github.com/ReneNyffenegger/about-iMacro'                    , dir => $about_dir };
 $repos{'javascript'                   } = {url => 'https://github.com/ReneNyffenegger/about-javascript'                , dir => $about_dir };
 $repos{'jqGrid'                       } = {url => 'https://github.com/ReneNyffenegger/about-jqGrid'                    , dir => $about_dir };
 $repos{'jQuery'                       } = {url => 'https://github.com/ReneNyffenegger/about-jQuery'                    , dir => $about_dir };
@@ -137,6 +136,7 @@ $repos{'Skizzen'                      } = {url => 'https://github.com/ReneNyffen
 $repos{'Sprachen'                     } = {url => 'https://github.com/ReneNyffenegger/Sprachen'                        , dir => $github_dir};
 $repos{'tq84.css'                     } = {url => 'https://github.com/ReneNyffenegger/tq84.css'                        , dir => $github_dir};
 $repos{'Vortraege'                    } = {url => 'https://github.com/ReneNyffenegger/Vortraege'                       , dir => $github_dir};
+$repos{'WebAutomation'                } = {url => 'https://github.com/ReneNyffenegger/WebAutomation'                   , dir => $github_dir};
 $repos{'Zefix'                        } = {url => 'https://github.com/ReneNyffenegger/Zefix'                           , dir => $github_dir};
 
 $repos{'.vim'                         } = {url => 'https://github.com/ReneNyffenegger/.vim'                            , dir =>'special .vim'};
