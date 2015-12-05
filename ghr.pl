@@ -92,6 +92,7 @@ $repos{'jQuery'                       } = {url => 'https://github.com/ReneNyffen
 $repos{'jQuery-UI'                    } = {url => 'https://github.com/ReneNyffenegger/about-jQuery-UI'                 , dir => $about_dir };
 $repos{'node.js'                      } = {url => 'https://github.com/ReneNyffenegger/about-node.js'                   , dir => $about_dir };
 $repos{'MapReduce'                    } = {url => 'https://github.com/ReneNyffenegger/about-MapReduce'                 , dir => $about_dir };
+$repos{'mshta'                        } = {url => 'https://github.com/ReneNyffenegger/about-mshta'                     , dir => $about_dir };
 $repos{'MSSQL'                        } = {url => 'https://github.com/ReneNyffenegger/about-MSSQL'                     , dir => $about_dir };
 $repos{'Office-Open-XML'              } = {url => 'https://github.com/ReneNyffenegger/about-Office-Open-XML'           , dir => $about_dir };
 $repos{'Open-Street-Map'              } = {url => 'https://github.com/ReneNyffenegger/about-Open-Street-Map'           , dir => $about_dir };
