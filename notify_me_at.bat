@@ -1,12 +1,12 @@
-set year=%1
-set month=%2
-set day=%3
-set hour=%4
-set minute=%5
+@set year=%1
+@set month=%2
+@set day=%3
+@set hour=%4
+@set minute=%5
 
-set message=%hour%:%minute% - %*
+@set message=%hour%:%minute% - %*
 
-set taskname=NotifyMeAt%year%%month%%day%%year%%hour%%minute%
+@set taskname=NotifyMeAt%year%%month%%day%%year%%hour%%minute%
 
 @rem
 @rem  TODO
