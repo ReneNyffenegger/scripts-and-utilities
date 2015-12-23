@@ -135,6 +135,7 @@ $repos{'PerlModules'                  } = {url => 'https://github.com/ReneNyffen
 $repos{'printing'                     } = {url => 'https://github.com/ReneNyffenegger/printing'                        , dir => $github_dir};
 $repos{'Skizzen'                      } = {url => 'https://github.com/ReneNyffenegger/Skizzen'                         , dir => $github_dir};
 $repos{'Sprachen'                     } = {url => 'https://github.com/ReneNyffenegger/Sprachen'                        , dir => $github_dir};
+$repos{'swap-keys'                    } = {url => 'https://github.com/ReneNyffenegger/swap-keys'                       , dir => $github_dir};
 $repos{'tq84.css'                     } = {url => 'https://github.com/ReneNyffenegger/tq84.css'                        , dir => $github_dir};
 $repos{'Vortraege'                    } = {url => 'https://github.com/ReneNyffenegger/Vortraege'                       , dir => $github_dir};
 $repos{'WebAutomation'                } = {url => 'https://github.com/ReneNyffenegger/WebAutomation'                   , dir => $github_dir};
