@@ -128,6 +128,7 @@ $repos{'Geschichte-der-Wissenschaft'  } = {url => 'https://github.com/ReneNyffen
 $repos{'Graphic-Design-Fonts'         } = {url => 'https://github.com/ReneNyffenegger/Graphic-Design-and-Font'         , dir => $github_dir};
 $repos{'kaggle'                       } = {url => 'https://github.com/ReneNyffenegger/kaggle'                          , dir => $github_dir};
 $repos{'Meta-Oracle'                  } = {url => 'https://github.com/ReneNyffenegger/Meta-Oracle'                     , dir => $github_dir};
+$repos{'netcat'                       } = {url => 'https://github.com/ReneNyffenegger/netcat'                          , dir => $github_dir};
 $repos{'oracle-patterns'              } = {url => 'https://github.com/ReneNyffenegger/oracle-patterns'                 , dir => $github_dir};
 $repos{'oracle_scriptlets'            } = {url => 'https://github.com/ReneNyffenegger/oracle_scriptlets'               , dir => $github_dir};
 $repos{'OracleTool'                   } = {url => 'https://github.com/ReneNyffenegger/OracleTool'                      , dir => $github_dir};
