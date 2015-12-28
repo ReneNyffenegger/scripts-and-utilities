@@ -74,6 +74,7 @@ $repos{'xlsx_writer-Oracle'           } = {url => 'https://github.com/ReneNyffen
 
 #                                      = {url => 'https://github.com/ReneNyffenegger/Windows-Pixel-Ruler'              , dir                };
 $repos{'adodb'                        } = {url => 'https://github.com/ReneNyffenegger/about-adodb'                     , dir => $about_dir };
+$repos{'AutoHotkey'                   } = {url => 'https://github.com/ReneNyffenegger/about-AutoHotkey'                , dir => $about_dir };
 $repos{'CGI'                          } = {url => 'https://github.com/ReneNyffenegger/about-cgi'                       , dir => $about_dir };
 $repos{'coffeescript'                 } = {url => 'https://github.com/ReneNyffenegger/about-coffeescript'              , dir => $about_dir };
 $repos{'css'                          } = {url => 'https://github.com/ReneNyffenegger/about-css'                       , dir => $about_dir };
@@ -128,6 +129,7 @@ $repos{'Geschichte-der-Wissenschaft'  } = {url => 'https://github.com/ReneNyffen
 $repos{'Graphic-Design-Fonts'         } = {url => 'https://github.com/ReneNyffenegger/Graphic-Design-and-Font'         , dir => $github_dir};
 $repos{'kaggle'                       } = {url => 'https://github.com/ReneNyffenegger/kaggle'                          , dir => $github_dir};
 $repos{'Meta-Oracle'                  } = {url => 'https://github.com/ReneNyffenegger/Meta-Oracle'                     , dir => $github_dir};
+$repos{'netcat'                       } = {url => 'https://github.com/ReneNyffenegger/netcat'                          , dir => $github_dir};
 $repos{'oracle-patterns'              } = {url => 'https://github.com/ReneNyffenegger/oracle-patterns'                 , dir => $github_dir};
 $repos{'oracle_scriptlets'            } = {url => 'https://github.com/ReneNyffenegger/oracle_scriptlets'               , dir => $github_dir};
 $repos{'OracleTool'                   } = {url => 'https://github.com/ReneNyffenegger/OracleTool'                      , dir => $github_dir};
@@ -135,6 +137,7 @@ $repos{'PerlModules'                  } = {url => 'https://github.com/ReneNyffen
 $repos{'printing'                     } = {url => 'https://github.com/ReneNyffenegger/printing'                        , dir => $github_dir};
 $repos{'Skizzen'                      } = {url => 'https://github.com/ReneNyffenegger/Skizzen'                         , dir => $github_dir};
 $repos{'Sprachen'                     } = {url => 'https://github.com/ReneNyffenegger/Sprachen'                        , dir => $github_dir};
+$repos{'swap-keys'                    } = {url => 'https://github.com/ReneNyffenegger/swap-keys'                       , dir => $github_dir};
 $repos{'tq84.css'                     } = {url => 'https://github.com/ReneNyffenegger/tq84.css'                        , dir => $github_dir};
 $repos{'Vortraege'                    } = {url => 'https://github.com/ReneNyffenegger/Vortraege'                       , dir => $github_dir};
 $repos{'WebAutomation'                } = {url => 'https://github.com/ReneNyffenegger/WebAutomation'                   , dir => $github_dir};
