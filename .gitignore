@@ -1,4 +1,4 @@
 # following file created with hex_dump.pl  --create-testfile
 hex_dump_test_end_of_lines.txt
-.*.swp
-.*.swo
+*.swp
+*.swo
