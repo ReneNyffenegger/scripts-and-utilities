@@ -1,6 +1,6 @@
 @rem
 @rem    Turn the internet proxy on or off,
-@rem    or show current statua
+@rem    or show current status.
 @rem
 
 
