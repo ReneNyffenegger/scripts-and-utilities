@@ -141,6 +141,7 @@ $repos{'swap-keys'                    } = {url => 'https://github.com/ReneNyffen
 $repos{'tq84.css'                     } = {url => 'https://github.com/ReneNyffenegger/tq84.css'                        , dir => $github_dir};
 $repos{'Vortraege'                    } = {url => 'https://github.com/ReneNyffenegger/Vortraege'                       , dir => $github_dir};
 $repos{'WebAutomation'                } = {url => 'https://github.com/ReneNyffenegger/WebAutomation'                   , dir => $github_dir};
+$repos{'Windows-API'                  } = {url => 'https://github.com/ReneNyffenegger/Windows-API'                     , dir => $github_dir};
 $repos{'Zefix'                        } = {url => 'https://github.com/ReneNyffenegger/Zefix'                           , dir => $github_dir};
 
 $repos{'.vim'                         } = {url => 'https://github.com/ReneNyffenegger/.vim'                            , dir =>'special .vim'};
