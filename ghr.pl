@@ -121,6 +121,7 @@ $repos{'Ausfluege-Touren-etc'         } = {url => 'https://github.com/ReneNyffen
 $repos{'Bibeluebersetzungen'          } = {url => 'https://github.com/ReneNyffenegger/Bibeluebersetzungen'             , dir => $github_dir};
 $repos{'Bible-Text-Sources'           } = {url => 'https://github.com/ReneNyffenegger/Bible-Text-Sources'              , dir => $github_dir};
 $repos{'Biblisches'                   } = {url => 'https://github.com/ReneNyffenegger/Biblisches'                      , dir => $github_dir};
+$repos{'renenyffenegger.blogspot.com' } = {url => 'https://github.com/ReneNyffenegger/renenyffenegger.blogspot.com'    , dir => $github_dir};
 $repos{'browser-object-model'         } = {url => 'https://github.com/ReneNyffenegger/Browser-Object-Model'            , dir => $github_dir};
 $repos{'Csound'                       } = {url => 'https://github.com/ReneNyffenegger/Csound'                          , dir => $github_dir};
 $repos{'data-visualization'           } = {url => 'https://github.com/ReneNyffenegger/data-visualization'              , dir => $github_dir};
