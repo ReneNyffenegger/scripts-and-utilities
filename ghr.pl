@@ -90,6 +90,7 @@ $repos{'GoogleEarth'                  } = {url => 'https://github.com/ReneNyffen
 $repos{'Graphviz'                     } = {url => 'https://github.com/ReneNyffenegger/about-Graphviz'                  , dir => $about_dir };
 $repos{'html'                         } = {url => 'https://github.com/ReneNyffenegger/about-html'                      , dir => $about_dir };
 $repos{'impress.js'                   } = {url => 'https://github.com/ReneNyffenegger/about-impress.js'                , dir => $about_dir };
+$repos{'jmpress.js'                   } = {url => 'https://github.com/ReneNyffenegger/about-jmpress.js'                , dir => $about_dir };
 $repos{'javascript'                   } = {url => 'https://github.com/ReneNyffenegger/about-javascript'                , dir => $about_dir };
 $repos{'jqGrid'                       } = {url => 'https://github.com/ReneNyffenegger/about-jqGrid'                    , dir => $about_dir };
 $repos{'jQuery'                       } = {url => 'https://github.com/ReneNyffenegger/about-jQuery'                    , dir => $about_dir };
