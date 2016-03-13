@@ -1,4 +1,3 @@
-
 @rem
 @rem  Ask for the Password if it
 @rem  is not already set:
@@ -9,4 +8,3 @@
 )
 
 @git-push.pl
-
