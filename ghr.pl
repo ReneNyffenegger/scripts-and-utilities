@@ -31,9 +31,9 @@ if ($^O eq 'MSWin32') { # or MSWin64 ?
   $github_dir  = 'c:/github';
 }
 else {
-  $lib_dir     = File::HomeDir -> my_home . '/github-lib';
-  $about_dir   = File::HomeDir -> my_home . '/about';
-  $github_dir  = File::HomeDir -> my_home . '/github';
+  $lib_dir     = File::HomeDir -> my_home . '/github/lib';
+  $about_dir   = File::HomeDir -> my_home . '/github/about';
+  $github_dir  = File::HomeDir -> my_home . '/github/github';
 }
 
 my $exact = '';
@@ -135,6 +135,7 @@ $repos{'Fonts'                        } = {url => 'https://github.com/ReneNyffen
 $repos{'Geschichte-der-Wissenschaft'  } = {url => 'https://github.com/ReneNyffenegger/Geschichte-der-Wissenschaft'     , dir => $github_dir};
 $repos{'Graphic-Design-Fonts'         } = {url => 'https://github.com/ReneNyffenegger/Graphic-Design-and-Font'         , dir => $github_dir};
 $repos{'kaggle'                       } = {url => 'https://github.com/ReneNyffenegger/kaggle'                          , dir => $github_dir};
+$repos{'LinuxFromScratch'             } = {url => 'https://github.com/ReneNyffenegger/LinuxFromScratch'                , dir => $github_dir};
 $repos{'Meta-Oracle'                  } = {url => 'https://github.com/ReneNyffenegger/Meta-Oracle'                     , dir => $github_dir};
 $repos{'netcat'                       } = {url => 'https://github.com/ReneNyffenegger/netcat'                          , dir => $github_dir};
 $repos{'notes'                        } = {url => 'https://github.com/ReneNyffenegger/notes'                           , dir => $github_dir};
