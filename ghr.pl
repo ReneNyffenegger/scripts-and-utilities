@@ -121,6 +121,7 @@ $repos{'vim'                          } = {url => 'https://github.com/ReneNyffen
 $repos{'Windows-Registry'             } = {url => 'https://github.com/ReneNyffenegger/about-Windows-Registry'          , dir => $about_dir };
 $repos{'wsh'                          } = {url => 'https://github.com/ReneNyffenegger/about-wsh'                       , dir => $about_dir };
 
+$repos{'Arch-Linux-UEFI-Installation' } = {url => 'https://github.com/ReneNyffenegger/Arch-Linux-UEFI-Installation'    , dir => $github_dir};
 $repos{'Astronomie'                   } = {url => 'https://github.com/ReneNyffenegger/Astronomie'                      , dir => $github_dir};
 $repos{'Ausfluege-Touren-etc'         } = {url => 'https://github.com/ReneNyffenegger/Ausfluege-Touren-etc'            , dir => $github_dir};
 $repos{'Bibeluebersetzungen'          } = {url => 'https://github.com/ReneNyffenegger/Bibeluebersetzungen'             , dir => $github_dir};
