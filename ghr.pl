@@ -76,6 +76,7 @@ $repos{'VBAModules'                   } = {url => 'https://github.com/ReneNyffen
 $repos{'xlsx_writer-Oracle'           } = {url => 'https://github.com/ReneNyffenegger/xlsx_writer-Oracle'              , dir => $lib_dir   };
 
 #                                      = {url => 'https://github.com/ReneNyffenegger/Windows-Pixel-Ruler'              , dir                };
+$repos{'Access'                       } = {url => 'https://github.com/ReneNyffenegger/about-Access'                    , dir => $about_dir };
 $repos{'adodb'                        } = {url => 'https://github.com/ReneNyffenegger/about-adodb'                     , dir => $about_dir };
 $repos{'AutoHotkey'                   } = {url => 'https://github.com/ReneNyffenegger/about-AutoHotkey'                , dir => $about_dir };
 $repos{'Bash'                         } = {url => 'https://github.com/ReneNyffenegger/about-Bash'                      , dir => $about_dir };
