@@ -65,6 +65,7 @@ $repos{'js-inkscape'                  } = {url => 'https://github.com/ReneNyffen
 $repos{'js-line-writer'               } = {url => 'https://github.com/ReneNyffenegger/js-line-writer'                  , dir => $lib_dir   };
 $repos{'js-tablator'                  } = {url => 'https://github.com/ReneNyffenegger/js-tablator'                     , dir => $lib_dir   };
 $repos{'js-vector-matrix'             } = {url => 'https://github.com/ReneNyffenegger/js-vector-matrix'                , dir => $lib_dir   };
+$repos{'MS-Access-bootstrap'          } = {url => 'https://github.com/ReneNyffenegger/MS-Access-bootstrap'             , dir => $lib_dir   };
 $repos{'notes2html'                   } = {url => 'https://github.com/ReneNyffenegger/notes2html'                      , dir => $lib_dir   };
 $repos{'perl-tcp'                     } = {url => 'https://github.com/ReneNyffenegger/perl-tcp'                        , dir => $lib_dir   };
 $repos{'perl-Win32-OLE'               } = {url => 'https://github.com/ReneNyffenegger/perl-Win32-OLE'                  , dir => $lib_dir   };
