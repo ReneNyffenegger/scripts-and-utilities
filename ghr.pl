@@ -65,6 +65,7 @@ $repos{'js-inkscape'                  } = {url => 'https://github.com/ReneNyffen
 $repos{'js-line-writer'               } = {url => 'https://github.com/ReneNyffenegger/js-line-writer'                  , dir => $lib_dir   };
 $repos{'js-tablator'                  } = {url => 'https://github.com/ReneNyffenegger/js-tablator'                     , dir => $lib_dir   };
 $repos{'js-vector-matrix'             } = {url => 'https://github.com/ReneNyffenegger/js-vector-matrix'                , dir => $lib_dir   };
+$repos{'MS-Access-bootstrap'          } = {url => 'https://github.com/ReneNyffenegger/MS-Access-bootstrap'             , dir => $lib_dir   };
 $repos{'notes2html'                   } = {url => 'https://github.com/ReneNyffenegger/notes2html'                      , dir => $lib_dir   };
 $repos{'perl-tcp'                     } = {url => 'https://github.com/ReneNyffenegger/perl-tcp'                        , dir => $lib_dir   };
 $repos{'perl-Win32-OLE'               } = {url => 'https://github.com/ReneNyffenegger/perl-Win32-OLE'                  , dir => $lib_dir   };
@@ -75,8 +76,10 @@ $repos{'VBAModules'                   } = {url => 'https://github.com/ReneNyffen
 $repos{'xlsx_writer-Oracle'           } = {url => 'https://github.com/ReneNyffenegger/xlsx_writer-Oracle'              , dir => $lib_dir   };
 
 #                                      = {url => 'https://github.com/ReneNyffenegger/Windows-Pixel-Ruler'              , dir                };
+$repos{'Access'                       } = {url => 'https://github.com/ReneNyffenegger/about-Access'                    , dir => $about_dir };
 $repos{'adodb'                        } = {url => 'https://github.com/ReneNyffenegger/about-adodb'                     , dir => $about_dir };
 $repos{'AutoHotkey'                   } = {url => 'https://github.com/ReneNyffenegger/about-AutoHotkey'                , dir => $about_dir };
+$repos{'Bash'                         } = {url => 'https://github.com/ReneNyffenegger/about-Bash'                      , dir => $about_dir };
 $repos{'CGI'                          } = {url => 'https://github.com/ReneNyffenegger/about-cgi'                       , dir => $about_dir };
 $repos{'coffeescript'                 } = {url => 'https://github.com/ReneNyffenegger/about-coffeescript'              , dir => $about_dir };
 $repos{'css'                          } = {url => 'https://github.com/ReneNyffenegger/about-css'                       , dir => $about_dir };
@@ -117,10 +120,12 @@ $repos{'three.js'                     } = {url => 'https://github.com/ReneNyffen
 $repos{'TopoJSON'                     } = {url => 'https://github.com/ReneNyffenegger/about-TopoJSON'                  , dir => $about_dir };
 $repos{'Unicode'                      } = {url => 'https://github.com/ReneNyffenegger/about-Unicode'                   , dir => $about_dir };
 $repos{'VBA'                          } = {url => 'https://github.com/ReneNyffenegger/about-VBA'                       , dir => $about_dir };
+$repos{'VBScript'                     } = {url => 'https://github.com/ReneNyffenegger/about-VBScript'                  , dir => $about_dir };
 $repos{'vim'                          } = {url => 'https://github.com/ReneNyffenegger/about-vim'                       , dir => $about_dir };
 $repos{'Windows-Registry'             } = {url => 'https://github.com/ReneNyffenegger/about-Windows-Registry'          , dir => $about_dir };
 $repos{'wsh'                          } = {url => 'https://github.com/ReneNyffenegger/about-wsh'                       , dir => $about_dir };
 
+$repos{'Arch-Linux-UEFI-Installation' } = {url => 'https://github.com/ReneNyffenegger/Arch-Linux-UEFI-Installation'    , dir => $github_dir};
 $repos{'Astronomie'                   } = {url => 'https://github.com/ReneNyffenegger/Astronomie'                      , dir => $github_dir};
 $repos{'Ausfluege-Touren-etc'         } = {url => 'https://github.com/ReneNyffenegger/Ausfluege-Touren-etc'            , dir => $github_dir};
 $repos{'Bibeluebersetzungen'          } = {url => 'https://github.com/ReneNyffenegger/Bibeluebersetzungen'             , dir => $github_dir};
