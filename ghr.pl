@@ -139,6 +139,7 @@ $repos{'development_misc'             } = {url => 'https://github.com/ReneNyffen
 $repos{'EGG'                          } = {url => 'https://github.com/ReneNyffenegger/EGG-Explosion-Graphics-Generator', dir => $github_dir};
 $repos{'Fonts'                        } = {url => 'https://github.com/ReneNyffenegger/Fonts'                           , dir => $github_dir};
 $repos{'Geschichte-der-Wissenschaft'  } = {url => 'https://github.com/ReneNyffenegger/Geschichte-der-Wissenschaft'     , dir => $github_dir};
+$repos{'git-internals'                } = {url => 'https://github.com/ReneNyffenegger/git-internals'                   , dir => $github_dir};
 $repos{'Graphic-Design-Fonts'         } = {url => 'https://github.com/ReneNyffenegger/Graphic-Design-and-Font'         , dir => $github_dir};
 $repos{'kaggle'                       } = {url => 'https://github.com/ReneNyffenegger/kaggle'                          , dir => $github_dir};
 $repos{'LinuxFromScratch'             } = {url => 'https://github.com/ReneNyffenegger/LinuxFromScratch'                , dir => $github_dir};
