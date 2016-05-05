@@ -115,6 +115,7 @@ $repos{'powershell'                   } = {url => 'https://github.com/ReneNyffen
 $repos{'python'                       } = {url => 'https://github.com/ReneNyffenegger/about-python'                    , dir => $about_dir };
 $repos{'README.md'                    } = {url => 'https://github.com/ReneNyffenegger/about-README.md'                 , dir => $about_dir };
 $repos{'r'                            } = {url => 'https://github.com/ReneNyffenegger/about-r'                         , dir => $about_dir };
+$repos{'sed'                          } = {url => 'https://github.com/ReneNyffenegger/about-sed'                       , dir => $about_dir };
 $repos{'sqlite'                       } = {url => 'https://github.com/ReneNyffenegger/about-sqlite'                    , dir => $about_dir };
 $repos{'Stellarium'                   } = {url => 'https://github.com/ReneNyffenegger/about-Stellarium'                , dir => $about_dir };
 $repos{'svg'                          } = {url => 'https://github.com/ReneNyffenegger/about-svg'                       , dir => $about_dir };
