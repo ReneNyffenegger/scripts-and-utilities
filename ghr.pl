@@ -100,6 +100,7 @@ $repos{'javascript'                   } = {url => 'https://github.com/ReneNyffen
 $repos{'jqGrid'                       } = {url => 'https://github.com/ReneNyffenegger/about-jqGrid'                    , dir => $about_dir };
 $repos{'jQuery'                       } = {url => 'https://github.com/ReneNyffenegger/about-jQuery'                    , dir => $about_dir };
 $repos{'jQuery-UI'                    } = {url => 'https://github.com/ReneNyffenegger/about-jQuery-UI'                 , dir => $about_dir };
+$repos{'libc'                         } = {url => 'https://github.com/ReneNyffenegger/about-libc'                      , dir => $lib_dir   };
 $repos{'node.js'                      } = {url => 'https://github.com/ReneNyffenegger/about-node.js'                   , dir => $about_dir };
 $repos{'MapReduce'                    } = {url => 'https://github.com/ReneNyffenegger/about-MapReduce'                 , dir => $about_dir };
 $repos{'mshta'                        } = {url => 'https://github.com/ReneNyffenegger/about-mshta'                     , dir => $about_dir };
