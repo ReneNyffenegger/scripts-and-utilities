@@ -231,7 +231,7 @@ for my $repo (keys %repos) {
      }
   }
   else {
-     return if $todo; # In todo-mode, do nothing if the repository does not exist
+     next if $todo; # In todo-mode, do nothing if the repository does not exist
 
      chdir $repo_parent;
 
