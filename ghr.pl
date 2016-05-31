@@ -136,6 +136,7 @@ $repos{'Bibeluebersetzungen'          } = {url => 'https://github.com/ReneNyffen
 $repos{'Bible-Text-Sources'           } = {url => 'https://github.com/ReneNyffenegger/Bible-Text-Sources'              , dir => $github_dir};
 $repos{'Biblisches'                   } = {url => 'https://github.com/ReneNyffenegger/Biblisches'                      , dir => $github_dir};
 $repos{'browser-object-model'         } = {url => 'https://github.com/ReneNyffenegger/Browser-Object-Model'            , dir => $github_dir};
+$repos{'Chronologie'                  } = {url => 'https://github.com/ReneNyffenegger/Chronologie'                     , dir => $github_dir};
 $repos{'Configure-Windows'            } = {url => 'https://github.com/ReneNyffenegger/Configure-Windows'               , dir => $github_dir};
 $repos{'Csound'                       } = {url => 'https://github.com/ReneNyffenegger/Csound'                          , dir => $github_dir};
 $repos{'data-visualization'           } = {url => 'https://github.com/ReneNyffenegger/data-visualization'              , dir => $github_dir};
