@@ -57,6 +57,8 @@ elsif (@ARGV > 1) {
 
 my %repos;
 
+my $plsql_and_types = 'Oracle-supplied-PL-SQL-Packages-and-Types';
+
 # $repos{'d3-threeD'     } = 'https://github.com/asutherland/d3-threeD';
 $repos{'Access.pm'                    } = {url => 'https://github.com/ReneNyffenegger/Access.pm'                       , dir => $lib_dir   };
 $repos{'blob_wrapper-Oracle'          } = {url => 'https://github.com/ReneNyffenegger/blob_wrapper-Oracle'             , dir => $lib_dir   };
@@ -67,6 +69,7 @@ $repos{'js-tablator'                  } = {url => 'https://github.com/ReneNyffen
 $repos{'js-vector-matrix'             } = {url => 'https://github.com/ReneNyffenegger/js-vector-matrix'                , dir => $lib_dir   };
 $repos{'MS-Access-bootstrap'          } = {url => 'https://github.com/ReneNyffenegger/MS-Access-bootstrap'             , dir => $lib_dir   };
 $repos{'notes2html'                   } = {url => 'https://github.com/ReneNyffenegger/notes2html'                      , dir => $lib_dir   };
+$repos{$plsql_and_types               } = {url => "https://github.com/ReneNyffenegger/$plsql_and_types"                , dir => $lib_dir   };
 $repos{'perl-tcp'                     } = {url => 'https://github.com/ReneNyffenegger/perl-tcp'                        , dir => $lib_dir   };
 $repos{'perl-Win32-OLE'               } = {url => 'https://github.com/ReneNyffenegger/perl-Win32-OLE'                  , dir => $lib_dir   };
 $repos{'runVBAFilesInOffice'          } = {url => 'https://github.com/ReneNyffenegger/runVBAFilesInOffice'             , dir => $lib_dir   };
