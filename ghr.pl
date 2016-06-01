@@ -135,6 +135,7 @@ $repos{'wsh'                          } = {url => 'https://github.com/ReneNyffen
 $repos{'Arch-Linux-UEFI-Installation' } = {url => 'https://github.com/ReneNyffenegger/Arch-Linux-UEFI-Installation'    , dir => $github_dir};
 $repos{'Astronomie'                   } = {url => 'https://github.com/ReneNyffenegger/Astronomie'                      , dir => $github_dir};
 $repos{'Ausfluege-Touren-etc'         } = {url => 'https://github.com/ReneNyffenegger/Ausfluege-Touren-etc'            , dir => $github_dir};
+$repos{'Bibelhebraeisch-lernen'       } = {url => 'https://github.com/ReneNyffenegger/Bibelhebraeisch-lernen'          , dir => $github_dir};
 $repos{'Bibeluebersetzungen'          } = {url => 'https://github.com/ReneNyffenegger/Bibeluebersetzungen'             , dir => $github_dir};
 $repos{'Bible-Text-Sources'           } = {url => 'https://github.com/ReneNyffenegger/Bible-Text-Sources'              , dir => $github_dir};
 $repos{'Biblisches'                   } = {url => 'https://github.com/ReneNyffenegger/Biblisches'                      , dir => $github_dir};
