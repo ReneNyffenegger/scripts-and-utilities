@@ -1,0 +1,22 @@
+#!/bin/bash
+
+if [[ "$#" < 2 ]]; then
+  echo "mp3-prep mp3-file out-prefix"
+  exit -1
+fi
+
+mp3_file=$1
+out_prefix=$2
+
+if [[ ! -e "$mp3_file" ]]; then
+  echo "$mp3_file" is not a file
+  exit -1
+fi
+
+duration_minutes=$(mp3info -p "%m" "$mp3_file")
+# echo duration_minutes: $duration_minutes
+
+nof_splits=$(($duration_minutes / 5 ))
+# echo nof_splits: $nof_splits
+
+mp3splt -f -S $nof_splits -o ${out_prefix}@n "$mp3_file"
