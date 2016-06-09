@@ -9,10 +9,11 @@ use Getopt::Long;
 my $match = '';
 
 GetOptions(
-   'match=s' => \$match,
-   'help'    => \my $help,
-   'todo'    => \my $todo,
-   'debug'   => \my $debug
+   'match=s'    => \$match,
+   'show-repos' => \my $show_repos,
+   'help'       => \my $help,
+   'todo'       => \my $todo,
+   'debug'      => \my $debug
 );
 
 
@@ -183,6 +184,11 @@ mkdir $github_dir unless -d $github_dir;
 
 for my $repo (keys %repos) {
 
+  if ($show_repos) {
+      print "$repo\n";
+      next;
+  }
+
   print "repo: $repo\n" if $debug;
 
   if ($match and $repo !~ /$match/i) {
@@ -258,6 +264,7 @@ sub usage {
   print "\n";
   print "  $0 exact-expression\n";
   print "  $0 --match regular-expression\n";
+  print "  $0 --show-tags\n";
   print "  $0 --debug\n";
   print "  $0 --todo\n";
   print "  $0 --help\n";
