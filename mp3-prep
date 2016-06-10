@@ -16,7 +16,7 @@ fi
 duration_minutes=$(mp3info -p "%m" "$mp3_file")
 # echo duration_minutes: $duration_minutes
 
-nof_splits=$(($duration_minutes / 5 ))
+nof_splits=$(( ( $duration_minutes + 3 ) / 5 ))
 # echo nof_splits: $nof_splits
 
-mp3splt -f -S $nof_splits -o ${out_prefix}@n "$mp3_file"
+mp3splt -f -S $nof_splits -o ${out_prefix}_@n "$mp3_file"
