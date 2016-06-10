@@ -1,0 +1,25 @@
+#
+#  Move a file to a directory to be newly created
+#
+
+if [[ "$#" < 2 ]]; then
+  echo "mvnd file-name new-directory-name"
+  exit -1
+fi
+
+file_name=$1
+dir_name=$2
+
+if [[ -e "$dir_name" ]]; then
+  echo $dir_name already exists
+  exit -1
+fi
+
+if [[ ! -f "$file_name" ]]; then
+  echo "$file_name does not exist"
+  exit -1
+fi
+
+mkdir "$dir_name"
+
+mv "$file_name" "$dir_name"
