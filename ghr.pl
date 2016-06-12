@@ -76,6 +76,7 @@ $repos{'perl-Win32-OLE'               } = {url => 'https://github.com/ReneNyffen
 $repos{'runVBAFilesInOffice'          } = {url => 'https://github.com/ReneNyffenegger/runVBAFilesInOffice'             , dir => $lib_dir   };
 $repos{'SendDirectoryWithMail'        } = {url => 'https://github.com/ReneNyffenegger/SendDirectoryWithMail'           , dir => $lib_dir   };
 $repos{'scripts'                      } = {url => 'https://github.com/ReneNyffenegger/scripts-and-utilities'           , dir => $lib_dir   };
+$repos{'svg-in-html'                  } = {url => 'https://github.com/ReneNyffenegger/svg-in-html'                     , dir => $lib_dir   };
 $repos{'VBAModules'                   } = {url => 'https://github.com/ReneNyffenegger/VBAModules'                      , dir => $lib_dir   };
 $repos{'xlsx_writer-Oracle'           } = {url => 'https://github.com/ReneNyffenegger/xlsx_writer-Oracle'              , dir => $lib_dir   };
 
