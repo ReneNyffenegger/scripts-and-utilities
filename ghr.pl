@@ -98,6 +98,7 @@ $repos{'FinnOne'                      } = {url => 'https://github.com/ReneNyffen
 $repos{'git'                          } = {url => 'https://github.com/ReneNyffenegger/about-git'                       , dir => $about_dir };
 $repos{'GoogleEarth'                  } = {url => 'https://github.com/ReneNyffenegger/about-GoogleEarth'               , dir => $about_dir };
 $repos{'Graphviz'                     } = {url => 'https://github.com/ReneNyffenegger/about-Graphviz'                  , dir => $about_dir };
+$repos{'hadoop'                       } = {url => 'https://github.com/ReneNyffenegger/about-hadoop'                    , dir => $about_dir };
 $repos{'html'                         } = {url => 'https://github.com/ReneNyffenegger/about-html'                      , dir => $about_dir };
 $repos{'impress.js'                   } = {url => 'https://github.com/ReneNyffenegger/about-impress.js'                , dir => $about_dir };
 $repos{'jmpress.js'                   } = {url => 'https://github.com/ReneNyffenegger/about-jmpress.js'                , dir => $about_dir };
