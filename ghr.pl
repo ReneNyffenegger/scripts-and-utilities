@@ -158,6 +158,7 @@ $repos{'Graphic-Design-Fonts'         } = {url => 'https://github.com/ReneNyffen
 $repos{'Hydroplattentheorie'          } = {url => 'https://github.com/ReneNyffenegger/Hydroplattentheorie'             , dir => $github_dir};
 $repos{'JavaClasses'                  } = {url => 'https://github.com/ReneNyffenegger/JavaClasses'                     , dir => $github_dir};
 $repos{'kaggle'                       } = {url => 'https://github.com/ReneNyffenegger/kaggle'                          , dir => $github_dir};
+$repos{'Karten'                       } = {url => 'https://github.com/ReneNyffenegger/Karten'                          , dir => $github_dir};
 $repos{'LinuxFromScratch'             } = {url => 'https://github.com/ReneNyffenegger/LinuxFromScratch'                , dir => $github_dir};
 $repos{'Meta-Oracle'                  } = {url => 'https://github.com/ReneNyffenegger/Meta-Oracle'                     , dir => $github_dir};
 $repos{'netcat'                       } = {url => 'https://github.com/ReneNyffenegger/netcat'                          , dir => $github_dir};
