@@ -13,6 +13,15 @@ if [[ ! -e "$mp3_file" ]]; then
   exit -1
 fi
 
+if [[ -e "$out_prefix" ]]; then
+  echo "Directory $out_prefix already exists"
+  exit -1
+fi
+
+mkdir $out_prefix
+mv "$mp3_file" $out_prefix
+cd $out_prefix
+
 duration_minutes=$(mp3info -p "%m" "$mp3_file")
 # echo duration_minutes: $duration_minutes
 
