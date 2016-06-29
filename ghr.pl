@@ -84,6 +84,7 @@ $repos{'xlsx_writer-Oracle'           } = {url => 'https://github.com/ReneNyffen
 $repos{'Access'                       } = {url => 'https://github.com/ReneNyffenegger/about-Access'                    , dir => $about_dir };
 $repos{'adodb'                        } = {url => 'https://github.com/ReneNyffenegger/about-adodb'                     , dir => $about_dir };
 $repos{'AutoHotkey'                   } = {url => 'https://github.com/ReneNyffenegger/about-AutoHotkey'                , dir => $about_dir };
+$repos{'awk'                          } = {url => 'https://github.com/ReneNyffenegger/about-awk'                       , dir => $about_dir };
 $repos{'Bash'                         } = {url => 'https://github.com/ReneNyffenegger/about-Bash'                      , dir => $about_dir };
 $repos{'CGI'                          } = {url => 'https://github.com/ReneNyffenegger/about-cgi'                       , dir => $about_dir };
 $repos{'coffeescript'                 } = {url => 'https://github.com/ReneNyffenegger/about-coffeescript'              , dir => $about_dir };
