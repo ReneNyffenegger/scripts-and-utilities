@@ -1,0 +1,58 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+use Getopt::Long;
+
+use feature 'say';
+
+GetOptions(
+    'help' => \my $help
+);
+
+if ($help) {
+
+  print "
+  dt           Print today's date
+  dt 5         Print date in five days
+  dt 7w        Print date in seven weeks
+
+";
+  exit 0;
+}
+
+unless (@ARGV) {
+
+  print_date(time);
+  exit 0;
+}
+
+my $days_or_weeks = shift;
+
+my $secs_per_day = 24*60*60;
+if ($days_or_weeks =~ s/w//) {
+  print_date(time + $secs_per_day * $days_or_weeks * 7); 
+}
+else {
+  print_date(time + $secs_per_day * $days_or_weeks); 
+}
+
+sub year_month_day {
+
+  my $time = shift;
+
+  my ($second, $minute, $hour, $day_of_month, $month, $year, $day_of_week, $day_of_year, $daylight_saving_time) = localtime($time);
+  
+  $month ++;
+  $year  += 1900;
+  $month        = sprintf("%02d", $month       );
+  $day_of_month = sprintf("%02d", $day_of_month);
+
+  return ($year, $month, $day_of_month);
+
+}
+sub print_date {
+
+  my $time = shift;
+  say join "-", year_month_day($time);
+
+}
