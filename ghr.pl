@@ -97,6 +97,7 @@ $repos{'d3.js'                        } = {url => 'https://github.com/ReneNyffen
 $repos{'Excel'                        } = {url => 'https://github.com/ReneNyffenegger/about-Excel'                     , dir => $about_dir };
 $repos{'FinnOne'                      } = {url => 'https://github.com/ReneNyffenegger/about-FinnOne-Neo'               , dir => $about_dir };
 $repos{'git'                          } = {url => 'https://github.com/ReneNyffenegger/about-git'                       , dir => $about_dir };
+$repos{'GMT'                          } = {url => 'https://github.com/ReneNyffenegger/about-GMT'                       , dir => $about_dir };
 $repos{'GoogleEarth'                  } = {url => 'https://github.com/ReneNyffenegger/about-GoogleEarth'               , dir => $about_dir };
 $repos{'Graphviz'                     } = {url => 'https://github.com/ReneNyffenegger/about-Graphviz'                  , dir => $about_dir };
 $repos{'hadoop'                       } = {url => 'https://github.com/ReneNyffenegger/about-hadoop'                    , dir => $about_dir };
