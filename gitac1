@@ -1,0 +1,21 @@
+#!/usr/bin/perl
+
+# Git: add and commit 1 file
+
+use warnings;
+use strict;
+
+die "specify file to add and commit" unless @ARGV;
+
+my $file=shift;
+
+die "$file does not exist" unless (-f $file);
+
+my $git_status = readpipe "git status $file";
+die "$file seems to be already added to git" unless $git_status =~ /use "git add <file>\.\.\./;
+
+$git_status = readpipe "git add \"$file\"";
+die "$git_status" if $git_status;
+
+$git_status = readpipe "git commit \"$file\" -m \"+ $file\"";
+die "$git_status" unless $git_status =~ /^ 1 file changed/m;
