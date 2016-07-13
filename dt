@@ -36,7 +36,7 @@ else {
   print_date(time + $secs_per_day * $days_or_weeks); 
 }
 
-sub year_month_day {
+sub year_month_day_weekday {
 
   my $time = shift;
 
@@ -47,12 +47,13 @@ sub year_month_day {
   $month        = sprintf("%02d", $month       );
   $day_of_month = sprintf("%02d", $day_of_month);
 
-  return ($year, $month, $day_of_month);
+  return ($year, $month, $day_of_month, ('So', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa')[$day_of_week]);
 
 }
 sub print_date {
 
   my $time = shift;
-  say join "-", year_month_day($time);
+  my @ymdw = year_month_day_weekday($time);
 
+  say "$ymdw[0]-$ymdw[1]-$ymdw[2] ($ymdw[3])";
 }
