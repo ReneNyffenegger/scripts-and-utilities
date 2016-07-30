@@ -174,6 +174,7 @@ $repos{'PerlModules'                  } = {url => 'https://github.com/ReneNyffen
 $repos{'PostLinuxInstallation'        } = {url => 'https://github.com/ReneNyffenegger/PostLinuxInstallation'           , dir => $github_dir};
 $repos{'printing'                     } = {url => 'https://github.com/ReneNyffenegger/printing'                        , dir => $github_dir};
 $repos{'renenyffenegger.blogspot.com' } = {url => 'https://github.com/ReneNyffenegger/renenyffenegger.blogspot.com'    , dir => $github_dir};
+$repos{'RN'                           } = {url => 'https://github.com/ReneNyffenegger/RN'                              , dir => $github_dir};
 $repos{'shell-commands'               } = {url => 'https://github.com/ReneNyffenegger/shell-commands'                  , dir => $github_dir};
 $repos{'stationary-background'        } = {url => 'https://github.com/ReneNyffenegger/stationary-background'           , dir => $github_dir};
 $repos{'Skizzen'                      } = {url => 'https://github.com/ReneNyffenegger/Skizzen'                         , dir => $github_dir};
