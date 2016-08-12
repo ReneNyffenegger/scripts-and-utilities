@@ -1,1 +1,1 @@
-perl %~dp0\dt %*
+@perl %~dp0\dt %*
