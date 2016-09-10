@@ -58,7 +58,8 @@ elsif (@ARGV > 1) {
 
 my %repos;
 
-my $plsql_and_types = 'Oracle-supplied-PL-SQL-Packages-and-Types';
+my $plsql_and_types   = 'Oracle-supplied-PL-SQL-Packages-and-Types';
+my $sql_dev_decryptor = 'Oracle-SQL-developer-password-decryptor';
 
 # $repos{'d3-threeD'     } = 'https://github.com/asutherland/d3-threeD';
 $repos{'Access.pm'                    } = {url => 'https://github.com/ReneNyffenegger/Access.pm'                       , dir => $lib_dir   };
@@ -180,6 +181,7 @@ $repos{'stationary-background'        } = {url => 'https://github.com/ReneNyffen
 $repos{'Skizzen'                      } = {url => 'https://github.com/ReneNyffenegger/Skizzen'                         , dir => $github_dir};
 $repos{'Sprachen'                     } = {url => 'https://github.com/ReneNyffenegger/Sprachen'                        , dir => $github_dir};
 $repos{'swap-keys'                    } = {url => 'https://github.com/ReneNyffenegger/swap-keys'                       , dir => $github_dir};
+$repos{$sql_dev_decryptor             } = {url => "https://github.com/ReneNyffenegger/$sql_dev_decryptor"              , dir => $github_dir};
 $repos{'tq84.css'                     } = {url => 'https://github.com/ReneNyffenegger/tq84.css'                        , dir => $github_dir};
 $repos{'Vortraege'                    } = {url => 'https://github.com/ReneNyffenegger/Vortraege'                       , dir => $github_dir};
 $repos{'WebAutomation'                } = {url => 'https://github.com/ReneNyffenegger/WebAutomation'                   , dir => $github_dir};
