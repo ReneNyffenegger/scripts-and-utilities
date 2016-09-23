@@ -172,6 +172,7 @@ $repos{'notes'                        } = {url => 'https://github.com/ReneNyffen
 $repos{'oracle-patterns'              } = {url => 'https://github.com/ReneNyffenegger/oracle-patterns'                 , dir => $github_dir};
 $repos{'oracle_scriptlets'            } = {url => 'https://github.com/ReneNyffenegger/oracle_scriptlets'               , dir => $github_dir};
 $repos{'OracleTool'                   } = {url => 'https://github.com/ReneNyffenegger/OracleTool'                      , dir => $github_dir};
+$repos{'Oracle-Tutorial'              } = {url => 'https://github.com/ReneNyffenegger/Oracle-Tutorial'                 , dir => $github_dir};
 $repos{'PerlModules'                  } = {url => 'https://github.com/ReneNyffenegger/PerlModules'                     , dir => $github_dir};
 $repos{'PostLinuxInstallation'        } = {url => 'https://github.com/ReneNyffenegger/PostLinuxInstallation'           , dir => $github_dir};
 $repos{'printing'                     } = {url => 'https://github.com/ReneNyffenegger/printing'                        , dir => $github_dir};
