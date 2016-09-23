@@ -107,6 +107,7 @@ $repos{'impress.js'                   } = {url => 'https://github.com/ReneNyffen
 $repos{'jmpress.js'                   } = {url => 'https://github.com/ReneNyffenegger/about-jmpress.js'                , dir => $about_dir };
 $repos{'Java'                         } = {url => 'https://github.com/ReneNyffenegger/about-Java'                      , dir => $about_dir };
 $repos{'javascript'                   } = {url => 'https://github.com/ReneNyffenegger/about-javascript'                , dir => $about_dir };
+$repos{'jrunscript'                   } = {url => 'https://github.com/ReneNyffenegger/about-runscript'                 , dir => $about_dir };
 $repos{'jqGrid'                       } = {url => 'https://github.com/ReneNyffenegger/about-jqGrid'                    , dir => $about_dir };
 $repos{'jQuery'                       } = {url => 'https://github.com/ReneNyffenegger/about-jQuery'                    , dir => $about_dir };
 $repos{'jQuery-UI'                    } = {url => 'https://github.com/ReneNyffenegger/about-jQuery-UI'                 , dir => $about_dir };
