@@ -58,7 +58,8 @@ elsif (@ARGV > 1) {
 
 my %repos;
 
-my $plsql_and_types = 'Oracle-supplied-PL-SQL-Packages-and-Types';
+my $plsql_and_types   = 'Oracle-supplied-PL-SQL-Packages-and-Types';
+my $sql_dev_decryptor = 'Oracle-SQL-developer-password-decryptor';
 
 # $repos{'d3-threeD'     } = 'https://github.com/asutherland/d3-threeD';
 $repos{'Access.pm'                          } = {url => 'https://github.com/ReneNyffenegger/Access.pm'                        , dir => $lib_dir   };
@@ -109,6 +110,7 @@ $repos{'javascript'                         } = {url => 'https://github.com/Rene
 $repos{'jqGrid'                             } = {url => 'https://github.com/ReneNyffenegger/about-jqGrid'                     , dir => $about_dir };
 $repos{'jQuery'                             } = {url => 'https://github.com/ReneNyffenegger/about-jQuery'                     , dir => $about_dir };
 $repos{'jQuery-UI'                          } = {url => 'https://github.com/ReneNyffenegger/about-jQuery-UI'                  , dir => $about_dir };
+$repos{'jrunscript'                         } = {url => 'https://github.com/ReneNyffenegger/about-jrunscript'                 , dir => $about_dir };
 $repos{'libc'                               } = {url => 'https://github.com/ReneNyffenegger/about-libc'                       , dir => $about_dir };
 $repos{'Linux'                              } = {url => 'https://github.com/ReneNyffenegger/about-Linux'                      , dir => $about_dir };
 $repos{'node.js'                            } = {url => 'https://github.com/ReneNyffenegger/about-node.js'                    , dir => $about_dir };
@@ -171,6 +173,7 @@ $repos{'oracle-patterns'                    } = {url => 'https://github.com/Rene
 $repos{'Oracle-Performance-Investigations'  } = {url => 'https://github.com/ReneNyffenegger/Oracle-Performance-Investigations', dir => $github_dir};
 $repos{'oracle_scriptlets'                  } = {url => 'https://github.com/ReneNyffenegger/oracle_scriptlets'                , dir => $github_dir};
 $repos{'OracleTool'                         } = {url => 'https://github.com/ReneNyffenegger/OracleTool'                       , dir => $github_dir};
+$repos{'Oracle-Tutorial'                    } = {url => 'https://github.com/ReneNyffenegger/Oracle-Tutorial'                  , dir => $github_dir};
 $repos{'PerlModules'                        } = {url => 'https://github.com/ReneNyffenegger/PerlModules'                      , dir => $github_dir};
 $repos{'PostLinuxInstallation'              } = {url => 'https://github.com/ReneNyffenegger/PostLinuxInstallation'            , dir => $github_dir};
 $repos{'printing'                           } = {url => 'https://github.com/ReneNyffenegger/printing'                         , dir => $github_dir};
@@ -181,6 +184,7 @@ $repos{'stationary-background'              } = {url => 'https://github.com/Rene
 $repos{'Skizzen'                            } = {url => 'https://github.com/ReneNyffenegger/Skizzen'                          , dir => $github_dir};
 $repos{'Sprachen'                           } = {url => 'https://github.com/ReneNyffenegger/Sprachen'                         , dir => $github_dir};
 $repos{'swap-keys'                          } = {url => 'https://github.com/ReneNyffenegger/swap-keys'                        , dir => $github_dir};
+$repos{$sql_dev_decryptor                   } = {url => "https://github.com/ReneNyffenegger/$sql_dev_decryptor"               , dir => $github_dir};
 $repos{'tq84.css'                           } = {url => 'https://github.com/ReneNyffenegger/tq84.css'                         , dir => $github_dir};
 $repos{'Vortraege'                          } = {url => 'https://github.com/ReneNyffenegger/Vortraege'                        , dir => $github_dir};
 $repos{'WebAutomation'                      } = {url => 'https://github.com/ReneNyffenegger/WebAutomation'                    , dir => $github_dir};
