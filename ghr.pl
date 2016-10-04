@@ -183,6 +183,7 @@ $repos{'RN'                                 } = {url => 'https://github.com/Rene
 $repos{'shell-commands'                     } = {url => 'https://github.com/ReneNyffenegger/shell-commands'                   , dir => $github_dir};
 $repos{'stationary-background'              } = {url => 'https://github.com/ReneNyffenegger/stationary-background'            , dir => $github_dir};
 $repos{'Skizzen'                            } = {url => 'https://github.com/ReneNyffenegger/Skizzen'                          , dir => $github_dir};
+$repos{'statistics'                         } = {url => 'https://github.com/ReneNyffenegger/statistics'                       , dir => $github_dir};
 $repos{'Sprachen'                           } = {url => 'https://github.com/ReneNyffenegger/Sprachen'                         , dir => $github_dir};
 $repos{'swap-keys'                          } = {url => 'https://github.com/ReneNyffenegger/swap-keys'                        , dir => $github_dir};
 $repos{$sql_dev_decryptor                   } = {url => "https://github.com/ReneNyffenegger/$sql_dev_decryptor"               , dir => $github_dir};
