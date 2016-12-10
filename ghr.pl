@@ -94,6 +94,7 @@ $repos{'cmd.exe'                            } = {url => 'https://github.com/Rene
 $repos{'dat.GUI'                            } = {url => 'https://github.com/ReneNyffenegger/about-dat.GUI'                    , dir => $about_dir };
 $repos{'DFS'                                } = {url => 'https://github.com/ReneNyffenegger/about-DFS'                        , dir => $about_dir };
 $repos{'Document-Object-Model'              } = {url => 'https://github.com/ReneNyffenegger/about-Document-Object-Model'      , dir => $about_dir };
+$repos{'draw-io'                            } = {url => 'https://github.com/ReneNyffenegger/about-draw-io'                    , dir => $about_dir };
 $repos{'d3.js'                              } = {url => 'https://github.com/ReneNyffenegger/about-d3.js'                      , dir => $about_dir };
 $repos{'Excel'                              } = {url => 'https://github.com/ReneNyffenegger/about-Excel'                      , dir => $about_dir };
 $repos{'FinnOne'                            } = {url => 'https://github.com/ReneNyffenegger/about-FinnOne-Neo'                , dir => $about_dir };
@@ -182,6 +183,7 @@ $repos{'RN'                                 } = {url => 'https://github.com/Rene
 $repos{'shell-commands'                     } = {url => 'https://github.com/ReneNyffenegger/shell-commands'                   , dir => $github_dir};
 $repos{'stationary-background'              } = {url => 'https://github.com/ReneNyffenegger/stationary-background'            , dir => $github_dir};
 $repos{'Skizzen'                            } = {url => 'https://github.com/ReneNyffenegger/Skizzen'                          , dir => $github_dir};
+$repos{'statistics'                         } = {url => 'https://github.com/ReneNyffenegger/statistics'                       , dir => $github_dir};
 $repos{'Sprachen'                           } = {url => 'https://github.com/ReneNyffenegger/Sprachen'                         , dir => $github_dir};
 $repos{'swap-keys'                          } = {url => 'https://github.com/ReneNyffenegger/swap-keys'                        , dir => $github_dir};
 $repos{$sql_dev_decryptor                   } = {url => "https://github.com/ReneNyffenegger/$sql_dev_decryptor"               , dir => $github_dir};
