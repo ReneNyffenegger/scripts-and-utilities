@@ -143,6 +143,7 @@ $repos{'Windows-Registry'                   } = {url => 'https://github.com/Rene
 $repos{'wsh'                                } = {url => 'https://github.com/ReneNyffenegger/about-wsh'                        , dir => $about_dir };
 
 $repos{'Algorithms'                         } = {url => 'https://github.com/ReneNyffenegger/Algorithms'                       , dir => $github_dir};
+$repos{'Amdocs'                             } = {url => 'https://github.com/ReneNyffenegger/Amdocs'                           , dir => $github_dir};
 $repos{'Arch-Linux-UEFI-Installation'       } = {url => 'https://github.com/ReneNyffenegger/Arch-Linux-UEFI-Installation'     , dir => $github_dir};
 $repos{'Astronomie'                         } = {url => 'https://github.com/ReneNyffenegger/Astronomie'                       , dir => $github_dir};
 $repos{'Ausfluege-Touren-etc'               } = {url => 'https://github.com/ReneNyffenegger/Ausfluege-Touren-etc'             , dir => $github_dir};
@@ -152,6 +153,7 @@ $repos{'Bible-Text-Sources'                 } = {url => 'https://github.com/Rene
 $repos{'Biblisches'                         } = {url => 'https://github.com/ReneNyffenegger/Biblisches'                       , dir => $github_dir};
 $repos{'browser-object-model'               } = {url => 'https://github.com/ReneNyffenegger/Browser-Object-Model'             , dir => $github_dir};
 $repos{'Chronologie'                        } = {url => 'https://github.com/ReneNyffenegger/Chronologie'                      , dir => $github_dir};
+$repos{'Clarify'                            } = {url => 'https://github.com/ReneNyffenegger/Clarify'                          , dir => $github_dir};
 $repos{'Configure-Windows'                  } = {url => 'https://github.com/ReneNyffenegger/Configure-Windows'                , dir => $github_dir};
 $repos{'Csound'                             } = {url => 'https://github.com/ReneNyffenegger/Csound'                           , dir => $github_dir};
 $repos{'data-visualization'                 } = {url => 'https://github.com/ReneNyffenegger/data-visualization'               , dir => $github_dir};
@@ -166,6 +168,7 @@ $repos{'Hydroplattentheorie'                } = {url => 'https://github.com/Rene
 $repos{'JavaClasses'                        } = {url => 'https://github.com/ReneNyffenegger/JavaClasses'                      , dir => $github_dir};
 $repos{'kaggle'                             } = {url => 'https://github.com/ReneNyffenegger/kaggle'                           , dir => $github_dir};
 $repos{'Karten'                             } = {url => 'https://github.com/ReneNyffenegger/Karten'                           , dir => $github_dir};
+$repos{'Kenan-Arbor'                        } = {url => 'https://github.com/ReneNyffenegger/Kenan-Arbor'                      , dir => $github_dir};
 $repos{'LinuxFromScratch'                   } = {url => 'https://github.com/ReneNyffenegger/LinuxFromScratch'                 , dir => $github_dir};
 $repos{'Meta-Oracle'                        } = {url => 'https://github.com/ReneNyffenegger/Meta-Oracle'                      , dir => $github_dir};
 $repos{'netcat'                             } = {url => 'https://github.com/ReneNyffenegger/netcat'                           , dir => $github_dir};
