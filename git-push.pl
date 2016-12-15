@@ -9,13 +9,24 @@
 
 use warnings;
 use strict;
+use Cwd;
 
-my $remote = readpipe("git config --get remote.origin.url");
+if ( cwd() . '/' =~ m!^$ENV{git_work_dir}!) {
 
-my $renes_password=$ENV{TQ84_GITHUB_PW};
+  print "Within $ENV{git_work_dir}\n";
+  print readpipe ('git push /media/rene/TOSHIBA\ EXT/git');
 
-die "Set TQ84_GITHUB_PW" unless $renes_password;
+}
+else {
 
-$remote =~ s,https://,https://ReneNyffenegger:$renes_password\@,;
-
-print readpipe ("git push $remote");
+  print "Not within $ENV{git_work_dir}\n";
+  my $remote = readpipe("git config --get remote.origin.url");
+  
+  my $renes_password=$ENV{TQ84_GITHUB_PW};
+  
+  die "Set TQ84_GITHUB_PW" unless $renes_password;
+  
+  $remote =~ s,https://,https://ReneNyffenegger:$renes_password\@,;
+  
+  print readpipe ("git push $remote");
+}
