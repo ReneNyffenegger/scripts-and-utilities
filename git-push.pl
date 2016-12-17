@@ -22,7 +22,7 @@ print "$0
   gwd=$gwd
 ";
 
-if (length($cwd) < length($gwd) or substr($cwd, 0, length($cwd)) ne $gwd) { # { Push to github
+if (length($cwd) < length($gwd) or substr($cwd, 0, length($gwd)) ne $gwd) { # { Push to github
 
   print "  Not within $ENV{git_work_dir}\n";
 
