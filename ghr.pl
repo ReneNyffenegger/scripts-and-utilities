@@ -144,6 +144,7 @@ $repos{'wsh'                                } = {url => 'https://github.com/Rene
 
 $repos{'Algorithms'                         } = {url => 'https://github.com/ReneNyffenegger/Algorithms'                       , dir => $github_dir};
 $repos{'Amdocs'                             } = {url => 'https://github.com/ReneNyffenegger/Amdocs'                           , dir => $github_dir};
+$repos{'Apache-logfile'                     } = {url => 'https://github.com/ReneNyffenegger/Apache-logfile'                   , dir => $github_dir};
 $repos{'Arch-Linux-UEFI-Installation'       } = {url => 'https://github.com/ReneNyffenegger/Arch-Linux-UEFI-Installation'     , dir => $github_dir};
 $repos{'Astronomie'                         } = {url => 'https://github.com/ReneNyffenegger/Astronomie'                       , dir => $github_dir};
 $repos{'Ausfluege-Touren-etc'               } = {url => 'https://github.com/ReneNyffenegger/Ausfluege-Touren-etc'             , dir => $github_dir};
