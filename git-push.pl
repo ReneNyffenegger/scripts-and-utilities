@@ -39,7 +39,11 @@ if (length($cwd) < length($gwd) or substr($cwd, 0, length($gwd)) ne $gwd) { # { 
 } # }
 else { # { Push to harddisk
 
-
   print "  Within $ENV{git_work_dir}\n";
-  print readpipe ('git push /media/rene/TOSHIBA\ EXT/git');
+  if ($^O eq 'linux') {
+    print readpipe ("git push '$ENV{git_local_repo_dir}'");
+  }
+  else {
+    print readpipe ("git push $ENV{git_local_repo_dir}");
+  }
 } # }
