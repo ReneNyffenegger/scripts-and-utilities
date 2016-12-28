@@ -1,8 +1,12 @@
+#!/usr/bin/perl
 use warnings; use strict;
 
 print "\n\n";
 
-my @pathes = split /;/, $ENV{PATH};
+my $sep=':';
+   $sep=';' if $^O eq 'MSWin32';
+
+my @pathes = split /$sep/, $ENV{PATH};
 
 my $executable_name = shift;
 
@@ -30,3 +34,4 @@ if (defined $executable_name) {
 #     not defined:
 # 
 print join "\n", @pathes;
+print "\n";
