@@ -38,7 +38,7 @@ sub iterate_dir { # {{{
 
   my $dh;
   unless (opendir ($dh, $dir)) {
-    print "could not open directory $dir\n";
+    print STDERR "could not open directory $dir\n";
     return {
       size => 0,
       dirs => [],
@@ -59,7 +59,7 @@ sub iterate_dir { # {{{
       push @$dirs, $dir_;
     }
     else {
-      print "$dir/$f is neither -d nor -f\n";
+      print STDERR "$dir/$f is neither -d nor -f\n";
     }
 
   }
