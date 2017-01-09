@@ -24,9 +24,9 @@ for my $img_in_path (glob "$in_dir/*.jpg $in_dir/*.mp4") {
 
   my ($atime, $mtime, $ctime) = (stat($img_in_path))[8, 9, 10];
 
-  if ($mtime != $ctime) {
-    die "mtime (". localtime($mtime) . ") != ctime (" . localtime($ctime) . ")";
-  }
+# if ($mtime != $ctime) {
+#   die "mtime (". localtime($mtime) . ") != ctime (" . localtime($ctime) . ")";
+# }
 
   my ($year, $month, $day) = (localtime($mtime))[5, 4, 3];
   $year  += 1900;
@@ -59,10 +59,10 @@ for my $img_in_path (glob "$in_dir/*.jpg $in_dir/*.mp4") {
   }
   else {
      print "   ";
+     move $img_in_path, "$out_dir/$year/$month-$day/$img_name" or die "could not rename $img_in_path to $out_dir/$year/$month-$day/$img_name $!";
   }
 
   
-  move $img_in_path, "$out_dir/$year/$month-$day/$img_name" or die "could not rename $img_in_path to $out_dir/$year/$month-$day/$img_name $!";
 
   print "\n";
 }
