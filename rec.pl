@@ -1,3 +1,4 @@
+#!/usr/bin/perl
 use warnings;
 use strict;
 
@@ -14,11 +15,11 @@ use Cwd;              # TODO Really used
 
 my $root_dir;
 
-if (hostname() eq 'MOB10088759') {
-   $root_dir = 'c:/workarea/work';
+if ($ENV{git_work_dir} and -d $ENV{git_work_dir}) {
+  $root_dir = $ENV{git_work_dir};
 }
 else {
-   $root_dir = 'c:/localgit';
+  die "git_work_dir does not exist or points nowhere" 
 }
 
 my @directories_to_prune;
@@ -285,7 +286,7 @@ sub help { # {{{
 
 print <<"E"
 
-  -d          <root dir>
+  -d          <root dir> (Default \$git_work_dir)
   -f          file_pattern_1 file_pattern_2 .. file_pattern_n
   -g [-m]     grep pattern
   -h          This help
