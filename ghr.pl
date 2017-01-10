@@ -284,11 +284,11 @@ for my $repo (keys %repos) {
 
 sub usage {
   print "\n";
-  print "  $0 exact-expression\n";
-  print "  $0 --match regular-expression\n";
-  print "  $0 --show-tags\n";
-  print "  $0 --debug\n";
-  print "  $0 --todo\n";
-  print "  $0 --help\n";
+  print "  ghr.pl exact-expression\n";
+  print "  ghr.pl --match regular-expression\n";
+  print "  ghr.pl --show-tags\n";
+  print "  ghr.pl --debug\n";
+  print "  ghr.pl --todo\n";
+  print "  ghr.pl --help\n";
   print "\n";
 }
