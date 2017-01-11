@@ -1,0 +1,21 @@
+one
+two
+three
+
+five
+__DATA__
+use warnings;
+use strict;
+
+open (my $o, '>', 'show-newline.test') or die;
+binmode $o;
+
+print $o   "one\x0a";
+print $o   "two\x0a";
+print $o "three\x0d\x0a";
+print $o      "\x0d\x0a";
+print $o  "five\x0d\x0a";
+print $o      "\x0a";
+print $o      "\x0a";
+
+close $o;
