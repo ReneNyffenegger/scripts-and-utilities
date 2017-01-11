@@ -1,1 +1,1 @@
-$github_root/PerlModules/HTTP/Server/Simple/CGI/webserver.pl
+${github_root}PerlModules/HTTP/Server/Simple/CGI/webserver.pl
