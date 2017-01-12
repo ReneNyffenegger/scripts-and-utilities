@@ -138,7 +138,7 @@ $repos{'TopoJSON'                           } = {url => 'https://github.com/Rene
 $repos{'Unicode'                            } = {url => 'https://github.com/ReneNyffenegger/about-Unicode'                    , dir => $about_dir };
 $repos{'VBA'                                } = {url => 'https://github.com/ReneNyffenegger/about-VBA'                        , dir => $about_dir };
 $repos{'VBScript'                           } = {url => 'https://github.com/ReneNyffenegger/about-VBScript'                   , dir => $about_dir };
-$repos{'vim'                                } = {url => 'https://github.com/ReneNyffenegger/about-vim'                        , dir => $about_dir };
+$repos{'about-vim'                          } = {url => 'https://github.com/ReneNyffenegger/about-vim'                        , dir => $about_dir };
 $repos{'Windows-Registry'                   } = {url => 'https://github.com/ReneNyffenegger/about-Windows-Registry'           , dir => $about_dir };
 $repos{'wsh'                                } = {url => 'https://github.com/ReneNyffenegger/about-wsh'                        , dir => $about_dir };
 
