@@ -150,6 +150,7 @@ $repos{'Astronomie'                         } = {url => 'https://github.com/Rene
 $repos{'Ausfluege-Touren-etc'               } = {url => 'https://github.com/ReneNyffenegger/Ausfluege-Touren-etc'             , dir => $github_dir};
 $repos{'Bibelhebraeisch-lernen'             } = {url => 'https://github.com/ReneNyffenegger/Bibelhebraeisch-lernen'           , dir => $github_dir};
 $repos{'Bibeluebersetzungen'                } = {url => 'https://github.com/ReneNyffenegger/Bibeluebersetzungen'              , dir => $github_dir};
+$repos{'Bibelkommentare'                    } = {url => 'https://github.com/ReneNyffenegger/Bibelkommentare'                  , dir => $github_dir};
 $repos{'Bible-Text-Sources'                 } = {url => 'https://github.com/ReneNyffenegger/Bible-Text-Sources'               , dir => $github_dir};
 $repos{'Biblisches'                         } = {url => 'https://github.com/ReneNyffenegger/Biblisches'                       , dir => $github_dir};
 $repos{'browser-object-model'               } = {url => 'https://github.com/ReneNyffenegger/Browser-Object-Model'             , dir => $github_dir};
