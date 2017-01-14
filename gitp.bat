@@ -8,15 +8,14 @@
 @call set tq84_cd=%%tq84_cd:%git_work_dir%=%%
 
 @if "%tq84_cd%"=="%cd%\" (
-  @echo gitp.bat: I am not under %git_work_dir%
+  @rem @echo gitp.bat: I am not under %git_work_dir%
 
   @if [%TQ84_GITHUB_PW%] EQU [] (
     @set /p TQ84_GITHUB_PW=TQ84_GITHUB_PW? 
   )
 
-) else ( @rem 
-  @echo gitp.bat: I am under %git_work_dir%
-
+) else (
+  @rem @echo gitp.bat: I am under %git_work_dir%
 )
 
 @git-push.pl
