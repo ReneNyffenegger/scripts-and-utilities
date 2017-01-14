@@ -11,6 +11,8 @@ use warnings;
 use strict;
 use Cwd;
 
+my $verbose = 0;
+
 my $cwd = cwd() . '/';
 my $gwd = $ENV{git_work_dir};
 
@@ -20,11 +22,11 @@ $gwd =~ s!\\!/!g;
 print "$0
   cwd=$cwd
   gwd=$gwd
-";
+" if $verbose;
 
 if (length($cwd) < length($gwd) or substr($cwd, 0, length($gwd)) ne $gwd) { # { Push to github
 
-  print "  Not within $ENV{git_work_dir}\n";
+  print "  Not within $ENV{git_work_dir}\n" if $verbose;
 
   my $remote = readpipe("git config --get remote.origin.url");
   
@@ -39,7 +41,7 @@ if (length($cwd) < length($gwd) or substr($cwd, 0, length($gwd)) ne $gwd) { # { 
 } # }
 else { # { Push to harddisk
 
-  print "  Within $ENV{git_work_dir}\n";
+  print "  Within $ENV{git_work_dir}\n" if $verbose;
   if ($^O eq 'linux') {
     print readpipe ("git push '$ENV{git_local_repo_dir}'");
   }

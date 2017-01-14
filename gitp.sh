@@ -10,7 +10,7 @@
 #       $PWD, so we are in or below $git_work_dir
 #
 if [[ ${PWD##${git_work_dir%/}} != ${PWD} ]]; then
-   echo "not asking for TQ84_GITHUB_PW"
+ : #  echo "not asking for TQ84_GITHUB_PW"
 else
 
   if [ -z ${TQ84_GITHUB_PW+x} ]; then
