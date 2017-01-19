@@ -14,7 +14,7 @@ GetOptions(
    'help'       => \my $help,
    'todo'       => \my $todo,
    'debug'      => \my $debug
-);
+) or exit -1;
 
 
 if ($help) {
