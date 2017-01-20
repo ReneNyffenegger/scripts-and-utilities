@@ -9,11 +9,12 @@ use Getopt::Long;
 my $match = '';
 
 GetOptions(
-   'match=s'    => \$match,
-   'show-repos' => \my $show_repos,
-   'help'       => \my $help,
-   'todo'       => \my $todo,
-   'debug'      => \my $debug
+   'match=s'        => \$match,
+   'show-repos'     => \my $show_repos,
+   'help'           => \my $help,
+   'todo'           => \my $todo,
+   'debug'          => \my $debug,
+   'check-status'   => \my $check_status
 ) or exit -1;
 
 
@@ -22,20 +23,21 @@ if ($help) {
    exit;
 }
 
-my $lib_dir    ;
-my $about_dir  ;
-my $github_dir ;
+my $lib_dir    = "$ENV{github_top_root}lib";
+my $about_dir  = "$ENV{github_top_root}about";
+my $github_dir =  $ENV{github_root};
 
-if ($^O eq 'MSWin32') { # or MSWin64 ?
-  $lib_dir     = 'c:/lib';
-  $about_dir   = 'c:/about';
-  $github_dir  = 'c:/github';
-}
-else {
-  $lib_dir     = File::HomeDir -> my_home . '/github/lib';
-  $about_dir   = File::HomeDir -> my_home . '/github/about';
-  $github_dir  = File::HomeDir -> my_home . '/github/github';
-}
+
+#if ($^O eq 'MSWin32') { # or MSWin64 ?
+#  $lib_dir     = 'c:/lib';
+#  $about_dir   = 'c:/about';
+#  $github_dir  = 'c:/github';
+#}
+#else {
+#  $lib_dir     = File::HomeDir -> my_home . '/github/lib';
+#  $about_dir   = File::HomeDir -> my_home . '/github/about';
+#  $github_dir  = File::HomeDir -> my_home . '/github/github';
+#}
 
 my $exact = '';
 if (@ARGV == 1) {
@@ -209,20 +211,6 @@ mkdir $github_dir unless -d $github_dir;
 
 for my $repo (keys %repos) {
 
-  if ($show_repos) {
-      print "$repo\n";
-      next;
-  }
-
-  print "repo: $repo\n" if $debug;
-
-  if ($match and $repo !~ /$match/i) {
-     next;
-  }
-  if ($exact and $repo ne $exact) {
-     next;
-  }
-
   my $repository_path = "$repos{$repo}{dir}/$repo";
   my $repo_parent     =  $repos{$repo}{dir};
   my $repo_directory  =  $repo;
@@ -238,16 +226,46 @@ for my $repo (keys %repos) {
       $repository_path = File::HomeDir -> my_home . '/.vim';
       $repo_directory  = '.vim';
     }
-
   }
 
+  if ($show_repos) {
+      printf ("%-50s", $repo);
+
+      printf "directory does not exist" unless -d $repository_path;
+      print "\n";
+      next;
+  }
+
+  print "repo: $repo\n" if $debug;
+
+  if ($match and $repo !~ /$match/i) {
+     next;
+  }
+  if ($exact and $repo ne $exact) {
+     next;
+  }
+
+
+
   if (-d $repository_path ) {
-
-
       
      chdir "$repository_path";
   
-     if (!$todo) {
+     if ($check_status) {
+        my @git_response = readpipe('git status');
+        @git_response = grep { !/^On branch master$/ } @git_response;
+        @git_response = grep { !/^Your branch is up-to-date with 'origin\/master'\.$/ } @git_response;
+        @git_response = grep { !/^Your branch is ahead of 'origin\/master' by \d+ commits?.$/ } @git_response;
+        @git_response = grep { !/^nothing to commit, working directory clean$/ } @git_response;
+        @git_response = grep { !/^  \(use "git push" to publish your local commits\)$/ } @git_response;
+
+        if (@git_response) {
+          print "\n\n\n$repository_path\n";
+          print "----------------------------\n";
+          print map {"      $_"} @git_response;
+        }
+     }
+     elsif (!$todo) {
        print "\n\nRepo $repository_path exists, updating it\n";
        my $git_response = readpipe("git pull");
        print $git_response;
@@ -270,7 +288,9 @@ for my $repo (keys %repos) {
      }
   }
   else {
+
      next if $todo; # In todo-mode, do nothing if the repository does not exist
+     next if $check_status;
 
      chdir $repo_parent;
 
@@ -290,6 +310,7 @@ sub usage {
   print "  ghr.pl exact-expression\n";
   print "  ghr.pl --match regular-expression\n";
   print "  ghr.pl --show-tags\n";
+  print "  ghr.pl --check-status\n";
   print "  ghr.pl --debug\n";
   print "  ghr.pl --todo\n";
   print "  ghr.pl --help\n";

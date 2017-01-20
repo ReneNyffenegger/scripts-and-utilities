@@ -1,0 +1,6 @@
+#!/bin/bash
+
+pushd ${github_root}notes
+# perl scripts/${git_work_dir}renenyffenegger.ch/notes/go.pl $*
+./scripts/create-html.pl $*
+popd
