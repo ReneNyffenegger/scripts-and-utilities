@@ -1,0 +1,3 @@
+@pushd %github_root%Bibelkommentare
+@perl create_html.pl %*
+@popd
