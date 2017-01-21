@@ -1,3 +1,4 @@
 pushd %github_root%notes
-perl %git_work_dir%renenyffenegger.ch\notes\go.pl %*
+@rem 2017-01-21 perl %git_work_dir%renenyffenegger.ch\notes\go.pl %*
+.\scripts\create-html.pl %*
 popd
