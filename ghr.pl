@@ -252,12 +252,12 @@ for my $repo (keys %repos) {
      chdir "$repository_path";
   
      if ($check_status) {
-        my @git_response = readpipe('git status');
-        @git_response = grep { !/^On branch (master|tq84)$/ } @git_response;
-        @git_response = grep { !/^Your branch is up-to-date with 'origin\/master'\.$/ } @git_response;
-        @git_response = grep { !/^Your branch is ahead of 'origin\/master' by \d+ commits?.$/ } @git_response;
-        @git_response = grep { !/^nothing to commit, working directory clean$/ } @git_response;
-        @git_response = grep { !/^  \(use "git push" to publish your local commits\)$/ } @git_response;
+        my @git_response = readpipe('git status -s');
+#       @git_response = grep { !/^(# )?On branch (master|tq84)$/ } @git_response;
+#       @git_response = grep { !/^Your branch is up-to-date with 'origin\/master'\.$/ } @git_response;
+#       @git_response = grep { !/^Your branch is ahead of 'origin\/master' by \d+ commits?.$/ } @git_response;
+#       @git_response = grep { !/^nothing to commit,? \(?working directory clean\)?$/ } @git_response;
+#       @git_response = grep { !/^  \(use "git push" to publish your local commits\)$/ } @git_response;
 
         if (@git_response) {
           print "\n\n\n$repository_path\n";
