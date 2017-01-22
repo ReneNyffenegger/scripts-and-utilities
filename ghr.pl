@@ -10,7 +10,7 @@ my $match = '';
 
 GetOptions(
    'match=s'        => \$match,
-   'show-repos'     => \my $show_repos,
+   'list-repos'     => \my $list_repos,
    'help'           => \my $help,
    'todo'           => \my $todo,
    'debug'          => \my $debug,
@@ -228,7 +228,7 @@ for my $repo (keys %repos) {
     }
   }
 
-  if ($show_repos) {
+  if ($list_repos) {
       printf ("%-50s", $repo);
 
       printf "directory does not exist" unless -d $repository_path;
@@ -309,7 +309,7 @@ sub usage {
   print "\n";
   print "  ghr.pl exact-expression\n";
   print "  ghr.pl --match regular-expression\n";
-  print "  ghr.pl --show-tags\n";
+  print "  ghr.pl --list-repos\n";
   print "  ghr.pl --check-status\n";
   print "  ghr.pl --debug\n";
   print "  ghr.pl --todo\n";
