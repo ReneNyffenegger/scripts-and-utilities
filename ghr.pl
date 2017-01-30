@@ -318,7 +318,7 @@ sub usage {
   print "\n";
   print "  ghr.pl exact-expression\n";
   print "  ghr.pl --match regular-expression\n";
-  print "  ghr.pl --list-repos\n";
+  print "  ghr.pl --list-repos   [regexp]\n";
   print "  ghr.pl --check-status\n";
   print "  ghr.pl --debug\n";
   print "  ghr.pl --todo\n";
