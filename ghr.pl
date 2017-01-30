@@ -9,7 +9,7 @@ use Getopt::Long;
 my $match = '';
 
 GetOptions(
-   'match=s'        => \$match,
+   'match=s'        => \   $match,
    'list-repos'     => \my $list_repos,
    'help'           => \my $help,
    'todo'           => \my $todo,
@@ -40,6 +40,7 @@ my $github_dir =  $ENV{github_root};
 #}
 
 my $exact = '';
+my $arg1  = '';
 if (@ARGV == 1) {
 
   if ($match) {
@@ -48,8 +49,12 @@ if (@ARGV == 1) {
     exit;
   
   }
-
-  $exact = shift @ARGV;
+  elsif ($list_repos) {
+     $arg1 = shift;
+  }
+  else {
+    $exact = shift @ARGV;
+  }
 }
 elsif (@ARGV > 1) {
 
@@ -229,10 +234,14 @@ for my $repo (keys %repos) {
   }
 
   if ($list_repos) {
-      printf ("%-50s", $repo);
 
-      printf "directory does not exist" unless -d $repository_path;
-      print "\n";
+      if ($arg1 and $repo =~ /$arg1/i or !$arg1) {
+
+        printf ("%-50s", $repo);
+
+        printf "directory does not exist" unless -d $repository_path;
+        print "\n";
+      }
       next;
   }
 
