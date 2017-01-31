@@ -63,6 +63,13 @@ elsif (@ARGV > 1) {
 
 }
 
+if (substr($exact, 0, 1) eq '/') {
+
+  $match = substr($exact, 1);
+  $exact = undef;
+
+}
+
 my %repos;
 
 my $plsql_and_types   = 'Oracle-supplied-PL-SQL-Packages-and-Types';
@@ -164,6 +171,7 @@ $repos{'Biblisches'                         } = {url => 'https://github.com/Rene
 $repos{'browser-object-model'               } = {url => 'https://github.com/ReneNyffenegger/Browser-Object-Model'             , dir => $github_dir};
 $repos{'Chronologie'                        } = {url => 'https://github.com/ReneNyffenegger/Chronologie'                      , dir => $github_dir};
 $repos{'Clarify'                            } = {url => 'https://github.com/ReneNyffenegger/Clarify'                          , dir => $github_dir};
+$repos{'cpp-base64'                         } = {url => 'https://github.com/ReneNyffenegger/cpp-base64'                       , dir => $github_dir};
 $repos{'Configure-Windows'                  } = {url => 'https://github.com/ReneNyffenegger/Configure-Windows'                , dir => $github_dir};
 $repos{'Csound'                             } = {url => 'https://github.com/ReneNyffenegger/Csound'                           , dir => $github_dir};
 $repos{'data-visualization'                 } = {url => 'https://github.com/ReneNyffenegger/data-visualization'               , dir => $github_dir};
@@ -318,6 +326,7 @@ sub usage {
   print "\n";
   print "  ghr.pl exact-expression\n";
   print "  ghr.pl --match regular-expression\n";
+  print "  ghr.pl /regexp\n";
   print "  ghr.pl --list-repos   [regexp]\n";
   print "  ghr.pl --check-status\n";
   print "  ghr.pl --debug\n";
