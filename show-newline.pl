@@ -4,6 +4,8 @@
 #
 #   Won't probably work with Mac line endings.
 #
+#   See also dos-or-unix.pl
+#
 use warnings;
 use strict;
 
