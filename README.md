@@ -55,3 +55,5 @@ is called, it expects a parameter that is expanded to a value (in example above:
 
 [`profile.ps1`](https://github.com/ReneNyffenegger/scripts-and-utilities/blob/master/profile.ps1) is my startup script
 for [powershell](https://github.com/ReneNyffenegger/about-powershell).
+
+http://renenyffenegger.ch/notes/development/tools/scripts/personal/index
