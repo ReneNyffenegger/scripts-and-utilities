@@ -10,7 +10,13 @@ use strict;
 
 for my $file (@ARGV) {
 
+  if (-d $file) {
+    print "$file is a directory\n";
+    next;
+  }
+
   die "$file is not a file" unless -f $file;
+
   open(my $fh, '<', $file) or die;
   binmode($fh);
 
