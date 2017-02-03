@@ -11,7 +11,9 @@ use Getopt::Long;
 
 my $nof_chars_shown = 10;
 
-GetOptions ('chars-shown=i' => \$nof_chars_shown);
+GetOptions (
+    'chars-shown=i' => \$nof_chars_shown,
+    'nof-lines=i'   => \my $nof_lines);
 
 my $file = shift;
 die unless -e $file;
@@ -24,6 +26,8 @@ my $cur_line='';
 my $c;
 my $last_c = '';
 while (read($fh, $c, 1)) {
+
+  last if $nof_lines and $line_no > $nof_lines;
 
   if ($c eq "\x0d") {
      if ($last_c eq "\x0a") {
