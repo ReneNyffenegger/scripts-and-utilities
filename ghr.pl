@@ -13,6 +13,8 @@ GetOptions( #_{
    'list-repos'     => \my $list_repos,
    'help'           => \my $help,
    'todo'           => \my $todo,
+   'start-day'      => \my $start_day,
+   'end-day'        => \my $end_day,
    'debug'          => \my $debug,
    'check-status'   => \my $check_status,
    'push'           => \my $push,
@@ -245,11 +247,14 @@ for my $repo (keys %repos) { #_{
 
   print "repo: $repo\n" if $debug;
 
-  if ($match and $repo !~ /$match/i) { #_{
-     next;
-  } #_}
-  if ($exact and $repo ne $exact) { #_{
-     next;
+
+  unless ($start_day or $end_day) { #_{
+    if ($match and $repo !~ /$match/i) { #_{
+       next;
+    } #_}
+    if ($exact and $repo ne $exact) { #_{
+       next;
+    } #_}
   } #_}
 
 
@@ -258,7 +263,7 @@ for my $repo (keys %repos) { #_{
       
      chdir "$repository_path";
 
-     if ($push) { #_{
+     if ($push  or ( $end_day and is_daily_repo($repo))) {  #_{
 
        if ($^O eq 'MSWin32') {
          system "gitp.bat";
@@ -283,9 +288,11 @@ for my $repo (keys %repos) { #_{
         }
      } #_}
      elsif (!$todo) { #_{
-       print "\n\nRepo $repository_path exists, updating it\n";
-       my $git_response = readpipe("git pull");
-       print $git_response;
+       if (($start_day and is_daily_repo($repo)) or !$start_day) { #_{
+         print "\n\nRepo $repository_path exists, updating it\n";
+         my $git_response = readpipe("git pull");
+         print $git_response;
+       } #_}
      } #_}
      else { #_{
 
@@ -294,22 +301,27 @@ for my $repo (keys %repos) { #_{
        if ($git_response) {
          print "\n\nRepo $repository_path should be pushed\n";
        }
-
+  
        #  New files or uncommited files
        my @git_response = readpipe('git status');
        chomp($git_response[1]);
        if ($git_response[1] ne 'nothing to commit, working directory clean') {
          print "\n\nRepo $repository_path not clean [$git_response[1] ]\n";
        }
-
      } #_}
+
   } #_}
   else { #_{
+
 
      die "cannot push $repo, directory does not exist!" if $push;
 
      next if $todo; # In todo-mode, do nothing if the repository does not exist
      next if $check_status;
+     next if $start_day and !is_daily_repo($repo);
+
+     print "foo $repo";
+     next;
 
      chdir $repo_parent;
 
@@ -330,6 +342,8 @@ sub usage { #_{
   print "  ghr.pl --match regular-expression\n";
   print "  ghr.pl /regexp\n";
   print "  ghr.pl --push repo\n";
+  print "  ghr.pl --start-day\n";
+  print "  ghr.pl --end-day\n";
   print "  ghr.pl --list-repos   [regexp]\n";
   print "  ghr.pl --check-status\n";
   print "  ghr.pl --debug\n";
@@ -337,3 +351,13 @@ sub usage { #_{
   print "  ghr.pl --help\n";
   print "\n";
 } #_}
+
+sub is_daily_repo {
+  my $repo = shift;
+
+  return 1 if $repo eq 'Bibelkommentare';
+  return 1 if $repo eq 'Bibeluebersetzungen';
+  return 1 if $repo eq 'notes';
+
+  return 0;
+}
