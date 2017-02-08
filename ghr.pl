@@ -320,9 +320,6 @@ for my $repo (keys %repos) { #_{
      next if $check_status;
      next if $start_day and !is_daily_repo($repo);
 
-     print "foo $repo";
-     next;
-
      chdir $repo_parent;
 
      my $command = "git clone $repos{$repo}{url} $repo_directory";
