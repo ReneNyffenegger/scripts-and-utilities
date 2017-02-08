@@ -261,10 +261,10 @@ for my $repo (keys %repos) { #_{
      if ($push) { #_{
 
        if ($^O eq 'MSWin32') {
-         print system "gitp.bat";
+         system "gitp.bat";
        }
        else {
-         print system "gitp.sh";
+         system "gitp.sh";
        }
 
      } #_}
