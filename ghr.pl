@@ -329,6 +329,7 @@ sub usage { #_{
   print "  ghr.pl exact-expression\n";
   print "  ghr.pl --match regular-expression\n";
   print "  ghr.pl /regexp\n";
+  print "  ghr.pl --push repo\n";
   print "  ghr.pl --list-repos   [regexp]\n";
   print "  ghr.pl --check-status\n";
   print "  ghr.pl --debug\n";
