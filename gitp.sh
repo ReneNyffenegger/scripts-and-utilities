@@ -9,7 +9,11 @@
 #       If this expression != PWD, we could remove $git_work_dir from
 #       $PWD, so we are in or below $git_work_dir
 #
-if [[ ${PWD##${git_work_dir%/}} != ${PWD} ]]; then
+
+
+# 2017-02-08 [[ -> [
+# if [[ ${PWD##${git_work_dir%/}} != ${PWD} ]]; then
+if [ ${PWD##${git_work_dir%/}} != ${PWD} ]; then
  : #  echo "not asking for TQ84_GITHUB_PW"
 else
 
