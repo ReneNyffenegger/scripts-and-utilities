@@ -23,8 +23,7 @@ binmode $in;
 my $cnt_chunks = 0;
 my $cnt_bufs   = 0;
 
-open (my $out, '>', sprintf("$dest_dir/$filename.%03d", $cnt_chunks)) or die;
-binmode $out;
+my $out = open_out_part($cnt_chunks);
 
 while (read($in, my $buf, ($cnt_bufs+1) * $buf_size < $chunk_size ?  $buf_size : ($cnt_bufs+1)*$buf_size - $chunk_size)) {
 
@@ -36,11 +35,20 @@ while (read($in, my $buf, ($cnt_bufs+1) * $buf_size < $chunk_size ?  $buf_size :
        $cnt_bufs = 0;
        close $out;
 
-       open ($out, '>', sprintf("$dest_dir/$filename.%003d", $cnt_chunks)) or die;
-       binmode $out;
-
+       $out = open_out_part($cnt_chunks);
     }
 }
 
 close $out;
 close $in;
+
+sub open_out_part { #_{
+  my $cnt = shift;
+  my $filename = sprintf("$dest_dir/$filename.%03d", $cnt);
+
+  open (my $out, '>', $filename) or die "Could not open $filename\n$!";
+
+  binmode $out;
+
+  return $out;
+} #_}
