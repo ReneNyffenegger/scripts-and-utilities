@@ -15,6 +15,8 @@ GetOptions (
 
 my $filename = shift or die "No filename given";
 
+my ($filename_base) = $filename =~ m!([^/]+)$!;
+
 die unless -d $dest_dir;
 
 open (my $in, '<', $filename) or die "Could not open $filename\n$!";
@@ -44,7 +46,7 @@ close $in;
 
 sub open_out_part { #_{
   my $cnt = shift;
-  my $filename = sprintf("$dest_dir/$filename.%03d", $cnt);
+  my $filename = sprintf("$dest_dir/$filename_base.%03d", $cnt);
 
   open (my $out, '>', $filename) or die "Could not open $filename\n$!";
 
