@@ -8,40 +8,32 @@ use Getopt::Long;
 
 my $match = '';
 
-GetOptions(
+GetOptions( #_{
    'match=s'        => \   $match,
    'list-repos'     => \my $list_repos,
    'help'           => \my $help,
    'todo'           => \my $todo,
+   'start-day'      => \my $start_day,
+   'end-day'        => \my $end_day,
    'debug'          => \my $debug,
-   'check-status'   => \my $check_status
-) or exit -1;
+   'check-status'   => \my $check_status,
+   'push'           => \my $push,
+) or exit -1; #_}
 
-
-if ($help) {
+if ($help) { #_{
    usage();
    exit;
-}
+} #_}
 
 my $lib_dir    = "$ENV{github_top_root}lib";
 my $about_dir  = "$ENV{github_top_root}about";
 my $github_dir =  $ENV{github_root};
 
 
-#if ($^O eq 'MSWin32') { # or MSWin64 ?
-#  $lib_dir     = 'c:/lib';
-#  $about_dir   = 'c:/about';
-#  $github_dir  = 'c:/github';
-#}
-#else {
-#  $lib_dir     = File::HomeDir -> my_home . '/github/lib';
-#  $about_dir   = File::HomeDir -> my_home . '/github/about';
-#  $github_dir  = File::HomeDir -> my_home . '/github/github';
-#}
 
 my $exact = '';
 my $arg1  = '';
-if (@ARGV == 1) {
+if (@ARGV == 1) { #_{
 
   if ($match) {
 
@@ -55,13 +47,13 @@ if (@ARGV == 1) {
   else {
     $exact = shift @ARGV;
   }
-}
-elsif (@ARGV > 1) {
+} #_}
+elsif (@ARGV > 1) { #_{
 
   usage();
   exit;
 
-}
+} #_}
 
 if (substr($exact, 0, 1) eq '/') {
 
@@ -76,7 +68,7 @@ my $plsql_and_types   = 'Oracle-supplied-PL-SQL-Packages-and-Types';
 my $sql_dev_decryptor = 'Oracle-SQL-developer-password-decryptor';
 
 # $repos{'d3-threeD'     } = 'https://github.com/asutherland/d3-threeD';
-$repos{'Access.pm'                          } = {url => 'https://github.com/ReneNyffenegger/Access.pm'                        , dir => $lib_dir   };
+$repos{'Access.pm'                          } = {url => 'https://github.com/ReneNyffenegger/Access.pm'                        , dir => $lib_dir   }; #_{
 $repos{'blob_wrapper-Oracle'                } = {url => 'https://github.com/ReneNyffenegger/blob_wrapper-Oracle'              , dir => $lib_dir   };
 $repos{'js-keyboard-coordinates'            } = {url => 'https://github.com/ReneNyffenegger/js-keyboard-coordinates'          , dir => $lib_dir   };
 $repos{'js-inkscape'                        } = {url => 'https://github.com/ReneNyffenegger/js-inkscape'                      , dir => $lib_dir   };
@@ -94,10 +86,10 @@ $repos{'scripts'                            } = {url => 'https://github.com/Rene
 $repos{'svg-in-html'                        } = {url => 'https://github.com/ReneNyffenegger/svg-in-html'                      , dir => $lib_dir   };
 $repos{'tq84-PerlModules'                   } = {url => 'https://github.com/ReneNyffenegger/tq84-PerlModules'                 , dir => $lib_dir   };
 $repos{'VBAModules'                         } = {url => 'https://github.com/ReneNyffenegger/VBAModules'                       , dir => $lib_dir   };
-$repos{'xlsx_writer-Oracle'                 } = {url => 'https://github.com/ReneNyffenegger/xlsx_writer-Oracle'               , dir => $lib_dir   };
+$repos{'xlsx_writer-Oracle'                 } = {url => 'https://github.com/ReneNyffenegger/xlsx_writer-Oracle'               , dir => $lib_dir   }; #_}
 
 #                                            = {url => 'https://github.com/ReneNyffenegger/Windows-Pixel-Ruler'               , dir                };
-$repos{'Access'                             } = {url => 'https://github.com/ReneNyffenegger/about-Access'                     , dir => $about_dir };
+$repos{'Access'                             } = {url => 'https://github.com/ReneNyffenegger/about-Access'                     , dir => $about_dir }; #_{
 $repos{'adodb'                              } = {url => 'https://github.com/ReneNyffenegger/about-adodb'                      , dir => $about_dir };
 $repos{'AutoHotkey'                         } = {url => 'https://github.com/ReneNyffenegger/about-AutoHotkey'                 , dir => $about_dir };
 $repos{'awk'                                } = {url => 'https://github.com/ReneNyffenegger/about-awk'                        , dir => $about_dir };
@@ -155,9 +147,9 @@ $repos{'VBA'                                } = {url => 'https://github.com/Rene
 $repos{'VBScript'                           } = {url => 'https://github.com/ReneNyffenegger/about-VBScript'                   , dir => $about_dir };
 $repos{'about-vim'                          } = {url => 'https://github.com/ReneNyffenegger/about-vim'                        , dir => $about_dir }; # TODO: should that not be just the direcotry 'vim' instead of 'about-vim'?
 $repos{'Windows-Registry'                   } = {url => 'https://github.com/ReneNyffenegger/about-Windows-Registry'           , dir => $about_dir };
-$repos{'wsh'                                } = {url => 'https://github.com/ReneNyffenegger/about-wsh'                        , dir => $about_dir };
+$repos{'wsh'                                } = {url => 'https://github.com/ReneNyffenegger/about-wsh'                        , dir => $about_dir }; #_}
 
-$repos{'Algorithms'                         } = {url => 'https://github.com/ReneNyffenegger/Algorithms'                       , dir => $github_dir};
+$repos{'Algorithms'                         } = {url => 'https://github.com/ReneNyffenegger/Algorithms'                       , dir => $github_dir}; #_{
 $repos{'Amdocs'                             } = {url => 'https://github.com/ReneNyffenegger/Amdocs'                           , dir => $github_dir};
 $repos{'Apache-logfile'                     } = {url => 'https://github.com/ReneNyffenegger/Apache-logfile'                   , dir => $github_dir};
 $repos{'Arch-Linux-UEFI-Installation'       } = {url => 'https://github.com/ReneNyffenegger/Arch-Linux-UEFI-Installation'     , dir => $github_dir};
@@ -214,7 +206,7 @@ $repos{'vim'                                } = {url => 'https://github.com/Rene
 $repos{'Vortraege'                          } = {url => 'https://github.com/ReneNyffenegger/Vortraege'                        , dir => $github_dir};
 $repos{'WebAutomation'                      } = {url => 'https://github.com/ReneNyffenegger/WebAutomation'                    , dir => $github_dir};
 $repos{'Windows-API'                        } = {url => 'https://github.com/ReneNyffenegger/Windows-API'                      , dir => $github_dir};
-$repos{'Zefix'                              } = {url => 'https://github.com/ReneNyffenegger/Zefix'                            , dir => $github_dir};
+$repos{'Zefix'                              } = {url => 'https://github.com/ReneNyffenegger/Zefix'                            , dir => $github_dir}; #_}
 
 $repos{'.vim'                               } = {url => 'https://github.com/ReneNyffenegger/.vim'                             , dir =>'special .vim'};
 
@@ -222,13 +214,13 @@ mkdir $lib_dir    unless -d $lib_dir;
 mkdir $about_dir  unless -d $about_dir;
 mkdir $github_dir unless -d $github_dir;
 
-for my $repo (keys %repos) {
+for my $repo (keys %repos) { #_{
 
   my $repository_path = "$repos{$repo}{dir}/$repo";
   my $repo_parent     =  $repos{$repo}{dir};
   my $repo_directory  =  $repo;
 
-  if ($repos{$repo}{dir} eq 'special .vim') {
+  if ($repos{$repo}{dir} eq 'special .vim') { #_{
     $repo_parent     = File::HomeDir -> my_home;
 
     if ($^O eq 'MSWin32' or $^O eq 'MSWin64') {
@@ -239,9 +231,9 @@ for my $repo (keys %repos) {
       $repository_path = File::HomeDir -> my_home . '/.vim';
       $repo_directory  = '.vim';
     }
-  }
+  } #_}
 
-  if ($list_repos) {
+  if ($list_repos) { #_{
 
       if ($arg1 and $repo =~ /$arg1/i or !$arg1) {
 
@@ -251,24 +243,37 @@ for my $repo (keys %repos) {
         print "\n";
       }
       next;
-  }
+  } #_}
 
   print "repo: $repo\n" if $debug;
 
-  if ($match and $repo !~ /$match/i) {
-     next;
-  }
-  if ($exact and $repo ne $exact) {
-     next;
-  }
+
+  unless ($start_day or $end_day) { #_{
+    if ($match and $repo !~ /$match/i) { #_{
+       next;
+    } #_}
+    if ($exact and $repo ne $exact) { #_{
+       next;
+    } #_}
+  } #_}
 
 
 
-  if (-d $repository_path ) {
+  if (-d $repository_path ) { #_{
       
      chdir "$repository_path";
-  
-     if ($check_status) {
+
+     if ($push  or ( $end_day and is_daily_repo($repo))) {  #_{
+
+       if ($^O eq 'MSWin32') {
+         system "gitp.bat";
+       }
+       else {
+         system "gitp.sh";
+       }
+
+     } #_}
+     elsif ($check_status) { #_{
         my @git_response = readpipe('git status -s');
 #       @git_response = grep { !/^(# )?On branch (master|tq84)$/ } @git_response;
 #       @git_response = grep { !/^Your branch is up-to-date with 'origin\/master'\.$/ } @git_response;
@@ -281,33 +286,39 @@ for my $repo (keys %repos) {
           print "----------------------------\n";
           print map {"      $_"} @git_response;
         }
-     }
-     elsif (!$todo) {
-       print "\n\nRepo $repository_path exists, updating it\n";
-       my $git_response = readpipe("git pull");
-       print $git_response;
-     }
-     else {
+     } #_}
+     elsif (!$todo) { #_{
+       if (($start_day and is_daily_repo($repo)) or !$start_day) { #_{
+         print "\n\nRepo $repository_path exists, updating it\n";
+         my $git_response = readpipe("git pull");
+         print $git_response;
+       } #_}
+     } #_}
+     else { #_{
 
        #  Is there something to be pushed?
        my $git_response = readpipe('git log @{u}..');
        if ($git_response) {
          print "\n\nRepo $repository_path should be pushed\n";
        }
-
+  
        #  New files or uncommited files
        my @git_response = readpipe('git status');
        chomp($git_response[1]);
        if ($git_response[1] ne 'nothing to commit, working directory clean') {
          print "\n\nRepo $repository_path not clean [$git_response[1] ]\n";
        }
+     } #_}
 
-     }
-  }
-  else {
+  } #_}
+  else { #_{
+
+
+     die "cannot push $repo, directory does not exist!" if $push;
 
      next if $todo; # In todo-mode, do nothing if the repository does not exist
      next if $check_status;
+     next if $start_day and !is_daily_repo($repo);
 
      chdir $repo_parent;
 
@@ -318,19 +329,32 @@ for my $repo (keys %repos) {
      my $git_response = readpipe($command);
      print $git_response;
 
-  }
-}
+  } #_}
+} #_}
 
 
-sub usage {
+sub usage { #_{
   print "\n";
   print "  ghr.pl exact-expression\n";
   print "  ghr.pl --match regular-expression\n";
   print "  ghr.pl /regexp\n";
+  print "  ghr.pl --push repo\n";
+  print "  ghr.pl --start-day\n";
+  print "  ghr.pl --end-day\n";
   print "  ghr.pl --list-repos   [regexp]\n";
   print "  ghr.pl --check-status\n";
   print "  ghr.pl --debug\n";
   print "  ghr.pl --todo\n";
   print "  ghr.pl --help\n";
   print "\n";
+} #_}
+
+sub is_daily_repo {
+  my $repo = shift;
+
+  return 1 if $repo eq 'Bibelkommentare';
+  return 1 if $repo eq 'Bibeluebersetzungen';
+  return 1 if $repo eq 'notes';
+
+  return 0;
 }
