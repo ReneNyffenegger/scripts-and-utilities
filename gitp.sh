@@ -13,7 +13,7 @@
 
 # 2017-02-08 [[ -> [
 # if [[ ${PWD##${git_work_dir%/}} != ${PWD} ]]; then
-if [ ${PWD##${git_work_dir%/}} != ${PWD} ]; then
+if [ "${PWD##${git_work_dir%/}}" != ${PWD} ]; then
  : #  echo "not asking for TQ84_GITHUB_PW"
 else
 
