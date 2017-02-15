@@ -17,7 +17,7 @@ my $filename = shift or die "No filename given";
 
 my ($filename_base) = $filename =~ m!([^/]+)$!;
 
-die unless -d $dest_dir;
+die "Dest dir $dest_dir is no directory" unless -d $dest_dir;
 
 open (my $in, '<', $filename) or die "Could not open $filename\n$!";
 binmode $in;
