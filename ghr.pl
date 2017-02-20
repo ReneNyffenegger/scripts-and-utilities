@@ -75,6 +75,7 @@ $repos{'js-inkscape'                        } = {url => 'https://github.com/Rene
 $repos{'js-line-writer'                     } = {url => 'https://github.com/ReneNyffenegger/js-line-writer'                   , dir => $lib_dir   };
 $repos{'js-tablator'                        } = {url => 'https://github.com/ReneNyffenegger/js-tablator'                      , dir => $lib_dir   };
 $repos{'js-vector-matrix'                   } = {url => 'https://github.com/ReneNyffenegger/js-vector-matrix'                 , dir => $lib_dir   };
+$repos{'Geo-Converter-LV03'                 } = {url => 'https://github.com/ReneNyffenegger/Geo-Converter-LV03'               , dir => $lib_dir   };
 $repos{'MS-Access-bootstrap'                } = {url => 'https://github.com/ReneNyffenegger/MS-Access-bootstrap'              , dir => $lib_dir   };
 $repos{'notes2html'                         } = {url => 'https://github.com/ReneNyffenegger/notes2html'                       , dir => $lib_dir   };
 $repos{$plsql_and_types                     } = {url => "https://github.com/ReneNyffenegger/$plsql_and_types"                 , dir => $lib_dir   };
