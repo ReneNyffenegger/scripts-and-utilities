@@ -176,6 +176,7 @@ $repos{'Geschichte-der-Wissenschaft'        } = {url => 'https://github.com/Rene
 $repos{'Global-Relief-Model'                } = {url => 'https://github.com/ReneNyffenegger/Global-Relief-Model'              , dir => $github_dir};
 $repos{'git-internals'                      } = {url => 'https://github.com/ReneNyffenegger/git-internals'                    , dir => $github_dir};
 $repos{'Graphic-Design-Fonts'               } = {url => 'https://github.com/ReneNyffenegger/Graphic-Design-and-Font'          , dir => $github_dir};
+$repos{'Google-Suchbegriffe'                } = {url => 'https://github.com/ReneNyffenegger/Google-Suchbegriffe'              , dir => $github_dir};
 $repos{'Hydroplattentheorie'                } = {url => 'https://github.com/ReneNyffenegger/Hydroplattentheorie'              , dir => $github_dir};
 $repos{'JavaClasses'                        } = {url => 'https://github.com/ReneNyffenegger/JavaClasses'                      , dir => $github_dir};
 $repos{'kaggle'                             } = {url => 'https://github.com/ReneNyffenegger/kaggle'                           , dir => $github_dir};
