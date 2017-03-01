@@ -1,0 +1,19 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+use WWW::Wikipedia;
+
+binmode STDOUT, ':utf8';
+
+my $searchterm = join " ", @ARGV;
+die unless $searchterm;
+
+my $wp = WWW::Wikipedia->new(language => 'de');
+my $entry = $wp->search($searchterm);
+
+print $entry->text();
+
+print "Related entries:\n";
+for my $related ($entry->related) {
+  print "  $related\n";
+}
