@@ -170,6 +170,7 @@ $repos{'crawler'                            } = {url => 'https://github.com/Rene
 $repos{'Csound'                             } = {url => 'https://github.com/ReneNyffenegger/Csound'                           , dir => $github_dir};
 $repos{'data-visualization'                 } = {url => 'https://github.com/ReneNyffenegger/data-visualization'               , dir => $github_dir};
 $repos{'development_misc'                   } = {url => 'https://github.com/ReneNyffenegger/development_misc'                 , dir => $github_dir};
+$repos{'Earthquakes'                        } = {url => 'https://github.com/ReneNyffenegger/Earthquakes'                      , dir => $github_dir};
 $repos{'EGG'                                } = {url => 'https://github.com/ReneNyffenegger/EGG-Explosion-Graphics-Generator' , dir => $github_dir};
 $repos{'Fonts'                              } = {url => 'https://github.com/ReneNyffenegger/Fonts'                            , dir => $github_dir};
 $repos{'Geschichte-der-Wissenschaft'        } = {url => 'https://github.com/ReneNyffenegger/Geschichte-der-Wissenschaft'      , dir => $github_dir};
