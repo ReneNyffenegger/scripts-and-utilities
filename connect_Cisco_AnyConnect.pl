@@ -21,7 +21,8 @@ my $cisco_txt = "Cisco AnyConnect Secure Mobility Client";
 system 'start "" "c:\Program Files\Cisco\Cisco AnyConnect Secure Mobility Client\vpnui.exe"';
 
 
-        WaitWindowLike(undef, $cisco_txt, '#32770', undef, undef, 1, 1);
+my $wait_time_s = 2;
+        WaitWindowLike(undef, $cisco_txt, '#32770', undef, undef, 1, $wait_time_s);
 my @w = FindWindowLike(undef, $cisco_txt, '#32770', undef, undef, 1);
 
 die unless @w;
