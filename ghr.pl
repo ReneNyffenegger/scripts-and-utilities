@@ -270,6 +270,8 @@ for my $repo (keys %repos) { #_{
 
      if ($push  or ( $end_day and is_daily_repo($repo))) {  #_{
 
+       print "--push or (--end-day and is_daily_repo($repo))\n" if $debug;
+
        if ($^O eq 'MSWin32') {
          system "gitp.bat";
        }
@@ -278,6 +280,10 @@ for my $repo (keys %repos) { #_{
        }
 
      } #_}
+     elsif ($end_day) {
+        print "      skip, because --end_day\n" if $debug;
+        next;
+     }
      elsif ($check_status) { #_{
         my @git_response = readpipe('git status -s');
 #       @git_response = grep { !/^(# )?On branch (master|tq84)$/ } @git_response;
@@ -318,6 +324,9 @@ for my $repo (keys %repos) { #_{
   } #_}
   else { #_{
 
+     if ($end_day) {
+       next;
+     }
 
      die "cannot push $repo, directory does not exist!" if $push;
 
