@@ -82,8 +82,9 @@ $repos{$plsql_and_types                     } = {url => "https://github.com/Rene
 $repos{'perl-tcp'                           } = {url => 'https://github.com/ReneNyffenegger/perl-tcp'                         , dir => $lib_dir   };
 $repos{'perl-Win32-OLE'                     } = {url => 'https://github.com/ReneNyffenegger/perl-Win32-OLE'                   , dir => $lib_dir   };
 $repos{'runVBAFilesInOffice'                } = {url => 'https://github.com/ReneNyffenegger/runVBAFilesInOffice'              , dir => $lib_dir   };
-$repos{'SendDirectoryWithMail'              } = {url => 'https://github.com/ReneNyffenegger/SendDirectoryWithMail'            , dir => $lib_dir   };
 $repos{'scripts'                            } = {url => 'https://github.com/ReneNyffenegger/scripts-and-utilities'            , dir => $lib_dir   };
+$repos{'SendDirectoryWithMail'              } = {url => 'https://github.com/ReneNyffenegger/SendDirectoryWithMail'            , dir => $lib_dir   };
+$repos{'Socket.cpp'                         } = {url => 'https://github.com/ReneNyffenegger/Socket.cpp'                       , dir => $lib_dir   };
 $repos{'svg-in-html'                        } = {url => 'https://github.com/ReneNyffenegger/svg-in-html'                      , dir => $lib_dir   };
 $repos{'tq84-PerlModules'                   } = {url => 'https://github.com/ReneNyffenegger/tq84-PerlModules'                 , dir => $lib_dir   };
 $repos{'VBAModules'                         } = {url => 'https://github.com/ReneNyffenegger/VBAModules'                       , dir => $lib_dir   };
