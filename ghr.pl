@@ -170,6 +170,7 @@ $repos{'cpp-base64'                         } = {url => 'https://github.com/Rene
 $repos{'Configure-Windows'                  } = {url => 'https://github.com/ReneNyffenegger/Configure-Windows'                , dir => $github_dir};
 $repos{'crawler'                            } = {url => 'https://github.com/ReneNyffenegger/crawler'                          , dir => $github_dir};
 $repos{'Csound'                             } = {url => 'https://github.com/ReneNyffenegger/Csound'                           , dir => $github_dir};
+$repos{'data-stackexchange'                 } = {url => 'https://github.com/ReneNyffenegger/data-stackexchange'               , dir => $github_dir};
 $repos{'data-visualization'                 } = {url => 'https://github.com/ReneNyffenegger/data-visualization'               , dir => $github_dir};
 $repos{'development_misc'                   } = {url => 'https://github.com/ReneNyffenegger/development_misc'                 , dir => $github_dir};
 $repos{'Earthquakes'                        } = {url => 'https://github.com/ReneNyffenegger/Earthquakes'                      , dir => $github_dir};
