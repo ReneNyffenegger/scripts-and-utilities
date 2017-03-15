@@ -1,0 +1,7 @@
+#
+#      https://developer.mozilla.org/en-US/docs/Mozilla/Debugging/HTTP_logging
+#
+export MOZ_LOG=timestamp,rotate:200,nsHttp:5,nsSocketTransport:5,nsStreamPump:5,nsHostResolver:5
+export MOZ_LOG_FILE=$(date +'/tmp/mozilla-%Y-%m-%d_%H-%M-%S.log')
+echo "Logging to $MOZ_LOG_FILE"
+firefox &
