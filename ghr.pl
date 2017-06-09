@@ -89,7 +89,8 @@ $repos{'svg-in-html'                        } = {url => 'https://github.com/Rene
 $repos{'tq84-PerlModules'                   } = {url => 'https://github.com/ReneNyffenegger/tq84-PerlModules'                 , dir => $lib_dir   };
 $repos{'Tree-Create-DepthFirst'             } = {url => 'https://github.com/ReneNyffenegger/Tree-Create-DepthFirst'           , dir => $lib_dir   };
 $repos{'VBAModules'                         } = {url => 'https://github.com/ReneNyffenegger/VBAModules'                       , dir => $lib_dir   };
-$repos{'xlsx_writer-Oracle'                 } = {url => 'https://github.com/ReneNyffenegger/xlsx_writer-Oracle'               , dir => $lib_dir   }; #_}
+$repos{'xlsx_writer-Oracle'                 } = {url => 'https://github.com/ReneNyffenegger/xlsx_writer-Oracle'               , dir => $lib_dir   };
+$repos{'xml_writer-Oracle'                  } = {url => 'https://github.com/ReneNyffenegger/xml_writer-Oracle'                , dir => $lib_dir   }; #_}
 
 #                                            = {url => 'https://github.com/ReneNyffenegger/Windows-Pixel-Ruler'               , dir                };
 $repos{'Access'                             } = {url => 'https://github.com/ReneNyffenegger/about-Access'                     , dir => $about_dir }; #_{
