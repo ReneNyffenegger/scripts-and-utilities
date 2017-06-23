@@ -79,6 +79,7 @@ $repos{'Geo-Coordinates-Converter-LV03'     } = {url => 'https://github.com/Rene
 $repos{'MS-Access-bootstrap'                } = {url => 'https://github.com/ReneNyffenegger/MS-Access-bootstrap'              , dir => $lib_dir   };
 $repos{'notes2html'                         } = {url => 'https://github.com/ReneNyffenegger/notes2html'                       , dir => $lib_dir   };
 $repos{$plsql_and_types                     } = {url => "https://github.com/ReneNyffenegger/$plsql_and_types"                 , dir => $lib_dir   };
+$repos{'perl-Gravitation'                   } = {url => 'https://github.com/ReneNyffenegger/perl-Gravitation'                 , dir => $lib_dir   };
 $repos{'perl-tcp'                           } = {url => 'https://github.com/ReneNyffenegger/perl-tcp'                         , dir => $lib_dir   };
 $repos{'perl-Win32-OLE'                     } = {url => 'https://github.com/ReneNyffenegger/perl-Win32-OLE'                   , dir => $lib_dir   };
 $repos{'runVBAFilesInOffice'                } = {url => 'https://github.com/ReneNyffenegger/runVBAFilesInOffice'              , dir => $lib_dir   };
@@ -86,6 +87,7 @@ $repos{'scripts'                            } = {url => 'https://github.com/Rene
 $repos{'SendDirectoryWithMail'              } = {url => 'https://github.com/ReneNyffenegger/SendDirectoryWithMail'            , dir => $lib_dir   };
 $repos{'Socket.cpp'                         } = {url => 'https://github.com/ReneNyffenegger/Socket.cpp'                       , dir => $lib_dir   };
 $repos{'svg-in-html'                        } = {url => 'https://github.com/ReneNyffenegger/svg-in-html'                      , dir => $lib_dir   };
+$repos{'tq84-c-debug'                       } = {url => 'https://github.com/ReneNyffenegger/tq84-c-debug'                     , dir => $lib_dir   };
 $repos{'tq84-PerlModules'                   } = {url => 'https://github.com/ReneNyffenegger/tq84-PerlModules'                 , dir => $lib_dir   };
 $repos{'Tree-Create-DepthFirst'             } = {url => 'https://github.com/ReneNyffenegger/Tree-Create-DepthFirst'           , dir => $lib_dir   };
 $repos{'VBAModules'                         } = {url => 'https://github.com/ReneNyffenegger/VBAModules'                       , dir => $lib_dir   };
