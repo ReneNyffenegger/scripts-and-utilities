@@ -168,6 +168,7 @@ $repos{'Bibeluebersetzungen'                } = {url => 'https://github.com/Rene
 $repos{'Bibelkommentare'                    } = {url => 'https://github.com/ReneNyffenegger/Bibelkommentare'                  , dir => $github_dir};
 $repos{'Bible-Text-Sources'                 } = {url => 'https://github.com/ReneNyffenegger/Bible-Text-Sources'               , dir => $github_dir};
 $repos{'Biblisches'                         } = {url => 'https://github.com/ReneNyffenegger/Biblisches'                       , dir => $github_dir};
+$repos{'bitcoin-notes'                      } = {url => 'https://github.com/ReneNyffenegger/bitcoin-notes'                    , dir => $github_dir};
 $repos{'browser-object-model'               } = {url => 'https://github.com/ReneNyffenegger/Browser-Object-Model'             , dir => $github_dir};
 $repos{'Chronologie'                        } = {url => 'https://github.com/ReneNyffenegger/Chronologie'                      , dir => $github_dir};
 $repos{'Clarify'                            } = {url => 'https://github.com/ReneNyffenegger/Clarify'                          , dir => $github_dir};
