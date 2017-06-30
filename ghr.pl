@@ -100,6 +100,7 @@ $repos{'adodb'                              } = {url => 'https://github.com/Rene
 $repos{'AutoHotkey'                         } = {url => 'https://github.com/ReneNyffenegger/about-AutoHotkey'                 , dir => $about_dir };
 $repos{'awk'                                } = {url => 'https://github.com/ReneNyffenegger/about-awk'                        , dir => $about_dir };
 $repos{'Bash'                               } = {url => 'https://github.com/ReneNyffenegger/about-Bash'                       , dir => $about_dir };
+$repos{'boost'                              } = {url => 'https://github.com/ReneNyffenegger/about-boost'                      , dir => $about_dir };
 $repos{'CGI'                                } = {url => 'https://github.com/ReneNyffenegger/about-cgi'                        , dir => $about_dir };
 $repos{'coffeescript'                       } = {url => 'https://github.com/ReneNyffenegger/about-coffeescript'               , dir => $about_dir };
 $repos{'css'                                } = {url => 'https://github.com/ReneNyffenegger/about-css'                        , dir => $about_dir };
