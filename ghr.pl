@@ -149,6 +149,7 @@ $repos{'sed'                                } = {url => 'https://github.com/Rene
 $repos{'skychart'                           } = {url => 'https://github.com/ReneNyffenegger/about-skychart'                   , dir => $about_dir };
 $repos{'sqlite'                             } = {url => 'https://github.com/ReneNyffenegger/about-sqlite'                     , dir => $about_dir };
 $repos{'Stellarium'                         } = {url => 'https://github.com/ReneNyffenegger/about-Stellarium'                 , dir => $about_dir };
+$repos{'STL'                                } = {url => 'https://github.com/ReneNyffenegger/about-STL'                        , dir => $about_dir };
 $repos{'svg'                                } = {url => 'https://github.com/ReneNyffenegger/about-svg'                        , dir => $about_dir };
 $repos{'three.js'                           } = {url => 'https://github.com/ReneNyffenegger/about-three.js'                   , dir => $about_dir };
 $repos{'TopoJSON'                           } = {url => 'https://github.com/ReneNyffenegger/about-TopoJSON'                   , dir => $about_dir };
