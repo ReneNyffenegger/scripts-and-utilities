@@ -130,6 +130,7 @@ $repos{'libc'                               } = {url => 'https://github.com/Rene
 $repos{'Linux'                              } = {url => 'https://github.com/ReneNyffenegger/about-Linux'                      , dir => $about_dir };
 $repos{'node.js'                            } = {url => 'https://github.com/ReneNyffenegger/about-node.js'                    , dir => $about_dir };
 $repos{'MapReduce'                          } = {url => 'https://github.com/ReneNyffenegger/about-MapReduce'                  , dir => $about_dir };
+$repos{'Makefile'                           } = {url => 'https://github.com/ReneNyffenegger/about-Makefile'                   , dir => $about_dir };
 $repos{'MathJax'                            } = {url => 'https://github.com/ReneNyffenegger/about-MathJax'                    , dir => $about_dir };
 $repos{'mshta'                              } = {url => 'https://github.com/ReneNyffenegger/about-mshta'                      , dir => $about_dir };
 $repos{'MSSQL'                              } = {url => 'https://github.com/ReneNyffenegger/about-MSSQL'                      , dir => $about_dir };
