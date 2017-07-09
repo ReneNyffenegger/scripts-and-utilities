@@ -117,6 +117,7 @@ $repos{'FinnOne'                            } = {url => 'https://github.com/Rene
 $repos{'gcc'                                } = {url => 'https://github.com/ReneNyffenegger/about-gcc'                        , dir => $about_dir };
 $repos{'git'                                } = {url => 'https://github.com/ReneNyffenegger/about-git'                        , dir => $about_dir };
 $repos{'GMT'                                } = {url => 'https://github.com/ReneNyffenegger/about-GMT'                        , dir => $about_dir };
+$repos{'GNU-Build-System'                   } = {url => 'https://github.com/ReneNyffenegger/about-GNU-Build-System'           , dir => $about_dir };
 $repos{'GoogleEarth'                        } = {url => 'https://github.com/ReneNyffenegger/about-GoogleEarth'                , dir => $about_dir };
 $repos{'Graphviz'                           } = {url => 'https://github.com/ReneNyffenegger/about-Graphviz'                   , dir => $about_dir };
 $repos{'hadoop'                             } = {url => 'https://github.com/ReneNyffenegger/about-hadoop'                     , dir => $about_dir };
