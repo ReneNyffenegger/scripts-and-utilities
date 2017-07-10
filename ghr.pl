@@ -89,6 +89,7 @@ $repos{'SendDirectoryWithMail'              } = {url => 'https://github.com/Rene
 $repos{'Socket.cpp'                         } = {url => 'https://github.com/ReneNyffenegger/Socket.cpp'                       , dir => $lib_dir   };
 $repos{'svg-in-html'                        } = {url => 'https://github.com/ReneNyffenegger/svg-in-html'                      , dir => $lib_dir   };
 $repos{'tq84-c-debug'                       } = {url => 'https://github.com/ReneNyffenegger/tq84-c-debug'                     , dir => $lib_dir   };
+$repos{'tq84-cpp-debug'                     } = {url => 'https://github.com/ReneNyffenegger/tq84-cpp-debug'                   , dir => $lib_dir   };
 $repos{'tq84-PerlModules'                   } = {url => 'https://github.com/ReneNyffenegger/tq84-PerlModules'                 , dir => $lib_dir   };
 $repos{'Tree-Create-DepthFirst'             } = {url => 'https://github.com/ReneNyffenegger/Tree-Create-DepthFirst'           , dir => $lib_dir   };
 $repos{'VBAModules'                         } = {url => 'https://github.com/ReneNyffenegger/VBAModules'                       , dir => $lib_dir   };
