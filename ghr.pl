@@ -132,6 +132,7 @@ $repos{'jQuery-UI'                          } = {url => 'https://github.com/Rene
 $repos{'jrunscript'                         } = {url => 'https://github.com/ReneNyffenegger/about-jrunscript'                 , dir => $about_dir };
 $repos{'libc'                               } = {url => 'https://github.com/ReneNyffenegger/about-libc'                       , dir => $about_dir };
 $repos{'Linux'                              } = {url => 'https://github.com/ReneNyffenegger/about-Linux'                      , dir => $about_dir };
+$repos{'m4'                                 } = {url => 'https://github.com/ReneNyffenegger/about-m4'                         , dir => $about_dir };
 $repos{'node.js'                            } = {url => 'https://github.com/ReneNyffenegger/about-node.js'                    , dir => $about_dir };
 $repos{'MapReduce'                          } = {url => 'https://github.com/ReneNyffenegger/about-MapReduce'                  , dir => $about_dir };
 $repos{'Makefile'                           } = {url => 'https://github.com/ReneNyffenegger/about-Makefile'                   , dir => $about_dir };
