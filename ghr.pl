@@ -79,6 +79,7 @@ $repos{'Geo-Coordinates-Converter-LV03'     } = {url => 'https://github.com/Rene
 $repos{'MS-Access-bootstrap'                } = {url => 'https://github.com/ReneNyffenegger/MS-Access-bootstrap'              , dir => $lib_dir   };
 $repos{'notes2html'                         } = {url => 'https://github.com/ReneNyffenegger/notes2html'                       , dir => $lib_dir   };
 $repos{$plsql_and_types                     } = {url => "https://github.com/ReneNyffenegger/$plsql_and_types"                 , dir => $lib_dir   };
+$repos{'perl-GraphViz-ClassDiagram'         } = {url => 'https://github.com/ReneNyffenegger/perl-GraphViz-ClassDiagram'       , dir => $lib_dir   };
 $repos{'perl-GraphViz-Graph'                } = {url => 'https://github.com/ReneNyffenegger/perl-GraphViz-Graph'              , dir => $lib_dir   };
 $repos{'perl-Gravitation'                   } = {url => 'https://github.com/ReneNyffenegger/perl-Gravitation'                 , dir => $lib_dir   };
 $repos{'perl-tcp'                           } = {url => 'https://github.com/ReneNyffenegger/perl-tcp'                         , dir => $lib_dir   };
