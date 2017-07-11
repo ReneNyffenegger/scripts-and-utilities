@@ -106,6 +106,7 @@ $repos{'boost'                              } = {url => 'https://github.com/Rene
 $repos{'CGI'                                } = {url => 'https://github.com/ReneNyffenegger/about-cgi'                        , dir => $about_dir };
 $repos{'coffeescript'                       } = {url => 'https://github.com/ReneNyffenegger/about-coffeescript'               , dir => $about_dir };
 $repos{'cpp'                                } = {url => 'https://github.com/ReneNyffenegger/about-cpp'                        , dir => $about_dir };
+$repos{'cpp-standard-library'               } = {url => 'https://github.com/ReneNyffenegger/about-cpp-standard-library'       , dir => $about_dir };
 $repos{'css'                                } = {url => 'https://github.com/ReneNyffenegger/about-css'                        , dir => $about_dir };
 $repos{'cmd.exe'                            } = {url => 'https://github.com/ReneNyffenegger/about-cmd.exe'                    , dir => $about_dir };
 $repos{'dat.GUI'                            } = {url => 'https://github.com/ReneNyffenegger/about-dat.GUI'                    , dir => $about_dir };
