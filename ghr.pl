@@ -113,6 +113,7 @@ $repos{'cmd.exe'                            } = {url => 'https://github.com/Rene
 $repos{'dat.GUI'                            } = {url => 'https://github.com/ReneNyffenegger/about-dat.GUI'                    , dir => $about_dir };
 $repos{'DFS'                                } = {url => 'https://github.com/ReneNyffenegger/about-DFS'                        , dir => $about_dir };
 $repos{'Document-Object-Model'              } = {url => 'https://github.com/ReneNyffenegger/about-Document-Object-Model'      , dir => $about_dir };
+$repos{'Doxygen'                            } = {url => 'https://github.com/ReneNyffenegger/about-Doxygen'                    , dir => $about_dir };
 $repos{'draw-io'                            } = {url => 'https://github.com/ReneNyffenegger/about-draw-io'                    , dir => $about_dir };
 $repos{'d3.js'                              } = {url => 'https://github.com/ReneNyffenegger/about-d3.js'                      , dir => $about_dir };
 $repos{'Excel'                              } = {url => 'https://github.com/ReneNyffenegger/about-Excel'                      , dir => $about_dir };
