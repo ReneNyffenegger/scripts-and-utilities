@@ -156,6 +156,7 @@ $repos{'powershell'                         } = {url => 'https://github.com/Rene
 $repos{'python'                             } = {url => 'https://github.com/ReneNyffenegger/about-python'                       , dir => $about_dir };
 $repos{'README.md'                          } = {url => 'https://github.com/ReneNyffenegger/about-README.md'                    , dir => $about_dir };
 $repos{'r'                                  } = {url => 'https://github.com/ReneNyffenegger/about-r'                            , dir => $about_dir };
+$repos{'SAS'                                } = {url => 'https://github.com/ReneNyffenegger/about-SAS'                          , dir => $about_dir };
 $repos{'sed'                                } = {url => 'https://github.com/ReneNyffenegger/about-sed'                          , dir => $about_dir };
 $repos{'skychart'                           } = {url => 'https://github.com/ReneNyffenegger/about-skychart'                     , dir => $about_dir };
 $repos{'sqlite'                             } = {url => 'https://github.com/ReneNyffenegger/about-sqlite'                       , dir => $about_dir };
@@ -246,7 +247,7 @@ mkdir $lib_dir    unless -d $lib_dir;
 mkdir $about_dir  unless -d $about_dir;
 mkdir $github_dir unless -d $github_dir;
 
-for my $repo (keys %repos) { #_{
+for my $repo (keys %repos) { #_{ #_{
 
   my $repository_path = "$repos{$repo}{dir}/$repo";
   my $repo_parent     =  $repos{$repo}{dir};
@@ -371,7 +372,7 @@ for my $repo (keys %repos) { #_{
      print $git_response;
 
   } #_}
-} #_}
+} #_} #_}
 
 
 sub usage { #_{
