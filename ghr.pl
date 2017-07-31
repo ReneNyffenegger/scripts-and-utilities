@@ -218,6 +218,7 @@ $repos{'OpenStreetMap'                      } = {url => 'https://github.com/Rene
 $repos{'oracle-patterns'                    } = {url => 'https://github.com/ReneNyffenegger/oracle-patterns'                    , dir => $github_dir};
 $repos{'Oracle-Performance-Investigations'  } = {url => 'https://github.com/ReneNyffenegger/Oracle-Performance-Investigations'  , dir => $github_dir};
 $repos{'oracle_scriptlets'                  } = {url => 'https://github.com/ReneNyffenegger/oracle_scriptlets'                  , dir => $github_dir};
+$repos{'Oracle-SQL-clauses'                 } = {url => 'https://github.com/ReneNyffenegger/Oracle-SQL-clauses'                 , dir => $github_dir};
 $repos{'OracleTool'                         } = {url => 'https://github.com/ReneNyffenegger/OracleTool'                         , dir => $github_dir};
 $repos{'Oracle-Tutorial'                    } = {url => 'https://github.com/ReneNyffenegger/Oracle-Tutorial'                    , dir => $github_dir};
 $repos{'PostLinuxInstallation'              } = {url => 'https://github.com/ReneNyffenegger/PostLinuxInstallation'              , dir => $github_dir};
