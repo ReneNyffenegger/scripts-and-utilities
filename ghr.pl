@@ -85,6 +85,7 @@ $repos{'perl-GraphViz-Diagram-ClassDiagram' } = {url => 'https://github.com/Rene
 $repos{'perl-GraphViz-Diagram-GitRepository'} = {url => 'https://github.com/ReneNyffenegger/perl-GraphViz-Diagram-GitRepository', dir => $lib_dir   };
 $repos{'perl-GraphViz-Graph'                } = {url => 'https://github.com/ReneNyffenegger/perl-GraphViz-Graph'                , dir => $lib_dir   };
 $repos{'perl-Gravitation'                   } = {url => 'https://github.com/ReneNyffenegger/perl-Gravitation'                   , dir => $lib_dir   };
+$repos{'perl-Grid-Layout'                   } = {url => 'https://github.com/ReneNyffenegger/perl-Grid-Layout'                   , dir => $lib_dir   };
 $repos{'perl-tcp'                           } = {url => 'https://github.com/ReneNyffenegger/perl-tcp'                           , dir => $lib_dir   };
 $repos{'perl-Win32-OLE'                     } = {url => 'https://github.com/ReneNyffenegger/perl-Win32-OLE'                     , dir => $lib_dir   };
 $repos{'python-CreateGridBasedSVG'          } = {url => 'https://github.com/ReneNyffenegger/python-CreateGridBasedSVG'          , dir => $lib_dir   };
