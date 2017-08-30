@@ -80,6 +80,7 @@ $repos{'MS-Access-bootstrap'                } = {url => 'https://github.com/Rene
 $repos{'notes2html'                         } = {url => 'https://github.com/ReneNyffenegger/notes2html'                         , dir => $lib_dir   };
 $repos{$plsql_and_types                     } = {url => "https://github.com/ReneNyffenegger/$plsql_and_types"                   , dir => $lib_dir   };
 $repos{'perl-Csound'                        } = {url => 'https://github.com/ReneNyffenegger/perl-Csound'                        , dir => $lib_dir   };
+$repos{'perl-Geo-OSM-API'                   } = {url => 'https://github.com/ReneNyffenegger/perl-Geo-OSM-API'                   , dir => $lib_dir   };
 $repos{'perl-Geo-OSM-DBI'                   } = {url => 'https://github.com/ReneNyffenegger/perl-Geo-OSM-DBI'                   , dir => $lib_dir   };
 $repos{'perl-Git-Repository-Internal'       } = {url => 'https://github.com/ReneNyffenegger/perl-Git-Repository-Internal'       , dir => $lib_dir   };
 $repos{'perl-GraphViz-Diagram-ClassDiagram' } = {url => 'https://github.com/ReneNyffenegger/perl-GraphViz-Diagram-ClassDiagram' , dir => $lib_dir   };
