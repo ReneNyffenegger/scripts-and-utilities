@@ -83,6 +83,7 @@ $repos{'perl-Csound'                        } = {url => 'https://github.com/Rene
 $repos{'perl-Geo-OSM-API'                   } = {url => 'https://github.com/ReneNyffenegger/perl-Geo-OSM-API'                   , dir => $lib_dir   };
 $repos{'perl-Geo-OSM-DBI'                   } = {url => 'https://github.com/ReneNyffenegger/perl-Geo-OSM-DBI'                   , dir => $lib_dir   };
 $repos{'perl-Geo-OSM-Primitive'             } = {url => 'https://github.com/ReneNyffenegger/perl-Geo-OSM-Primitive'             , dir => $lib_dir   };
+$repos{'perl-Geo-OSM-Render'                } = {url => 'https://github.com/ReneNyffenegger/perl-Geo-OSM-Render'                , dir => $lib_dir   };
 $repos{'perl-Git-Repository-Internal'       } = {url => 'https://github.com/ReneNyffenegger/perl-Git-Repository-Internal'       , dir => $lib_dir   };
 $repos{'perl-GraphViz-Diagram-ClassDiagram' } = {url => 'https://github.com/ReneNyffenegger/perl-GraphViz-Diagram-ClassDiagram' , dir => $lib_dir   };
 $repos{'perl-GraphViz-Diagram-GitRepository'} = {url => 'https://github.com/ReneNyffenegger/perl-GraphViz-Diagram-GitRepository', dir => $lib_dir   };
