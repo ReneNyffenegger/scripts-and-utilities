@@ -1,0 +1,1 @@
+sqlite3 $github_root/OpenStreetMap/db/ch.db $*
