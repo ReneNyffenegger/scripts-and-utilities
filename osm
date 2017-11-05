@@ -1,1 +1,4 @@
-sqlite3 $github_root/OpenStreetMap/db/ch.db $*
+#
+# vi: ft=sh
+#
+sqlite3 $github_root/OpenStreetMap/db/ch.db ${1+"$@"}
