@@ -1,4 +1,4 @@
-/bin/bash: use: command not found
+#!/usr/bin/perl
 use warnings;
 use strict;
 
