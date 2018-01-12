@@ -256,6 +256,7 @@ $repos{'Windows-API'                               } = {url => 'https://github.c
 $repos{'word-db'                                   } = {url => 'https://github.com/ReneNyffenegger/word-db'                                 , dir => $github_dir};
 $repos{'wordlists.ch'                              } = {url => 'https://github.com/ReneNyffenegger/wordlists.ch'                            , dir => $github_dir};
 $repos{'Y-Combinator'                              } = {url => 'https://github.com/ReneNyffenegger/Y-Combinator'                            , dir => $github_dir};
+$repos{'Zahlen'                                    } = {url => 'https://github.com/ReneNyffenegger/Zahlen'                                  , dir => $github_dir};
 $repos{'Zefix'                                     } = {url => 'https://github.com/ReneNyffenegger/Zefix'                                   , dir => $github_dir}; #_}
 
 $repos{'.vim'                                      } = {url => 'https://github.com/ReneNyffenegger/.vim'                                    , dir =>'special .vim'};
