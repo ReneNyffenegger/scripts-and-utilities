@@ -204,6 +204,7 @@ $repos{'Clarify'                                   } = {url => 'https://github.c
 $repos{'cpp-base64'                                } = {url => 'https://github.com/ReneNyffenegger/cpp-base64'                              , dir => $github_dir};
 $repos{'Configure-Windows'                         } = {url => 'https://github.com/ReneNyffenegger/Configure-Windows'                       , dir => $github_dir};
 $repos{'compile-dll'                               } = {url => 'https://github.com/ReneNyffenegger/compile-dll'                             , dir => $github_dir};
+$repos{'cpp-create-library'                        } = {url => 'https://github.com/ReneNyffenegger/cpp-create-library'                      , dir => $github_dir};
 $repos{'crawler'                                   } = {url => 'https://github.com/ReneNyffenegger/crawler'                                 , dir => $github_dir};
 $repos{'Csound'                                    } = {url => 'https://github.com/ReneNyffenegger/Csound'                                  , dir => $github_dir};
 $repos{'data-stackexchange'                        } = {url => 'https://github.com/ReneNyffenegger/data-stackexchange'                      , dir => $github_dir};
