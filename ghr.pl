@@ -130,6 +130,7 @@ $repos{'Doxygen'                                   } = {url => 'https://github.c
 $repos{'draw-io'                                   } = {url => 'https://github.com/ReneNyffenegger/about-draw-io'                           , dir => $about_dir };
 $repos{'d3.js'                                     } = {url => 'https://github.com/ReneNyffenegger/about-d3.js'                             , dir => $about_dir };
 $repos{'Excel'                                     } = {url => 'https://github.com/ReneNyffenegger/about-Excel'                             , dir => $about_dir };
+$repos{'filesystems-and-partitions'                } = {url => 'https://github.com/ReneNyffenegger/about-filesystems-and-partitions'        , dir => $about_dir };
 $repos{'FinnOne'                                   } = {url => 'https://github.com/ReneNyffenegger/about-FinnOne-Neo'                       , dir => $about_dir };
 $repos{'gcc'                                       } = {url => 'https://github.com/ReneNyffenegger/about-gcc'                               , dir => $about_dir };
 $repos{'git'                                       } = {url => 'https://github.com/ReneNyffenegger/about-git'                               , dir => $about_dir };
