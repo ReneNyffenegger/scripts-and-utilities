@@ -226,7 +226,8 @@ $repos{'JavaClasses'                               } = {url => 'https://github.c
 $repos{'kaggle'                                    } = {url => 'https://github.com/ReneNyffenegger/kaggle'                                  , dir => $github_dir};
 $repos{'Karten'                                    } = {url => 'https://github.com/ReneNyffenegger/Karten'                                  , dir => $github_dir};
 $repos{'Kenan-Arbor'                               } = {url => 'https://github.com/ReneNyffenegger/Kenan-Arbor'                             , dir => $github_dir};
-$repos{'LinuxFromScratch'                          } = {url => 'https://github.com/ReneNyffenegger/LinuxFromScratch'                        , dir => $github_dir};
+# $repos{'LinuxFromScratch'                          } = {url => 'https://github.com/ReneNyffenegger/LinuxFromScratch'                      , dir => $github_dir}; # 2018-02-11
+$repos{'Linux-From-Scratch'                        } = {url => 'https://github.com/ReneNyffenegger/Linux-From-Scratch'                      , dir => $github_dir};
 $repos{'Meta-Oracle'                               } = {url => 'https://github.com/ReneNyffenegger/Meta-Oracle'                             , dir => $github_dir};
 $repos{'netcat'                                    } = {url => 'https://github.com/ReneNyffenegger/netcat'                                  , dir => $github_dir};
 $repos{'notes'                                     } = {url => 'https://github.com/ReneNyffenegger/notes'                                   , dir => $github_dir};
