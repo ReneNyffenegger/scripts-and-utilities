@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+# Be easy on the eye when showing mounts
+#
+
+echo
+mount | grep '^\/dev' | awk '{print " " $1 "   " $3}'
+echo
