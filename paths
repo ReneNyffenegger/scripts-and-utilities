@@ -1,0 +1,7 @@
+#   vi: ft=sh
+#
+#   Pretty print value of $PATH:
+#
+#   Each componenent of PATH on its own line
+#
+tr : '\n' <<<$PATH
