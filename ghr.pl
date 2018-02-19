@@ -141,6 +141,7 @@ $repos{'GoogleEarth'                               } = {url => 'https://github.c
 $repos{'Graphviz'                                  } = {url => 'https://github.com/ReneNyffenegger/about-Graphviz'                          , dir => $about_dir };
 $repos{'hadoop'                                    } = {url => 'https://github.com/ReneNyffenegger/about-hadoop'                            , dir => $about_dir };
 $repos{'html'                                      } = {url => 'https://github.com/ReneNyffenegger/about-html'                              , dir => $about_dir };
+$repos{'html-canvas'                               } = {url => 'https://github.com/ReneNyffenegger/about-html-canvas'                       , dir => $about_dir };
 $repos{'IEEE-754'                                  } = {url => 'https://github.com/ReneNyffenegger/about-IEEE-754'                          , dir => $about_dir };
 $repos{'impress.js'                                } = {url => 'https://github.com/ReneNyffenegger/about-impress.js'                        , dir => $about_dir };
 $repos{'indexed-DB'                                } = {url => 'https://github.com/ReneNyffenegger/about-indexed-DB'                        , dir => $about_dir };
