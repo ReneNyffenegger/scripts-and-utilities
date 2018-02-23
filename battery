@@ -1,0 +1,4 @@
+#
+#  Show how full the battery is, and if it is discharging
+#
+upower -i $(upower -e | grep BAT) | grep --color=never -E "state|to\ full|to\ empty|percentage"
