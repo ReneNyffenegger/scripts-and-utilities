@@ -1,0 +1,7 @@
+#
+#    Note the trailing slash in the source: it prevents
+#    the creation of another Digitiales-Backup directory
+#    in the destination directory
+#
+#                     Source                 Destination
+rsync -av --delete    ~/Digitales-Backup/    ~/.Digitales-Backup.safe
