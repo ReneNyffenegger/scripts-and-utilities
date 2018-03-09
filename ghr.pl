@@ -216,6 +216,7 @@ $repos{'data-visualization'                        } = {url => 'https://github.c
 $repos{'development_misc'                          } = {url => 'https://github.com/ReneNyffenegger/development_misc'                        , dir => $github_dir};
 $repos{'Earthquakes'                               } = {url => 'https://github.com/ReneNyffenegger/Earthquakes'                             , dir => $github_dir};
 $repos{'EGG'                                       } = {url => 'https://github.com/ReneNyffenegger/EGG-Explosion-Graphics-Generator'        , dir => $github_dir};
+$repos{'epson-inkjet-printer-escpr'                } = {url => 'https://github.com/ReneNyffenegger/epson-inkjet-printer-escpr'              , dir => $github_dir};
 $repos{'Fonts'                                     } = {url => 'https://github.com/ReneNyffenegger/Fonts'                                   , dir => $github_dir};
 $repos{'gcc-create-library'                        } = {url => 'https://github.com/ReneNyffenegger/gcc-create-library'                      , dir => $github_dir};
 $repos{'Geschichte-der-Wissenschaft'               } = {url => 'https://github.com/ReneNyffenegger/Geschichte-der-Wissenschaft'             , dir => $github_dir};
