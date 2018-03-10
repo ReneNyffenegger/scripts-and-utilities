@@ -8,6 +8,8 @@ my $verbose = 0;
 my $cwd = cwd() . '/';
 my $gwd = $ENV{git_work_dir};
 
+die "Environment variable git_work_dir not defined" unless ($gwd);
+
 $cwd =~ s!\\!/!g;
 $gwd =~ s!\\!/!g;
 
