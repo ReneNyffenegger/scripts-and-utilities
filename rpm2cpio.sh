@@ -6,6 +6,9 @@
 #
 # Found at https://www.redhat.com/archvies/rpm-list/2003-June/msg00367.html
 #
+# More or less moderatly changed by me (Adding check for magic numbers, useing
+# more readable variable names).
+#
 #  Executing
 #    rpm2cpio foo.rpm
 #  creates
