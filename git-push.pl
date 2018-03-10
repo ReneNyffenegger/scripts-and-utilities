@@ -16,16 +16,26 @@ my $verbose = 0;
 my $cwd = cwd() . '/';
 my $gwd = $ENV{git_work_dir};
 
-$cwd =~ s!\\!/!g;
-$gwd =~ s!\\!/!g;
+if ($^O eq 'MSWin32') {
+  $cwd =~ s!\\!/!g;
+  $gwd =~ s!\\!/!g;
+}
 
 print "$0
   cwd=$cwd
   gwd=$gwd
 " if $verbose;
 
-if (length($cwd) < length($gwd) or substr($cwd, 0, length($gwd)) ne $gwd) { # { Push to github
 
+if ( # { Pull from github (TODO Same as in git-pull.pl)
+     #     We have to determine if we have to pull from github.
+     #     This is (probably) the case if one of the following three conditions
+     #     hold true:
+     #
+     ! defined $gwd or                          # - gwd not defined: most probably we're not in git localgit directory.
+      (length($cwd) <  length($gwd) or          # - cur work directory is not within working directory.
+       substr($cwd, 0, length($gwd)) ne $gwd)   # - The current working directory path starts differently from the git work dir.
+    ) {
   print "  Not within $ENV{git_work_dir}\n" if $verbose;
 
   my $remote = readpipe("git config --get remote.origin.url");
