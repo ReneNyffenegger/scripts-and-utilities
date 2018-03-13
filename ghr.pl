@@ -224,12 +224,12 @@ $repos{'Global-Relief-Model'                       } = {url => 'https://github.c
 $repos{'git-internals'                             } = {url => 'https://github.com/ReneNyffenegger/git-internals'                           , dir => $github_dir};
 $repos{'Graphic-Design-Fonts'                      } = {url => 'https://github.com/ReneNyffenegger/Graphic-Design-and-Font'                 , dir => $github_dir};
 $repos{'Google-Suchbegriffe'                       } = {url => 'https://github.com/ReneNyffenegger/Google-Suchbegriffe'                     , dir => $github_dir};
+$repos{'HTP-2018'                                  } = {url => 'https://github.com/ReneNyffenegger/HTP-2018'                                , dir => $github_dir};
 $repos{'Hydroplattentheorie'                       } = {url => 'https://github.com/ReneNyffenegger/Hydroplattentheorie'                     , dir => $github_dir};
 $repos{'JavaClasses'                               } = {url => 'https://github.com/ReneNyffenegger/JavaClasses'                             , dir => $github_dir};
 $repos{'kaggle'                                    } = {url => 'https://github.com/ReneNyffenegger/kaggle'                                  , dir => $github_dir};
 $repos{'Karten'                                    } = {url => 'https://github.com/ReneNyffenegger/Karten'                                  , dir => $github_dir};
 $repos{'Kenan-Arbor'                               } = {url => 'https://github.com/ReneNyffenegger/Kenan-Arbor'                             , dir => $github_dir};
-# $repos{'LinuxFromScratch'                          } = {url => 'https://github.com/ReneNyffenegger/LinuxFromScratch'                      , dir => $github_dir}; # 2018-02-11
 $repos{'Linux-From-Scratch'                        } = {url => 'https://github.com/ReneNyffenegger/Linux-From-Scratch'                      , dir => $github_dir};
 $repos{'Meta-Oracle'                               } = {url => 'https://github.com/ReneNyffenegger/Meta-Oracle'                             , dir => $github_dir};
 $repos{'netcat'                                    } = {url => 'https://github.com/ReneNyffenegger/netcat'                                  , dir => $github_dir};
