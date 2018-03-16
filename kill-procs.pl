@@ -5,7 +5,10 @@ use Win32::Process::List;
 
 my $which = shift; # 'open-office';
 
-die unless $which;
+unless ($which) {
+  usage();
+  exit -1;
+}
 my $reg_ex;
 if ($which eq 'open-office') {
   $reg_ex = 'soffice.exe|soffice.bin|swriter.exe';
@@ -16,7 +19,8 @@ elsif ($which eq 'ID') { # Input Director
 elsif ($which eq 'show') {
 }
 else {
-  die;
+  usage();
+  exit -1;
 }
 
 
@@ -35,4 +39,12 @@ foreach my $pid ( keys %proc_list ) {
        print "For a reason $proc_list{$pid} ($pid) was not killed\n";   
      }
   }
+}
+
+sub usage {
+  print "
+    kill-procs.pl open-office
+    kill-procs.pl InputDirectorSessionHelper
+";
+
 }
