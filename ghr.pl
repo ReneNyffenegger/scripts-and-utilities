@@ -248,6 +248,7 @@ $repos{'printing'                                  } = {url => 'https://github.c
 $repos{'Bible-Textual-Criticism'                   } = {url => 'https://github.com/ReneNyffenegger/Bible-Textual-Criticism'                 , dir => $github_dir};
 $repos{'renenyffenegger.blogspot.com'              } = {url => 'https://github.com/ReneNyffenegger/renenyffenegger.blogspot.com'            , dir => $github_dir};
 $repos{'RN'                                        } = {url => 'https://github.com/ReneNyffenegger/RN'                                      , dir => $github_dir};
+$repos{'SDLC'                                      } = {url => 'https://github.com/ReneNyffenegger/SDLC'                                    , dir => $github_dir};
 $repos{'sea-level'                                 } = {url => 'https://github.com/ReneNyffenegger/sea-level'                               , dir => $github_dir};
 $repos{'shell-commands'                            } = {url => 'https://github.com/ReneNyffenegger/shell-commands'                          , dir => $github_dir};
 $repos{'stationary-background'                     } = {url => 'https://github.com/ReneNyffenegger/stationary-background'                   , dir => $github_dir};
