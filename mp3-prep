@@ -5,6 +5,16 @@ if [[ "$#" < 2 ]]; then
   exit -1
 fi
 
+if ! command -v mp3splt; then
+     echo "mp3-splt not found"
+     exit 1
+fi
+
+if ! command -v mp3info; then
+     echo "mp3info not found"
+     exit 1
+fi
+
 mp3_file=$1
 out_prefix=$2
 
