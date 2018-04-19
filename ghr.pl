@@ -257,6 +257,7 @@ $repos{'statistics'                                } = {url => 'https://github.c
 $repos{'Sprachen'                                  } = {url => 'https://github.com/ReneNyffenegger/Sprachen'                                , dir => $github_dir};
 $repos{'swap-keys'                                 } = {url => 'https://github.com/ReneNyffenegger/swap-keys'                               , dir => $github_dir};
 $repos{$sql_dev_decryptor                          } = {url => "https://github.com/ReneNyffenegger/$sql_dev_decryptor"                      , dir => $github_dir};
+$repos{'Tetragrammaton'                            } = {url => 'https://github.com/ReneNyffenegger/Tetragrammaton'                          , dir => $github_dir};
 $repos{'tq84.css'                                  } = {url => 'https://github.com/ReneNyffenegger/tq84.css'                                , dir => $github_dir};
 $repos{'vim'                                       } = {url => 'https://github.com/ReneNyffenegger/vim'                                     , dir => $github_dir};
 $repos{'Vortraege'                                 } = {url => 'https://github.com/ReneNyffenegger/Vortraege'                               , dir => $github_dir};
