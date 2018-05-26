@@ -161,6 +161,7 @@ $repos{'MapReduce'                                 } = {url => 'https://github.c
 $repos{'Makefile'                                  } = {url => 'https://github.com/ReneNyffenegger/about-Makefile'                          , dir => $about_dir };
 $repos{'MathJax'                                   } = {url => 'https://github.com/ReneNyffenegger/about-MathJax'                           , dir => $about_dir };
 $repos{'mshta'                                     } = {url => 'https://github.com/ReneNyffenegger/about-mshta'                             , dir => $about_dir };
+$repos{'MS-Office-object-model'                    } = {url => 'https://github.com/ReneNyffenegger/about-MS-Office-object-model'            , dir => $about_dir };
 $repos{'MSSQL'                                     } = {url => 'https://github.com/ReneNyffenegger/about-MSSQL'                             , dir => $about_dir };
 $repos{'Office-Open-XML'                           } = {url => 'https://github.com/ReneNyffenegger/about-Office-Open-XML'                   , dir => $about_dir };
 $repos{'Open-Street-Map'                           } = {url => 'https://github.com/ReneNyffenegger/about-Open-Street-Map'                   , dir => $about_dir };
