@@ -69,6 +69,7 @@ my $sql_dev_decryptor = 'Oracle-SQL-developer-password-decryptor';
 
 # $repos{'d3-threeD'     } = 'https://github.com/asutherland/d3-threeD';
 $repos{'Access.pm'                                 } = {url => 'https://github.com/ReneNyffenegger/Access.pm'                               , dir => $lib_dir   }; #_{
+$repos{'Avaloq-VBA'                                } = {url => 'https://github.com/ReneNyffenegger/Avaloq-VBA'                              , dir => $lib_dir   }; #_{
 $repos{'blob_wrapper-Oracle'                       } = {url => 'https://github.com/ReneNyffenegger/blob_wrapper-Oracle'                     , dir => $lib_dir   };
 $repos{'cs-AVI-Writer'                             } = {url => 'https://github.com/ReneNyffenegger/cs-AVI-Writer'                           , dir => $lib_dir   };
 $repos{'js-aspect-ratio'                           } = {url => 'https://github.com/ReneNyffenegger/js-aspect-ratio'                         , dir => $lib_dir   };
