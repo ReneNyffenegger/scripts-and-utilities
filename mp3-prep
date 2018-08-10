@@ -40,7 +40,7 @@ nof_splits=$(( ( $duration_minutes + 3 ) / 5 ))
 
 mp3splt -f -S $nof_splits -o ${out_prefix}_@n "$mp3_file"
 
-if [ command -v id3convert]; then
+if command -v id3convert ; then
 #
 # Remove mp3 tags:
 #
