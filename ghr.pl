@@ -169,6 +169,7 @@ $repos{'Office-Open-XML'                           } = {url => 'https://github.c
 $repos{'Open-Street-Map'                           } = {url => 'https://github.com/ReneNyffenegger/about-Open-Street-Map'                   , dir => $about_dir };
 $repos{'perl'                                      } = {url => 'https://github.com/ReneNyffenegger/about-perl'                              , dir => $about_dir };
 $repos{'php'                                       } = {url => 'https://github.com/ReneNyffenegger/about-php'                               , dir => $about_dir };
+$repos{'preprocessor'                              } = {url => 'https://github.com/ReneNyffenegger/about-preprocessor'                      , dir => $about_dir };
 $repos{'Protocols'                                 } = {url => 'https://github.com/ReneNyffenegger/about-protocols'                         , dir => $about_dir };
 $repos{'Pig'                                       } = {url => 'https://github.com/ReneNyffenegger/about-Pig'                               , dir => $about_dir };
 $repos{'powershell'                                } = {url => 'https://github.com/ReneNyffenegger/about-powershell'                        , dir => $about_dir };
