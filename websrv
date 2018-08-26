@@ -1,1 +1,2 @@
-${github_root}PerlModules/HTTP/Server/Simple/CGI/webserver.pl
+# ${github_root}PerlModules/HTTP/Server/Simple/CGI/webserver.pl
+sudo python -m http.server 80 &
