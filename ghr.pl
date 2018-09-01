@@ -212,6 +212,7 @@ $repos{'Browser-Helper-Objects'                    } = {url => 'https://github.c
 $repos{'Chronologie'                               } = {url => 'https://github.com/ReneNyffenegger/Chronologie'                             , dir => $github_dir};
 $repos{'Clarify'                                   } = {url => 'https://github.com/ReneNyffenegger/Clarify'                                 , dir => $github_dir};
 $repos{'Configure-Windows'                         } = {url => 'https://github.com/ReneNyffenegger/Configure-Windows'                       , dir => $github_dir};
+$repos{'COM-in-plain-C'                            } = {url => 'https://github.com/ReneNyffenegger/COM-in-plain-C'                          , dir => $github_dir};
 $repos{'compile-dll'                               } = {url => 'https://github.com/ReneNyffenegger/compile-dll'                             , dir => $github_dir};
 $repos{'cpp-base64'                                } = {url => 'https://github.com/ReneNyffenegger/cpp-base64'                              , dir => $github_dir};
 $repos{'cpp-webserver'                             } = {url => 'https://github.com/ReneNyffenegger/cpp-webserver'                           , dir => $github_dir};
