@@ -262,6 +262,7 @@ $repos{'stationary-background'                     } = {url => 'https://github.c
 $repos{'Skizzen'                                   } = {url => 'https://github.com/ReneNyffenegger/Skizzen'                                 , dir => $github_dir};
 $repos{'statistics'                                } = {url => 'https://github.com/ReneNyffenegger/statistics'                              , dir => $github_dir};
 $repos{'Sprachen'                                  } = {url => 'https://github.com/ReneNyffenegger/Sprachen'                                , dir => $github_dir};
+$repos{'SQL-Server-helpers'                        } = {url => 'https://github.com/ReneNyffenegger/SQL-Server-helpers'                      , dir => $github_dir};
 $repos{'swap-keys'                                 } = {url => 'https://github.com/ReneNyffenegger/swap-keys'                               , dir => $github_dir};
 $repos{$sql_dev_decryptor                          } = {url => "https://github.com/ReneNyffenegger/$sql_dev_decryptor"                      , dir => $github_dir};
 $repos{'Tetragrammaton'                            } = {url => 'https://github.com/ReneNyffenegger/Tetragrammaton'                          , dir => $github_dir};
