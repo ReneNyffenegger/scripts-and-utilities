@@ -3,8 +3,12 @@
 use warnings;
 use strict;
 
+use Getopt::Long;
 use File::Basename;
 use File::Copy;
+
+my $dry = 0;
+GetOptions('dry' => \$dry);
 
 if (@ARGV != 2) {
   usage();
@@ -17,9 +21,11 @@ my $out_dir = shift;
 die "$in_dir is not a directory"  unless -d $in_dir;
 die "$out_dir is not a directory" unless -d $out_dir;
 
-for my $img_in_path (glob "$in_dir/*.jpg $in_dir/*.mp4") {
+for my $img_in_path (glob "$in_dir/*.jpg $in_dir/*.JPG $in_dir/*.mp4 $in_dir/*.MP4") {
 
   my $img_name = basename($img_in_path);
+  $img_name =~ s/JPG$/jpg/;
+  $img_name =~ s/MP4$/mp4/;
   printf "%-23s", $img_name;
 
   my ($atime, $mtime, $ctime) = (stat($img_in_path))[8, 9, 10];
@@ -39,7 +45,7 @@ for my $img_in_path (glob "$in_dir/*.jpg $in_dir/*.mp4") {
 
   unless (-d "$out_dir/$year") {
     print "  y";
-    mkdir "$out_dir/$year";
+    mkdir "$out_dir/$year" unless $dry;
   }
   else {
     print "   ";
@@ -47,7 +53,7 @@ for my $img_in_path (glob "$in_dir/*.jpg $in_dir/*.mp4") {
 
   unless (-d "$out_dir/$year/$month-$day") {
     print "  d";
-    mkdir "$out_dir/$year/$month-$day";
+    mkdir "$out_dir/$year/$month-$day" unless $dry;
   }
   else {
     print "   ";
@@ -59,7 +65,12 @@ for my $img_in_path (glob "$in_dir/*.jpg $in_dir/*.mp4") {
   }
   else {
      print "   ";
-     move $img_in_path, "$out_dir/$year/$month-$day/$img_name" or die "could not rename $img_in_path to $out_dir/$year/$month-$day/$img_name $!";
+     if ($dry) {
+       print "mv $img_in_path   $out_dir/$year/$month-$day/$img_name";
+     }
+     else {
+           move  $img_in_path, "$out_dir/$year/$month-$day/$img_name" or die "could not rename $img_in_path to $out_dir/$year/$month-$day/$img_name $!";
+     }
   }
 
   
@@ -70,7 +81,7 @@ for my $img_in_path (glob "$in_dir/*.jpg $in_dir/*.mp4") {
 sub usage {
   print "
 
-  move-photos.pl  in-dir  out-dir-root
+  move-photos.pl [-dry] in-dir  out-dir-root
 
 ";
 }
