@@ -241,6 +241,7 @@ $repos{'Linux-From-Scratch'                        } = {url => 'https://github.c
 $repos{'Meta-Oracle'                               } = {url => 'https://github.com/ReneNyffenegger/Meta-Oracle'                             , dir => $github_dir};
 $repos{'netcat'                                    } = {url => 'https://github.com/ReneNyffenegger/netcat'                                  , dir => $github_dir};
 $repos{'notes'                                     } = {url => 'https://github.com/ReneNyffenegger/notes'                                   , dir => $github_dir};
+$repos{'OCR-tests'                                 } = {url => 'https://github.com/ReneNyffenegger/OCR-tests'                               , dir => $github_dir};
 $repos{'OpenStreetMap'                             } = {url => 'https://github.com/ReneNyffenegger/OpenStreetMap'                           , dir => $github_dir};
 $repos{'oracle-patterns'                           } = {url => 'https://github.com/ReneNyffenegger/oracle-patterns'                         , dir => $github_dir};
 $repos{'Oracle-Performance-Investigations'         } = {url => 'https://github.com/ReneNyffenegger/Oracle-Performance-Investigations'       , dir => $github_dir};
