@@ -238,6 +238,7 @@ $repos{'kaggle'                                    } = {url => 'https://github.c
 $repos{'Karten'                                    } = {url => 'https://github.com/ReneNyffenegger/Karten'                                  , dir => $github_dir};
 $repos{'Kenan-Arbor'                               } = {url => 'https://github.com/ReneNyffenegger/Kenan-Arbor'                             , dir => $github_dir};
 $repos{'Linux-From-Scratch'                        } = {url => 'https://github.com/ReneNyffenegger/Linux-From-Scratch'                      , dir => $github_dir};
+$repos{'man-pages'                                 } = {url => 'https://github.com/ReneNyffenegger/man-pages'                               , dir => $github_dir};
 $repos{'Meta-Oracle'                               } = {url => 'https://github.com/ReneNyffenegger/Meta-Oracle'                             , dir => $github_dir};
 $repos{'netcat'                                    } = {url => 'https://github.com/ReneNyffenegger/netcat'                                  , dir => $github_dir};
 $repos{'notes'                                     } = {url => 'https://github.com/ReneNyffenegger/notes'                                   , dir => $github_dir};
