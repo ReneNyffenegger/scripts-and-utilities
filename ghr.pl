@@ -158,10 +158,11 @@ $repos{'jQuery-UI'                                 } = {url => 'https://github.c
 $repos{'jrunscript'                                } = {url => 'https://github.com/ReneNyffenegger/about-jrunscript'                        , dir => $about_dir };
 $repos{'libc'                                      } = {url => 'https://github.com/ReneNyffenegger/about-libc'                              , dir => $about_dir };
 $repos{'Linux'                                     } = {url => 'https://github.com/ReneNyffenegger/about-Linux'                             , dir => $about_dir };
+$repos{'about-man-pages'                           } = {url => 'https://github.com/ReneNyffenegger/about-man-pages'                         , dir => $about_dir }; # Compare with man-pages
 $repos{'m4'                                        } = {url => 'https://github.com/ReneNyffenegger/about-m4'                                , dir => $about_dir };
 $repos{'node.js'                                   } = {url => 'https://github.com/ReneNyffenegger/about-node.js'                           , dir => $about_dir };
-$repos{'MapReduce'                                 } = {url => 'https://github.com/ReneNyffenegger/about-MapReduce'                         , dir => $about_dir };
 $repos{'Makefile'                                  } = {url => 'https://github.com/ReneNyffenegger/about-Makefile'                          , dir => $about_dir };
+$repos{'MapReduce'                                 } = {url => 'https://github.com/ReneNyffenegger/about-MapReduce'                         , dir => $about_dir };
 $repos{'MathJax'                                   } = {url => 'https://github.com/ReneNyffenegger/about-MathJax'                           , dir => $about_dir };
 $repos{'mshta'                                     } = {url => 'https://github.com/ReneNyffenegger/about-mshta'                             , dir => $about_dir };
 $repos{'MS-Office-object-model'                    } = {url => 'https://github.com/ReneNyffenegger/about-MS-Office-object-model'            , dir => $about_dir };
@@ -239,7 +240,7 @@ $repos{'kaggle'                                    } = {url => 'https://github.c
 $repos{'Karten'                                    } = {url => 'https://github.com/ReneNyffenegger/Karten'                                  , dir => $github_dir};
 $repos{'Kenan-Arbor'                               } = {url => 'https://github.com/ReneNyffenegger/Kenan-Arbor'                             , dir => $github_dir};
 $repos{'Linux-From-Scratch'                        } = {url => 'https://github.com/ReneNyffenegger/Linux-From-Scratch'                      , dir => $github_dir};
-$repos{'man-pages'                                 } = {url => 'https://github.com/ReneNyffenegger/man-pages'                               , dir => $github_dir};
+$repos{'man-pages'                                 } = {url => 'https://github.com/ReneNyffenegger/man-pages'                               , dir => $github_dir}; # Compare with about-man-pages
 $repos{'Meta-Oracle'                               } = {url => 'https://github.com/ReneNyffenegger/Meta-Oracle'                             , dir => $github_dir};
 $repos{'netcat'                                    } = {url => 'https://github.com/ReneNyffenegger/netcat'                                  , dir => $github_dir};
 $repos{'notes'                                     } = {url => 'https://github.com/ReneNyffenegger/notes'                                   , dir => $github_dir};
