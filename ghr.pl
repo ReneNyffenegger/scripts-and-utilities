@@ -142,6 +142,7 @@ $repos{'GNU-Binutils'                              } = {url => 'https://github.c
 $repos{'GNU-Build-System'                          } = {url => 'https://github.com/ReneNyffenegger/about-GNU-Build-System'                  , dir => $about_dir };
 $repos{'GoogleEarth'                               } = {url => 'https://github.com/ReneNyffenegger/about-GoogleEarth'                       , dir => $about_dir };
 $repos{'Graphviz'                                  } = {url => 'https://github.com/ReneNyffenegger/about-Graphviz'                          , dir => $about_dir };
+$repos{'groff'                                     } = {url => 'https://github.com/ReneNyffenegger/about-groff'                             , dir => $about_dir };
 $repos{'hadoop'                                    } = {url => 'https://github.com/ReneNyffenegger/about-hadoop'                            , dir => $about_dir };
 $repos{'html'                                      } = {url => 'https://github.com/ReneNyffenegger/about-html'                              , dir => $about_dir };
 $repos{'html-canvas'                               } = {url => 'https://github.com/ReneNyffenegger/about-html-canvas'                       , dir => $about_dir };
