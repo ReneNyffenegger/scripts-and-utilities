@@ -217,6 +217,7 @@ $repos{'Configure-Windows'                         } = {url => 'https://github.c
 $repos{'COM-in-plain-C'                            } = {url => 'https://github.com/ReneNyffenegger/COM-in-plain-C'                          , dir => $github_dir};
 $repos{'compile-dll'                               } = {url => 'https://github.com/ReneNyffenegger/compile-dll'                             , dir => $github_dir};
 $repos{'cpp-base64'                                } = {url => 'https://github.com/ReneNyffenegger/cpp-base64'                              , dir => $github_dir};
+$repos{'cpp-MSHTML'                                } = {url => 'https://github.com/ReneNyffenegger/cpp-MSHTML'                              , dir => $github_dir};
 $repos{'cpp-webserver'                             } = {url => 'https://github.com/ReneNyffenegger/cpp-webserver'                           , dir => $github_dir};
 $repos{'crawler'                                   } = {url => 'https://github.com/ReneNyffenegger/crawler'                                 , dir => $github_dir};
 $repos{'Csound'                                    } = {url => 'https://github.com/ReneNyffenegger/Csound'                                  , dir => $github_dir};
