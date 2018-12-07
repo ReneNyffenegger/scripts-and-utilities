@@ -180,6 +180,7 @@ $repos{'README.md'                                 } = {url => 'https://github.c
 $repos{'r'                                         } = {url => 'https://github.com/ReneNyffenegger/about-r'                                 , dir => $about_dir };
 $repos{'SAS'                                       } = {url => 'https://github.com/ReneNyffenegger/about-SAS'                               , dir => $about_dir };
 $repos{'sed'                                       } = {url => 'https://github.com/ReneNyffenegger/about-sed'                               , dir => $about_dir };
+$repos{'SpiderMonkey-shell'                        } = {url => 'https://github.com/ReneNyffenegger/about-SpiderMonkey-shell'                , dir => $about_dir };
 $repos{'skychart'                                  } = {url => 'https://github.com/ReneNyffenegger/about-skychart'                          , dir => $about_dir };
 $repos{'sqlite'                                    } = {url => 'https://github.com/ReneNyffenegger/about-sqlite'                            , dir => $about_dir };
 $repos{'Stellarium'                                } = {url => 'https://github.com/ReneNyffenegger/about-Stellarium'                        , dir => $about_dir };
