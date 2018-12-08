@@ -163,6 +163,7 @@ $repos{'m4'                                        } = {url => 'https://github.c
 $repos{'node.js'                                   } = {url => 'https://github.com/ReneNyffenegger/about-node.js'                           , dir => $about_dir };
 $repos{'Makefile'                                  } = {url => 'https://github.com/ReneNyffenegger/about-Makefile'                          , dir => $about_dir };
 $repos{'MapReduce'                                 } = {url => 'https://github.com/ReneNyffenegger/about-MapReduce'                         , dir => $about_dir };
+$repos{'Meson'                                     } = {url => 'https://github.com/ReneNyffenegger/about-Meson'                             , dir => $about_dir };
 $repos{'MathJax'                                   } = {url => 'https://github.com/ReneNyffenegger/about-MathJax'                           , dir => $about_dir };
 $repos{'mshta'                                     } = {url => 'https://github.com/ReneNyffenegger/about-mshta'                             , dir => $about_dir };
 $repos{'MS-Office-object-model'                    } = {url => 'https://github.com/ReneNyffenegger/about-MS-Office-object-model'            , dir => $about_dir };
