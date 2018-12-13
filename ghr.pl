@@ -184,6 +184,7 @@ $repos{'sed'                                       } = {url => 'https://github.c
 $repos{'SpiderMonkey-shell'                        } = {url => 'https://github.com/ReneNyffenegger/about-SpiderMonkey-shell'                , dir => $about_dir };
 $repos{'skychart'                                  } = {url => 'https://github.com/ReneNyffenegger/about-skychart'                          , dir => $about_dir };
 $repos{'sqlite'                                    } = {url => 'https://github.com/ReneNyffenegger/about-sqlite'                            , dir => $about_dir };
+$repos{'sqlite-c-interface'                        } = {url => 'https://github.com/ReneNyffenegger/about-sqlite-c-interface'                , dir => $about_dir };
 $repos{'Stellarium'                                } = {url => 'https://github.com/ReneNyffenegger/about-Stellarium'                        , dir => $about_dir };
 $repos{'STL'                                       } = {url => 'https://github.com/ReneNyffenegger/about-STL'                               , dir => $about_dir };
 $repos{'svg'                                       } = {url => 'https://github.com/ReneNyffenegger/about-svg'                               , dir => $about_dir };
@@ -209,6 +210,7 @@ $repos{'Bibelhebraeisch-lernen'                    } = {url => 'https://github.c
 $repos{'Bibeluebersetzungen'                       } = {url => 'https://github.com/ReneNyffenegger/Bibeluebersetzungen'                     , dir => $github_dir};
 $repos{'Bibelkommentare'                           } = {url => 'https://github.com/ReneNyffenegger/Bibelkommentare'                         , dir => $github_dir};
 $repos{'Bible-Text-Sources'                        } = {url => 'https://github.com/ReneNyffenegger/Bible-Text-Sources'                      , dir => $github_dir};
+$repos{'Bible-Textual-Criticism'                   } = {url => 'https://github.com/ReneNyffenegger/Bible-Textual-Criticism'                 , dir => $github_dir};
 $repos{'Biblisches'                                } = {url => 'https://github.com/ReneNyffenegger/Biblisches'                              , dir => $github_dir};
 $repos{'bitcoin-notes'                             } = {url => 'https://github.com/ReneNyffenegger/bitcoin-notes'                           , dir => $github_dir};
 $repos{'browser-object-model'                      } = {url => 'https://github.com/ReneNyffenegger/Browser-Object-Model'                    , dir => $github_dir};
@@ -260,14 +262,13 @@ $repos{'PostLinuxInstallation'                     } = {url => 'https://github.c
 $repos{'PerlModules'                               } = {url => 'https://github.com/ReneNyffenegger/PerlModules'                             , dir => $github_dir};
 $repos{'perl-webserver'                            } = {url => 'https://github.com/ReneNyffenegger/perl-webserver'                          , dir => $github_dir};
 $repos{'printing'                                  } = {url => 'https://github.com/ReneNyffenegger/printing'                                , dir => $github_dir};
-$repos{'Bible-Textual-Criticism'                   } = {url => 'https://github.com/ReneNyffenegger/Bible-Textual-Criticism'                 , dir => $github_dir};
 $repos{'renenyffenegger.blogspot.com'              } = {url => 'https://github.com/ReneNyffenegger/renenyffenegger.blogspot.com'            , dir => $github_dir};
 $repos{'RN'                                        } = {url => 'https://github.com/ReneNyffenegger/RN'                                      , dir => $github_dir};
-$repos{'SDLC'                                      } = {url => 'https://github.com/ReneNyffenegger/SDLC'                                    , dir => $github_dir};
 $repos{'sea-level'                                 } = {url => 'https://github.com/ReneNyffenegger/sea-level'                               , dir => $github_dir};
+$repos{'SDLC'                                      } = {url => 'https://github.com/ReneNyffenegger/SDLC'                                    , dir => $github_dir};
+$repos{'Skizzen'                                   } = {url => 'https://github.com/ReneNyffenegger/Skizzen'                                 , dir => $github_dir};
 $repos{'shell-commands'                            } = {url => 'https://github.com/ReneNyffenegger/shell-commands'                          , dir => $github_dir};
 $repos{'stationary-background'                     } = {url => 'https://github.com/ReneNyffenegger/stationary-background'                   , dir => $github_dir};
-$repos{'Skizzen'                                   } = {url => 'https://github.com/ReneNyffenegger/Skizzen'                                 , dir => $github_dir};
 $repos{'statistics'                                } = {url => 'https://github.com/ReneNyffenegger/statistics'                              , dir => $github_dir};
 $repos{'Sprachen'                                  } = {url => 'https://github.com/ReneNyffenegger/Sprachen'                                , dir => $github_dir};
 $repos{'SQL-Server-helpers'                        } = {url => 'https://github.com/ReneNyffenegger/SQL-Server-helpers'                      , dir => $github_dir};
