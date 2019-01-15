@@ -255,6 +255,7 @@ $repos{'Oracle-SQL-clauses'                        } = {url => 'https://github.c
 $repos{'OracleTool'                                } = {url => 'https://github.com/ReneNyffenegger/OracleTool'                              , dir => $github_dir};
 $repos{'Oracle-Privileges-etc'                     } = {url => 'https://github.com/ReneNyffenegger/Oracle-Privileges-etc'                   , dir => $github_dir};
 $repos{'Oracle-Tutorial'                           } = {url => 'https://github.com/ReneNyffenegger/Oracle-Tutorial'                         , dir => $github_dir};
+$repos{'Partition-tables-and-file-systems'         } = {url => 'https://github.com/ReneNyffenegger/Partition-tables-and-file-systems'       , dir => $github_dir};
 $repos{'PostLinuxInstallation'                     } = {url => 'https://github.com/ReneNyffenegger/PostLinuxInstallation'                   , dir => $github_dir};
 $repos{'PerlModules'                               } = {url => 'https://github.com/ReneNyffenegger/PerlModules'                             , dir => $github_dir};
 $repos{'perl-webserver'                            } = {url => 'https://github.com/ReneNyffenegger/perl-webserver'                          , dir => $github_dir};
