@@ -119,6 +119,7 @@ $repos{'boost'                                     } = {url => 'https://github.c
 $repos{'CGI'                                       } = {url => 'https://github.com/ReneNyffenegger/about-cgi'                               , dir => $about_dir };
 $repos{'coffeescript'                              } = {url => 'https://github.com/ReneNyffenegger/about-coffeescript'                      , dir => $about_dir };
 $repos{'c'                                         } = {url => 'https://github.com/ReneNyffenegger/about-c'                                 , dir => $about_dir };
+$repos{'cl'                                        } = {url => 'https://github.com/ReneNyffenegger/about-cl'                                , dir => $about_dir };
 $repos{'cpp'                                       } = {url => 'https://github.com/ReneNyffenegger/about-cpp'                               , dir => $about_dir };
 $repos{'cpp-standard-library'                      } = {url => 'https://github.com/ReneNyffenegger/about-cpp-standard-library'              , dir => $about_dir };
 $repos{'css'                                       } = {url => 'https://github.com/ReneNyffenegger/about-css'                               , dir => $about_dir };
