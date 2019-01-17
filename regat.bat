@@ -18,7 +18,7 @@
 @rem Kill regedit.exe process if already running.
 @rem If it's not running, it would write an error message. Redirect
 @rem the message to nul
-@taskkill /f /im regedit.exe 2> nul
+@taskkill /f /im regedit.exe 1> nul 2> nul
 
 @reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit /v LastKey /t REG_SZ /d "%RegistryKey%" /f > nul
 
