@@ -285,6 +285,7 @@ $repos{'WebAutomation'                             } = {url => 'https://github.c
 $repos{'Windows-API'                               } = {url => 'https://github.com/ReneNyffenegger/Windows-API'                             , dir => $github_dir};
 $repos{'WinAPI'                                    } = {url => 'https://github.com/ReneNyffenegger/WinAPI'                                  , dir => $github_dir};
 $repos{'WinAPI-4-VBA'                              } = {url => 'https://github.com/ReneNyffenegger/WinAPI-4-VBA'                            , dir => $github_dir};
+$repos{'Windows-development'                       } = {url => 'https://github.com/ReneNyffenegger/Windows-development'                     , dir => $github_dir};
 $repos{'wfind'                                     } = {url => 'https://github.com/ReneNyffenegger/wfind'                                   , dir => $github_dir};
 $repos{'word-db'                                   } = {url => 'https://github.com/ReneNyffenegger/word-db'                                 , dir => $github_dir};
 $repos{'wordlists.ch'                              } = {url => 'https://github.com/ReneNyffenegger/wordlists.ch'                            , dir => $github_dir};
