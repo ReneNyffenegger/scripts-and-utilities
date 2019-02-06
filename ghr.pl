@@ -113,6 +113,7 @@ $repos{'xml_writer-Oracle'                         } = {url => 'https://github.c
 $repos{'Access'                                    } = {url => 'https://github.com/ReneNyffenegger/about-Access'                            , dir => $about_dir }; #_{
 $repos{'adodb'                                     } = {url => 'https://github.com/ReneNyffenegger/about-adodb'                             , dir => $about_dir };
 $repos{'assembler'                                 } = {url => 'https://github.com/ReneNyffenegger/about-assembler'                         , dir => $about_dir };
+$repos{'assembler-x86-x64'                         } = {url => 'https://github.com/ReneNyffenegger/about-assembler-x86-x64'                 , dir => $about_dir };
 $repos{'AutoHotkey'                                } = {url => 'https://github.com/ReneNyffenegger/about-AutoHotkey'                        , dir => $about_dir };
 $repos{'awk'                                       } = {url => 'https://github.com/ReneNyffenegger/about-awk'                               , dir => $about_dir };
 $repos{'Bash'                                      } = {url => 'https://github.com/ReneNyffenegger/about-Bash'                              , dir => $about_dir };
