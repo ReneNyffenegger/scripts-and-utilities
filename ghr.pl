@@ -193,6 +193,7 @@ $repos{'svg'                                       } = {url => 'https://github.c
 $repos{'three.js'                                  } = {url => 'https://github.com/ReneNyffenegger/about-three.js'                          , dir => $about_dir };
 $repos{'TopoJSON'                                  } = {url => 'https://github.com/ReneNyffenegger/about-TopoJSON'                          , dir => $about_dir };
 $repos{'Unicode'                                   } = {url => 'https://github.com/ReneNyffenegger/about-Unicode'                           , dir => $about_dir };
+$repos{'Valgrind'                                  } = {url => 'https://github.com/ReneNyffenegger/about-Valgrind'                          , dir => $about_dir };
 $repos{'VBA'                                       } = {url => 'https://github.com/ReneNyffenegger/about-VBA'                               , dir => $about_dir };
 $repos{'VBScript'                                  } = {url => 'https://github.com/ReneNyffenegger/about-VBScript'                          , dir => $about_dir };
 $repos{'about-vim'                                 } = {url => 'https://github.com/ReneNyffenegger/about-vim'                               , dir => $about_dir }; # TODO: should that not be just the direcotry 'vim' instead of 'about-vim'?
