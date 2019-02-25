@@ -31,8 +31,6 @@ if [%1] == [] (
 
 :buildRegistryKey
 
-  echo hello
-
    if not [%1] == [] (
 
       if not [!RegistryKey!] == [] (
