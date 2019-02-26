@@ -53,7 +53,7 @@ set RegistryKey=!RegistryKey:HKCU=HKEY_CURRENT_USER!
 set RegistryKey=!RegistryKey:HKLM=HKEY_LOCAL_MACHINE!
 set RegistryKey=!RegistryKey:HKCR=HKEY_CLASSES_ROOT!
 
-if [opt_m] == [/m] (
+if [opt_m] neq [/m] (
 
 rem Kill regedit.exe process if already running.
 rem If it's not running, it would write an error message. Redirect
