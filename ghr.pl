@@ -251,6 +251,7 @@ $repos{'Linux-From-Scratch'                        } = {url => 'https://github.c
 $repos{'man-pages'                                 } = {url => 'https://github.com/ReneNyffenegger/man-pages'                               , dir => $github_dir}; # Compare with about-man-pages
 $repos{'Meta-Oracle'                               } = {url => 'https://github.com/ReneNyffenegger/Meta-Oracle'                             , dir => $github_dir};
 $repos{'MS-Dynamics-CRM-ODATA'                     } = {url => 'https://github.com/ReneNyffenegger/MS-Dynamics-CRM-ODATA'                   , dir => $github_dir};
+$repos{'MS-Word'                                   } = {url => 'https://github.com/ReneNyffenegger/MS-Word'                                 , dir => $github_dir};
 $repos{'netcat'                                    } = {url => 'https://github.com/ReneNyffenegger/netcat'                                  , dir => $github_dir};
 $repos{'notes'                                     } = {url => 'https://github.com/ReneNyffenegger/notes'                                   , dir => $github_dir};
 $repos{'OCR-tests'                                 } = {url => 'https://github.com/ReneNyffenegger/OCR-tests'                               , dir => $github_dir};
