@@ -24,8 +24,18 @@ if [%1] == [] (
 
 @if [%1] == [env] (
 
-    set RegistryKey="HKCU\Environment"
+    set RegistryKey=HKCU\Environment
     goto goOn
+
+)
+@if [%1] == [clsid] (
+
+  if [%2] == [] (
+    echo expected: GUID for clsid
+    exit /b
+  )
+  set RegistryKey=HKCR\CLSID\%2
+  goto goOn
 
 )
 
@@ -62,6 +72,7 @@ rem the message to nul
 
 )
 
+echo RegistryKey=%RegistryKey%
 reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit /v LastKey /t REG_SZ /d "%RegistryKey%" /f > nul
 
 start regedit %opt_m%
