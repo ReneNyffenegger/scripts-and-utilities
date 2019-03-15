@@ -72,7 +72,6 @@ rem the message to nul
 
 )
 
-echo RegistryKey=%RegistryKey%
 reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit /v LastKey /t REG_SZ /d "%RegistryKey%" /f > nul
 
 start regedit %opt_m%
