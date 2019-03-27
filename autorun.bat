@@ -15,7 +15,8 @@ rem
 
 set tq84_cmdexe_start=%time% %date%
 
-@doskey cdnot=cd %github_root%notes\notes
-@doskey cdloc=cd %git_work_dir%
-@doskey cdkom=cd %github_root%Bibelkommentare
-@doskey v=gvim
+doskey /listsize=999
+doskey cdnot=cd %github_root%notes\notes
+doskey cdloc=cd %git_work_dir%
+doskey cdkom=cd %github_root%Bibelkommentare
+doskey v=gvim
