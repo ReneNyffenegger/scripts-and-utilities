@@ -172,6 +172,7 @@ $repos{'MathJax'                                   } = {url => 'https://github.c
 $repos{'mshta'                                     } = {url => 'https://github.com/ReneNyffenegger/about-mshta'                             , dir => $about_dir };
 $repos{'MS-Office-object-model'                    } = {url => 'https://github.com/ReneNyffenegger/about-MS-Office-object-model'            , dir => $about_dir };
 $repos{'MSSQL'                                     } = {url => 'https://github.com/ReneNyffenegger/about-MSSQL'                             , dir => $about_dir };
+$repos{'MySQL'                                     } = {url => 'https://github.com/ReneNyffenegger/about-MySQL'                             , dir => $about_dir };
 $repos{'Office-Open-XML'                           } = {url => 'https://github.com/ReneNyffenegger/about-Office-Open-XML'                   , dir => $about_dir };
 $repos{'Open-Street-Map'                           } = {url => 'https://github.com/ReneNyffenegger/about-Open-Street-Map'                   , dir => $about_dir };
 $repos{'perl'                                      } = {url => 'https://github.com/ReneNyffenegger/about-perl'                              , dir => $about_dir };
