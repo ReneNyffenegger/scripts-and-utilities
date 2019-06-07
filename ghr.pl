@@ -172,6 +172,7 @@ $repos{'MathJax'                                   } = {url => 'https://github.c
 $repos{'mshta'                                     } = {url => 'https://github.com/ReneNyffenegger/about-mshta'                             , dir => $about_dir };
 $repos{'MS-Office-object-model'                    } = {url => 'https://github.com/ReneNyffenegger/about-MS-Office-object-model'            , dir => $about_dir };
 $repos{'MSSQL'                                     } = {url => 'https://github.com/ReneNyffenegger/about-MSSQL'                             , dir => $about_dir };
+$repos{'MySQL'                                     } = {url => 'https://github.com/ReneNyffenegger/about-MySQL'                             , dir => $about_dir };
 $repos{'Office-Open-XML'                           } = {url => 'https://github.com/ReneNyffenegger/about-Office-Open-XML'                   , dir => $about_dir };
 $repos{'Open-Street-Map'                           } = {url => 'https://github.com/ReneNyffenegger/about-Open-Street-Map'                   , dir => $about_dir };
 $repos{'perl'                                      } = {url => 'https://github.com/ReneNyffenegger/about-perl'                              , dir => $about_dir };
@@ -229,6 +230,7 @@ $repos{'cpp-MSHTML'                                } = {url => 'https://github.c
 $repos{'cpp-webserver'                             } = {url => 'https://github.com/ReneNyffenegger/cpp-webserver'                           , dir => $github_dir};
 $repos{'crawler'                                   } = {url => 'https://github.com/ReneNyffenegger/crawler'                                 , dir => $github_dir};
 $repos{'Csound'                                    } = {url => 'https://github.com/ReneNyffenegger/Csound'                                  , dir => $github_dir};
+$repos{'data.stadt-zuerich.ch'                     } = {url => 'https://github.com/ReneNyffenegger/data.stadt-zuerich.ch'                   , dir => $github_dir};
 $repos{'data-stackexchange'                        } = {url => 'https://github.com/ReneNyffenegger/data-stackexchange'                      , dir => $github_dir};
 $repos{'data-visualization'                        } = {url => 'https://github.com/ReneNyffenegger/data-visualization'                      , dir => $github_dir};
 $repos{'development_misc'                          } = {url => 'https://github.com/ReneNyffenegger/development_misc'                        , dir => $github_dir};
@@ -258,6 +260,7 @@ $repos{'notes'                                     } = {url => 'https://github.c
 $repos{'OCR-tests'                                 } = {url => 'https://github.com/ReneNyffenegger/OCR-tests'                               , dir => $github_dir};
 $repos{'Office'                                    } = {url => 'https://github.com/ReneNyffenegger/Office'                                  , dir => $github_dir};
 $repos{'OpenStreetMap'                             } = {url => 'https://github.com/ReneNyffenegger/OpenStreetMap'                           , dir => $github_dir};
+$repos{'open-data.Kanton-Zuerich'                  } = {url => 'https://github.com/ReneNyffenegger/open-data.Kanton-Zuerich'                , dir => $github_dir};
 $repos{'oracle-patterns'                           } = {url => 'https://github.com/ReneNyffenegger/oracle-patterns'                         , dir => $github_dir};
 $repos{'Oracle-Performance-Investigations'         } = {url => 'https://github.com/ReneNyffenegger/Oracle-Performance-Investigations'       , dir => $github_dir};
 $repos{'oracle_scriptlets'                         } = {url => 'https://github.com/ReneNyffenegger/oracle_scriptlets'                       , dir => $github_dir};

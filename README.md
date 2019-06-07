@@ -5,7 +5,7 @@ Scripts and Utilities for cmd.exe and (ba)sh etc.
 
 [`ghr.pl`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/ghr.pl) is the script
 I use to automatically pull or clone my [github repostiories](https://github.com/ReneNyffenegger?tab=repositories) when
-I use a new computer or a computer on which I haven't worked for time.
+I use a new computer or a computer on which I haven't worked for a time.
 
 [`git-push.pl`](https://github.com/renenyffenegger/scripts-and-utilities/blob/master/git-push.pl) does a `git push` to the «correct»
 server. Requires the *envorinment variable* `TQ84_GITHUB_PW` to be set with the password of the remote repository. In order to
