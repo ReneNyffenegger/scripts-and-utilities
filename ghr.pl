@@ -189,6 +189,7 @@ $repos{'SAS'                                       } = {url => 'https://github.c
 $repos{'sed'                                       } = {url => 'https://github.com/ReneNyffenegger/about-sed'                               , dir => $about_dir };
 $repos{'SpiderMonkey-shell'                        } = {url => 'https://github.com/ReneNyffenegger/about-SpiderMonkey-shell'                , dir => $about_dir };
 $repos{'skychart'                                  } = {url => 'https://github.com/ReneNyffenegger/about-skychart'                          , dir => $about_dir };
+$repos{'SQL'                                       } = {url => 'https://github.com/ReneNyffenegger/about-SQL'                               , dir => $about_dir };
 $repos{'sqlite'                                    } = {url => 'https://github.com/ReneNyffenegger/about-sqlite'                            , dir => $about_dir };
 $repos{'sqlite-c-interface'                        } = {url => 'https://github.com/ReneNyffenegger/about-sqlite-c-interface'                , dir => $about_dir };
 $repos{'Stellarium'                                } = {url => 'https://github.com/ReneNyffenegger/about-Stellarium'                        , dir => $about_dir };
