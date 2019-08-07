@@ -1,6 +1,11 @@
 @echo off
 
 rem
+rem   TODO
+rem      connectionMode is currently hardcoded to be «auto»
+rem      It might be set to «manual»
+
+rem
 rem      Use enableDelayedExpansion so that
 rem      assigning values to variables does
 rem      not assign them to variables of the
@@ -8,13 +13,22 @@ rem      calling process.
 rem
 setlocal enableDelayedExpansion
 
-if [%2] == [] (
-  echo write-profile.bat SSID password
+if [%1] == [] (
+  echo write-profile.bat SSID [password]
   exit /b
 )
 
 set SSID=%~1
-set password=%~2
+
+if defined 2 (
+  set PASSWORD=%~2
+  set AUTHENTICATION=WPA2PSK
+  set ENCRYPTION=AES
+) else (
+  set AUTHENTICATION=open
+  set ENCRYPTION=none
+)
+
 
 echo ^<?xml version="1.0"?^> >> wlan-profile.xml
 echo ^<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1"^> >> wlan-profile.xml
@@ -25,15 +39,21 @@ echo   ^<connectionMode^>auto^</connectionMode^> >> wlan-profile.xml
 echo   ^<MSM^> >> wlan-profile.xml
 echo     ^<security^> >> wlan-profile.xml
 echo        ^<authEncryption^> >> wlan-profile.xml
-echo          ^<authentication^>WPA2PSK^</authentication^> >> wlan-profile.xml
-echo           ^<encryption^>AES^</encryption^> >> wlan-profile.xml
+echo          ^<authentication^>%AUTHENTICATION%^</authentication^> >> wlan-profile.xml
+echo           ^<encryption^>%ENCRYPTION%^</encryption^> >> wlan-profile.xml
 echo           ^<useOneX^>false^</useOneX^> >> wlan-profile.xml
 echo        ^</authEncryption^> >> wlan-profile.xml
+
+if defined PASSWORD (
+
 echo        ^<sharedKey^> >> wlan-profile.xml
 echo           ^<keyType^>passPhrase^</keyType^> >> wlan-profile.xml
 echo           ^<protected^>false^</protected^> >> wlan-profile.xml
 echo           ^<keyMaterial^>%PASSWORD%^</keyMaterial^> >> wlan-profile.xml
 echo        ^</sharedKey^> >> wlan-profile.xml
+
+)
+
 echo       ^</security^> >> wlan-profile.xml
 echo   ^</MSM^> >> wlan-profile.xml
 echo   ^<MacRandomization xmlns="http://www.microsoft.com/networking/WLAN/profile/v3"^> >> wlan-profile.xml
