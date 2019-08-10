@@ -254,6 +254,7 @@ $repos{'JavaClasses'                               } = {url => 'https://github.c
 $repos{'kaggle'                                    } = {url => 'https://github.com/ReneNyffenegger/kaggle'                                  , dir => $github_dir};
 $repos{'Karten'                                    } = {url => 'https://github.com/ReneNyffenegger/Karten'                                  , dir => $github_dir};
 $repos{'Kenan-Arbor'                               } = {url => 'https://github.com/ReneNyffenegger/Kenan-Arbor'                             , dir => $github_dir};
+$repos{'HTML-Entities'                             } = {url => 'https://github.com/ReneNyffenegger/HTML-Entities'                           , dir => $github_dir};
 $repos{'Linux-From-Scratch'                        } = {url => 'https://github.com/ReneNyffenegger/Linux-From-Scratch'                      , dir => $github_dir};
 $repos{'man-pages'                                 } = {url => 'https://github.com/ReneNyffenegger/man-pages'                               , dir => $github_dir}; # Compare with about-man-pages
 $repos{'Meta-Oracle'                               } = {url => 'https://github.com/ReneNyffenegger/Meta-Oracle'                             , dir => $github_dir};
