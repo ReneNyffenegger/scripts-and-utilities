@@ -20,13 +20,13 @@ if [%1] == [] (
 
 set SSID=%~1
 
-if defined 2 (
+if [%2] == [] (
+  set AUTHENTICATION=open
+  set ENCRYPTION=none
+) else (
   set PASSWORD=%~2
   set AUTHENTICATION=WPA2PSK
   set ENCRYPTION=AES
-) else (
-  set AUTHENTICATION=open
-  set ENCRYPTION=none
 )
 
 
