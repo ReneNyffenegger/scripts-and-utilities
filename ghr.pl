@@ -266,6 +266,7 @@ $repos{'OCR-tests'                                 } = {url => 'https://github.c
 $repos{'Office'                                    } = {url => 'https://github.com/ReneNyffenegger/Office'                                  , dir => $github_dir};
 $repos{'OpenStreetMap'                             } = {url => 'https://github.com/ReneNyffenegger/OpenStreetMap'                           , dir => $github_dir};
 $repos{'open-data.Kanton-Zuerich'                  } = {url => 'https://github.com/ReneNyffenegger/open-data.Kanton-Zuerich'                , dir => $github_dir};
+$repos{'Oracle-notes'                              } = {url => 'https://github.com/ReneNyffenegger/Oracle-notes'                            , dir => $github_dir};
 $repos{'oracle-patterns'                           } = {url => 'https://github.com/ReneNyffenegger/oracle-patterns'                         , dir => $github_dir};
 $repos{'Oracle-Performance-Investigations'         } = {url => 'https://github.com/ReneNyffenegger/Oracle-Performance-Investigations'       , dir => $github_dir};
 $repos{'oracle_scriptlets'                         } = {url => 'https://github.com/ReneNyffenegger/oracle_scriptlets'                       , dir => $github_dir};
