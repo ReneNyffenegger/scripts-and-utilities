@@ -40,18 +40,28 @@ if [%1] == [] (
 )
 
 :buildRegistryKey
+rem
+rem Entering a loop to build the registry key
+rem from the command line arguments. This loop
+rem is necessary because regat.bat might be called
+rem with a registry key that contains spaces, such as
+rem    regat HKCU\Control Panel\Mouse
+rem In such a case, we cannot just assign %1 to !RegistryKey!
+rem but must rather iterate over the indivdual
+rem arguments and assemble the final registry key.
+rem
 
    if not [%1] == [] (
 
       if not [!RegistryKey!] == [] (
+        echo 1: !RegistryKey!
         set RegistryKey=!RegistryKey! %1
       ) else (
-        set RegistryKey=!RegistryKey!%1
+        set RegistryKey=%1
       )
       shift
       goto buildRegistryKey
    )
-
 
 :goOn
 
@@ -72,7 +82,7 @@ rem the message to nul
 
 )
 
-reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit /v LastKey /t REG_SZ /d "%RegistryKey%" /f > nul
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit /v LastKey /t REG_SZ /d "!RegistryKey!" /f > nul
 
 start regedit %opt_m%
 
