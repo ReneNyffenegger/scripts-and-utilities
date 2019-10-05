@@ -54,7 +54,6 @@ rem
    if not [%1] == [] (
 
       if not [!RegistryKey!] == [] (
-        echo 1: !RegistryKey!
         set RegistryKey=!RegistryKey! %1
       ) else (
         set RegistryKey=%1
