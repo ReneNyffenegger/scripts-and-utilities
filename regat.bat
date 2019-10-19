@@ -23,10 +23,12 @@ if [%1] == [] (
 
 
 @if [%1] == [env] (
-
     set RegistryKey=HKCU\Environment
     goto goOn
-
+)
+@if [%1] == [globenv] (
+    set RegistryKey=HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment
+    goto goOn
 )
 @if [%1] == [clsid] (
 
