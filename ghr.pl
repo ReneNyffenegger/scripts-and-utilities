@@ -285,6 +285,7 @@ $repos{'sea-level'                                 } = {url => 'https://github.c
 $repos{'SDLC'                                      } = {url => 'https://github.com/ReneNyffenegger/SDLC'                                    , dir => $github_dir};
 $repos{'Skizzen'                                   } = {url => 'https://github.com/ReneNyffenegger/Skizzen'                                 , dir => $github_dir};
 $repos{'shell-commands'                            } = {url => 'https://github.com/ReneNyffenegger/shell-commands'                          , dir => $github_dir};
+$repos{'SQL-Server_AdventureWorks'                 } = {url => 'https://github.com/ReneNyffenegger/SQL-Server_AdventureWorks'               , dir => $github_dir};
 $repos{'stationary-background'                     } = {url => 'https://github.com/ReneNyffenegger/stationary-background'                   , dir => $github_dir};
 $repos{'statistics'                                } = {url => 'https://github.com/ReneNyffenegger/statistics'                              , dir => $github_dir};
 $repos{'Sprachen'                                  } = {url => 'https://github.com/ReneNyffenegger/Sprachen'                                , dir => $github_dir};
