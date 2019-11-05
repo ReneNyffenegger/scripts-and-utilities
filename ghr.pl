@@ -260,6 +260,7 @@ $repos{'man-pages'                                 } = {url => 'https://github.c
 $repos{'Meta-Oracle'                               } = {url => 'https://github.com/ReneNyffenegger/Meta-Oracle'                             , dir => $github_dir};
 $repos{'MS-Dynamics-CRM-ODATA'                     } = {url => 'https://github.com/ReneNyffenegger/MS-Dynamics-CRM-ODATA'                   , dir => $github_dir};
 $repos{'MS-Word'                                   } = {url => 'https://github.com/ReneNyffenegger/MS-Word'                                 , dir => $github_dir};
+$repos{'.NET-API'                                  } = {url => 'https://github.com/ReneNyffenegger/.NET-API'                                , dir => $github_dir};
 $repos{'netcat'                                    } = {url => 'https://github.com/ReneNyffenegger/netcat'                                  , dir => $github_dir};
 $repos{'notes'                                     } = {url => 'https://github.com/ReneNyffenegger/notes'                                   , dir => $github_dir};
 $repos{'OCR-tests'                                 } = {url => 'https://github.com/ReneNyffenegger/OCR-tests'                               , dir => $github_dir};
