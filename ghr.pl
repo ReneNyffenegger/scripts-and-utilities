@@ -204,6 +204,7 @@ $repos{'Valgrind'                                  } = {url => 'https://github.c
 $repos{'VBA'                                       } = {url => 'https://github.com/ReneNyffenegger/about-VBA'                               , dir => $about_dir };
 $repos{'VBScript'                                  } = {url => 'https://github.com/ReneNyffenegger/about-VBScript'                          , dir => $about_dir };
 $repos{'about-vim'                                 } = {url => 'https://github.com/ReneNyffenegger/about-vim'                               , dir => $about_dir }; # TODO: should that not be just the direcotry 'vim' instead of 'about-vim'?
+$repos{'Visual-Studio'                             } = {url => 'https://github.com/ReneNyffenegger/about-Visual-Studio'                     , dir => $about_dir }; # TODO: should that not be just the direcotry 'vim' instead of 'about-vim'?
 $repos{'Web-Extensions'                            } = {url => 'https://github.com/ReneNyffenegger/about-Web-Extensions'                    , dir => $about_dir };
 $repos{'WebGL'                                     } = {url => 'https://github.com/ReneNyffenegger/about-WebGL'                             , dir => $about_dir };
 $repos{'Windows-Registry'                          } = {url => 'https://github.com/ReneNyffenegger/about-Windows-Registry'                  , dir => $about_dir };
