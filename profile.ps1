@@ -11,3 +11,6 @@ function dod { get-childItem | sort-object lastWriteTime }
 function dsb($pattern) { get-childItem -filter $pattern  -recurse -force | select-object -expandProperty fullName }
 
 function pc() { (get-item .).ToString() | set-clipboard }
+
+# vi editing mode;
+set-psReadLineOption -editMode vi
