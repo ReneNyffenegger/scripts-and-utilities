@@ -7,7 +7,7 @@ else {
   $url = get-clipboardText
 }
 
-if ($url -match '^https://www\.youtube\.com/watch\?v=(\w{11})$') {
+if ($url -match '^https://www\.youtube\.com/watch\?v=(.{11})$') {
 
    $id = $matches[1]
 
