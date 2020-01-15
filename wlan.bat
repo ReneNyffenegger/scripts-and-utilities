@@ -15,11 +15,9 @@
   @netsh wlan connect "%2"
 
   @exit /b
-
 )
 
 @if "%1" equ "off" (
-
   @netsh wlan disconnect
   @exit /b
 )

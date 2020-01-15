@@ -1,6 +1,5 @@
 @echo off
 
-rem
 rem   TODO
 rem      connectionMode is currently hardcoded to be «auto»
 rem      It might be set to «manual»
@@ -14,7 +13,7 @@ rem
 setlocal enableDelayedExpansion
 
 if [%1] == [] (
-  echo write-profile.bat SSID [password]
+  echo new-wlan.bat SSID [password]
   exit /b
 )
 
