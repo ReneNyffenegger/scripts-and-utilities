@@ -40,6 +40,10 @@ if [%1] == [] (
   goto goOn
 
 )
+@if [%1] equ [svc] (
+  set RegistryKey=HKLM\SYSTEM\CurrentControlSet\Services
+  goto goOn
+)
 
 :buildRegistryKey
 rem
