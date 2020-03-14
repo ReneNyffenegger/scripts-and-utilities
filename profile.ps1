@@ -22,5 +22,9 @@ else {
   function pc() { (get-item .).ToString() | set-clipboardText }
 }
 
+# Find below
+# use fullName to emulate "dir /b /s"
+function fb($wildcard) { get-childItem -recurse -filter $wildcard | select-object fullName }
+
 # vi editing mode;
 set-psReadLineOption -editMode vi
