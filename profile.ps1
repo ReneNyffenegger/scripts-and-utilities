@@ -26,5 +26,11 @@ else {
 # use fullName to emulate "dir /b /s"
 function fb($wildcard) { get-childItem -recurse -filter $wildcard | select-object fullName }
 
+# Start same powershell executable as administrator
+function admin() {
+   $ps_exe = (get-process -pid $pid).path
+   start-process $ps_exe -verb runAs
+}
+
 # vi editing mode;
 set-psReadLineOption -editMode vi
