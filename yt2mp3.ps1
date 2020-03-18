@@ -1,3 +1,11 @@
+set-strictMode -version 2
+
+<#
+
+    2020-03-18: this check was removed because on Windows 6.1 (Windows 7)
+       $psEdition evaluated to 'Core',  and
+       get-clipbaordText was not easily installable.
+
 if ($psEdition -eq 'Desktop') {
   $url = get-clipboard
 }
@@ -6,6 +14,20 @@ else {
 #    install-module -name ClipboardText
   $url = get-clipboardText
 }
+#>
+
+#
+# 2020-03-18: new check if cmdLet get-clibboard is available
+#
+if (get-command get-clipboard -errorAction silentlyContinue) {
+    $url = get-clipboard
+}
+else {
+  # Maybe, clipboardText needs to be installed:
+  #    install-module -name ClipboardText
+    $url = get-clipboardText
+}
+
 
 if ($url -match '^https://www\.youtube\.com/watch\?v=(.{11})$') {
 
