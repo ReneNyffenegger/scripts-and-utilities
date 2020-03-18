@@ -1,3 +1,8 @@
+param (
+   [parameter()] [switch] $noJob
+)
+
+
 set-strictMode -version 2
 
 <#
@@ -39,12 +44,31 @@ else {
    return
 }
 
-$mp3Dir = (get-item "$env:temp/mp3").FullName
+
+# Using fullName because of shortname (aka 8.3) problem (is it the ~?)
+$mp3Dir = (get-item "$env:temp/mp3").fullName
+if (-not (test-path $mp3Dir)) {
+   write-error "mp3Dir $mp3Dir does not exist"
+}
 
 if (get-childItem $mp3Dir "*$id*") {
    write-output "$id already present"
    return
 }
 
-# Using fullName because of shortname (aka 8.3) problem (is it the ~?)
-start-job { set-location $using:mp3Dir ; youtube-dl --extract-audio --audio-format mp3 $using:url }
+
+
+
+# 2020-03-18: allow to download without job
+#
+#   
+if ($noJob) {
+   set-location $mp3Dir
+   youtube-dl --extract-audio --audio-format mp3 $url
+}
+else {
+   start-job {
+       set-location $using:mp3Dir
+       youtube-dl --extract-audio --audio-format mp3 $using:url
+   }
+}
