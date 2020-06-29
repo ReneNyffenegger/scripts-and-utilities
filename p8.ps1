@@ -1,6 +1,6 @@
 <#
 
-    convoluted call with exit suppress the idiotic
+    convoluted call with exit to suppress the idiotic
        Terminate batch job (Y/N)
        confirmation
 #>
