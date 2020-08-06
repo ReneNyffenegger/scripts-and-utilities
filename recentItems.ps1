@@ -13,7 +13,7 @@ foreach-object {
    if ($tgt) { 
 
      if ( test-path $tgt -pathType leaf ) {
-        write-host "$($_.lastAccessTime)   $($lnk.targetPath)"
+        write-host "$($_.lastAccessTime.toString('yyyy-MM-dd HH:mm:ss'))   $($lnk.targetPath)"
      }
 
    }
