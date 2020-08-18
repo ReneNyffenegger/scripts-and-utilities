@@ -40,7 +40,7 @@ if ($url -match '^https://www\.youtube\.com/watch\?v=(.{11})$') {
 
 }
 else {
-   write-output "$url is not a url"
+   write-output "$url is not a youtbue url"
    return
 }
 
