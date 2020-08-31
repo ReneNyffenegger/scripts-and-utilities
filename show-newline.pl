@@ -17,8 +17,11 @@ GetOptions (
     'chars-shown=i' => \$nof_chars_shown,
     'nof-lines=i'   => \my $nof_lines);
 
+if (@ARGV != 1) {
+  die "Specify file name";
+}
 my $file = shift;
-die unless -e $file;
+die "$file does not exist" unless -e $file;
 
 open (my $fh, '<', $file) or die;
 binmode ($fh);
