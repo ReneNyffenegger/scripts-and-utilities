@@ -34,14 +34,16 @@ else {
 }
 
 
-#if ($url -match '^https://www\.youtube\.com/watch\?v=(.{11})$')
- if ($url -match '^https://www\.youtube\.com/watch\?v=(.{11})') {
+ if ( ( $url -match '^https://www\.youtube\.com/watch\?v=(.{11})' ) -or
+      ( $url -match '^https://www.bitchute.com/video/(.{12})'     )
+    )
+ {
 
    $id = $matches[1]
 
 }
 else {
-   write-output "$url is not a youtube url"
+   write-output "$url is neither a youtube nor a bitchute url"
    return
 }
 
