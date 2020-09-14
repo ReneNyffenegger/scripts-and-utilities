@@ -26,6 +26,10 @@ else {
 # use fullName to emulate "dir /b /s"
 function fb($wildcard) { get-childItem -recurse -filter $wildcard | select-object fullName }
 
+function cdnot() {
+   cd $env:github_top_root/github/notes/notes
+}
+
 # Start same powershell executable as administrator
 function admin() {
    $ps_exe = (get-process -pid $pid).path
