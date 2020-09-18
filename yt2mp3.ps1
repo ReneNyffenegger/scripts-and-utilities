@@ -1,9 +1,17 @@
 param (
-   [parameter()] [switch] $noJob
+   [parameter()] [switch] $noJob,
+   [parameter()] [string] $outFileName
 )
 
 
 set-strictMode -version 2
+
+if ( $outFileName -eq '') {
+   $outFileNameModified = '%(title)s-%(id)s.%(ext)s' # Use the default
+}
+else {
+   $outFileNameMOdified = "$($outFileName)_%(id)s.%(ext)s"
+}
 
 <#
 
@@ -60,18 +68,23 @@ if (get-childItem $mp3Dir "*$id*") {
 }
 
 
-
-
 # 2020-03-18: allow to download without job
 #
-#   
+#
 if ($noJob) {
    set-location $mp3Dir
-   youtube-dl --extract-audio --audio-format mp3 $url
+   youtube-dl --extract-audio --audio-format mp3 $url -o $outFileNameModified
 }
 else {
-   start-job {
+   $j = start-job {
        set-location $using:mp3Dir
-       youtube-dl --extract-audio --audio-format mp3 $using:url
+       youtube-dl --extract-audio --audio-format mp3 $using:url -o $using:outFileNameModified
+   }
+
+   if ($outFileName) {
+      $j.name = $outFileName
+   }
+   else {
+      $j.name = $id
    }
 }
