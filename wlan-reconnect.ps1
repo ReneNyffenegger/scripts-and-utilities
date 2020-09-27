@@ -1,4 +1,11 @@
-$ssid = 'oooOOOooo'
+if ($args.count -lt 1) {
+  $ssid = 'oooOOOooo'
+}
+else {
+  $ssid = $args[0]
+}
+
+$host.ui.rawUi.windowTitle = "wlan reconnect $ssid"
 
 while ($true) {
    $now = get-date -format 'HH:mm:ss'
