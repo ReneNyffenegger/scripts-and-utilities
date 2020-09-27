@@ -12,7 +12,7 @@ while ($true) {
 
    if (! (test-connection 8.8.8.8 -count 1 -quiet) ) {
      "$now NOK"
-      $null = netsh wlan connect oooOOOooo
+      $null = netsh wlan connect $ssid
       start-sleep 13
    }
    else {
