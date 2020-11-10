@@ -1,0 +1,1 @@
+@cd %ORACLE_HOME%
