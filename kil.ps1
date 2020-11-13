@@ -3,8 +3,11 @@
 #   alias for stop-process.
 #
 
-set-strictMode -version latest
+param (
+  [switch] $restart
+)
 
+set-strictMode -version latest
 
 if ( $args.count -lt 1 ) {
    write-host 'kil procName'
@@ -24,5 +27,10 @@ if ($procs -eq $null) {
 
 foreach ($proc in $procs) {
    write-host "Killing $proc"
+   $procPath = $proc.path
    stop-process $proc
+}
+
+if ($restart) {
+   start-process $procPath
 }
