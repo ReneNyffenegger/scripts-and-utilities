@@ -42,8 +42,10 @@ else {
 }
 
 
- if ( ( $url -match '^https://www\.youtube\.com/watch\?v=(.{11})' ) -or
-      ( $url -match '^https://www.bitchute.com/video/(.{12})'     )
+ if ( ( $url -match '^https://www\.youtube\.com/watch\?v=(.{11})' )   -or
+      ( $url -match '^https://youtu\.be/(.{11})'                  )   -or
+      ( $url -match '^https://www.bitchute.com/video/(.{12})'     ) # -or
+#     ( $url -match '^https://rumble.com/.*?mref=(.{13})'         ) # Unsupported URL: rumble
     )
  {
 
@@ -51,7 +53,7 @@ else {
 
 }
 else {
-   write-output "$url is neither a youtube nor a bitchute url"
+   write-host -foreGroundColor red "$url is neither a youtube nor a bitchute url"
    return
 }
 
