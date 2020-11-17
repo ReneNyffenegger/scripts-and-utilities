@@ -30,6 +30,32 @@ function cdnot() {
    cd $env:github_top_root/github/notes/notes
 }
 
+# Change behaviour of cd {
+#
+# Introduce  $OLDPWD and the dash option.
+# Using cd sets $OLDPWD to the directory
+# I came from. 'cd -' goes to $OLDPWD.
+#
+# Code was found @ https://gist.github.com/naiduv/c975528f02aed8e20232dfb366b41e14
+
+remove-item alias:cd
+
+function cd($newPWD) {
+
+  if (-not $newPWD) {
+     return
+  }
+
+  if ($newPWD -eq '-') {
+      $newPWD = $oldPWD;
+  }
+
+  $curPWD = get-location
+  set-location $newPWD
+  $global:oldPWD = $curPWD
+}
+# }
+
 # Start same powershell executable as administrator
 function admin() {
    $ps_exe = (get-process -pid $pid).path
