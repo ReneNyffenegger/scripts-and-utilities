@@ -9,6 +9,29 @@
 #
 function update-profile { invoke-webRequest https://raw.githubusercontent.com/ReneNyffenegger/scripts-and-utilities/master/profile.ps1 -outFile $profile }
 
+function prompt {
+
+   # Get the built-in prompt function (before overriding it)
+   # with
+   #   (get-command prompt).ScriptBlock
+   #
+   # It is:
+   #   "PS $($executionContext.SessionState.Path.CurrentLocation)$('>' * ($nestedPromptLevel + 1)) ";
+
+   # @( … ) creates array even if get-history returns 0 or 1 elements.
+   $hist = @( get-history )
+   $thisId = 0
+   if ($hist.count -gt 0) {
+      $thisId = $hist[-1].id
+   }
+
+#  $curDir = get-location
+   $curDir = $executionContext.sessionState.path.currentLocation
+
+   $brackets = '>' * ($nestedPromptLevel + 1)
+
+   return "PS: $($thisId+1) $curDir$brackets "
+}
 
 # Equivalent of «dir /od» in cmd.exe
 function dod { get-childItem | sort-object lastWriteTime }
