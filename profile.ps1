@@ -4,6 +4,12 @@
 #    @powershell -executionpolicy bypass -noExit -file c:\lib\Scripts\profile.ps1
 #
 
+#
+#  Update «this» profile script from github
+#
+function update-profile { invoke-webRequest https://raw.githubusercontent.com/ReneNyffenegger/scripts-and-utilities/master/profile.ps1 -outFile $profile }
+
+
 # Equivalent of «dir /od» in cmd.exe
 function dod { get-childItem | sort-object lastWriteTime }
 
