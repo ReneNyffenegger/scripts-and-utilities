@@ -11,7 +11,7 @@ function update-profile { invoke-webRequest https://raw.githubusercontent.com/Re
 
 function prompt {
 
- …  # Get the built-in prompt function (before overriding it)
+   # Get the built-in prompt function (before overriding it)
    # with
    #   (get-command prompt).ScriptBlock
    #
@@ -38,6 +38,8 @@ $host.ui.rawUI.backgroundColor = 'black'
 $host.ui.rawUI.foregroundColor = 'white'
   # Change error colors etc. via
   #   $host.privateData.…
+  # Get a list of possible values
+  #   [enum]::GetValues([consoleColor])
 clear-host
 # }
 
