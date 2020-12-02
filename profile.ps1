@@ -11,7 +11,7 @@ function update-profile { invoke-webRequest https://raw.githubusercontent.com/Re
 
 function prompt {
 
-   # Get the built-in prompt function (before overriding it)
+ …  # Get the built-in prompt function (before overriding it)
    # with
    #   (get-command prompt).ScriptBlock
    #
@@ -32,6 +32,14 @@ function prompt {
 
    return "PS: $($thisId+1) $curDir$brackets "
 }
+
+# { Set default colors for console
+$host.ui.rawUI.backgroundColor = 'black'
+$host.ui.rawUI.foregroundColor = 'white'
+  # Change error colors etc. via
+  #   $host.privateData.…
+clear-host
+# }
 
 # Equivalent of «dir /od» in cmd.exe
 function dod { get-childItem | sort-object lastWriteTime }
