@@ -85,6 +85,11 @@ function cd($newPWD) {
      return
   }
 
+  if (! (test-path $newPWD)) {
+     write-host -foreGroundColor red "directory $newPWD does not exist"
+     return
+  }
+
   if ($newPWD -eq '-') {
       $newPWD = $oldPWD;
   }
