@@ -44,12 +44,14 @@ else {
 
  if ( ( $url -match '^https://www\.youtube\.com/watch\?v=(.{11})' )   -or
       ( $url -match '^https://youtu\.be/(.{11})'                  )   -or
-      ( $url -match '^https://www.bitchute.com/video/(.{12})'     ) # -or
+      ( $url -match '^https://www.bitchute.com/video/(.{12})'     )   -or
+      ( $url -match '^https://lbry.tv/@(.+)'                      ) # -or
 #     ( $url -match '^https://rumble.com/.*?mref=(.{13})'         ) # Unsupported URL: rumble
     )
  {
 
    $id = $matches[1]
+   $id = $id -replace '[:/]', '_' # lbry.tv
 
 }
 else {
