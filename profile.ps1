@@ -28,6 +28,11 @@ function prompt {
 #  $curDir = get-location
    $curDir = $executionContext.sessionState.path.currentLocation
 
+
+ # 2021-02-26: Print current directory with forward slashes instead
+ #             of backward slashed:
+   $curDir = $curDir -replace '\\', '/'
+
    $brackets = '>' * ($nestedPromptLevel + 1)
 
    return "PS: $($thisId+1) $curDir$brackets "
