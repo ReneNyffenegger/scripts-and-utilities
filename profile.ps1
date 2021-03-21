@@ -55,7 +55,16 @@ function dod { get-childItem | sort-object lastWriteTime }
 function dsb($pattern) { get-childItem -filter $pattern  -recurse -force | select-object -expandProperty fullName }
 
 # Show individual path-components of the PATH environment variable, each on its own line:
-function paths() { $env:PATH -split ';' }
+function paths() {
+   foreach ($p in $env:PATH -split ';' ) {
+      if (test-path $p) {
+         write-host "  $p"
+      }
+      else {
+         write-host "! $p"
+      }
+   }
+}
 
 if ($psEdition -eq 'Desktop') {
   function pc() { (get-item .).ToString() | set-clipboard }
