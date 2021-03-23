@@ -56,6 +56,19 @@ elseif (
 {
    $id = $matches[1]
    $id = $id -replace '[:/]', '_' # lbry.tv
+
+   $download_with_ytdl = $true
+}
+elseif ( $url -match '^(https://media2.kgov.com/audio/(\d{8}-BEL\d{3}).mp3)' ) {
+
+  $url        = $matches[1]
+  $id         = $matches[2]
+  $download_with_ytdl = $false
+
+  if (! $outFileName) {
+     $outFileName = $id
+  }
+
 }
 else {
    write-host -foreGroundColor red "$url is neither a youtube nor a bitchute url"
@@ -80,12 +93,24 @@ if (get-childItem $mp3Dir "*$id*") {
 #
 if ($noJob) {
    set-location $mp3Dir
-   youtube-dl --extract-audio --audio-format mp3 $url -o $outFileNameModified
+
+   if ($download_with_ytdl) {
+     youtube-dl --extract-audio --audio-format mp3 $url -o $outFileNameModified
+   }
+   else {
+     invoke-webRequest $url -outfile $outFileName
+   }
 }
 else {
    $j = start-job {
        set-location $using:mp3Dir
-       youtube-dl --extract-audio --audio-format mp3 $using:url -o $using:outFileNameModified
+
+       if ($using:download_with_ytdl) {
+          youtube-dl --extract-audio --audio-format mp3 $using:url -o $using:outFileNameModified
+       }
+       else {
+          invoke-webRequest $url -outfile $using:outFileNameModified
+       }
    }
 
    if ($outFileName) {
