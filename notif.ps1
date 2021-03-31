@@ -5,7 +5,7 @@ param (
 
 set-strictMode -version latest
 
-$trg = New-ScheduledTaskTrigger   -once -at $when
+$trg = new-ScheduledTaskTrigger   -once -at $when
 
 $trg.endBoundary = (get-date).addSeconds(60).toString('s');
 
