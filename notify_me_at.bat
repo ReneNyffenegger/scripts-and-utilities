@@ -13,4 +13,5 @@
 @rem    The task removes itself after running once. Maybe, /Z could
 @rem    be used to delete the task after running once.
 @rem
-@schtasks /create /SC once /ST %hour%:%minute%:00 /TN %taskname% /SD %day%/%month%/%year% /TR "cmd /c msg * %message% && schtasks /delete /tn %taskname% /f"
+@rem @schtasks /create /SC once /ST %hour%:%minute%:00 /TN %taskname% /SD %day%/%month%/%year% /TR "cmd /c msg * %message% && schtasks /delete /tn %taskname% /f"
+     @schtasks /create /SC once /ST %hour%:%minute%:00 /TN %taskname% /SD %year%/%month%/%day% /TR "cmd /c c:\users\rene\x.bat "
