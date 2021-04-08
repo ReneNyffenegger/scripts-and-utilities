@@ -7,7 +7,7 @@ set-strictMode -version latest
 
 $trg = new-ScheduledTaskTrigger   -once -at $when
 
-$trg.endBoundary = (get-date).addSeconds(60).toString('s');
+$trg.endBoundary = $when.addSeconds(1).toString('s')
 
 $set = new-scheduledTaskSettingsSet  `
    -deleteExpiredTaskAfter    00:00:01    `
