@@ -49,7 +49,14 @@ clear-host
 # }
 
 # Equivalent of «dir /od» in cmd.exe
-function dod { get-childItem | sort-object lastWriteTime }
+function dod {
+   param (
+      [validateScript( { test-path $_ } )]
+      [string]                     $dir = '.'
+   )
+
+   get-childItem $dir | sort-object lastWriteTime
+}
 
 # Equivalent of «dir /s /b» in cmd.exe  ( http://stackoverflow.com/a/1479683/180275 )
 function dsb($pattern) { get-childItem -filter $pattern  -recurse -force | select-object -expandProperty fullName }
