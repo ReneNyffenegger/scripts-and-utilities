@@ -8,7 +8,7 @@ param (
 set-strictMode -version 2
 
 if ( $outFileName -eq '') {
-   $outFileNameModified = '%(title)s-%(id)s.%(ext)s' # Use the default
+   $outFileNameModified = '%(title)s-%(id)s.%(ext)s' # Use the default value
 }
 else {
    $outFileNameMOdified = "$($outFileName)_%(id)s.%(ext)s"
@@ -61,17 +61,29 @@ elseif (
 }
 elseif ( $url -match '^(https://media2.kgov.com/audio/(\d{8}-BEL\d{3}).mp3)' ) {
 
+
   $url        = $matches[1]
   $id         = $matches[2]
   $download_with_ytdl = $false
 
   if (! $outFileName) {
-     $outFileName = $id
+     $outFileName = "$id.mp3"
+  }
+
+}
+elseif ( $url -match '^(https://.*([^/]+)\.mp3)' ) {
+
+  $url        = $matches[1]
+  $id         = $matches[2]
+  $download_with_ytdl = $false
+
+  if (! $outFileName) {
+     $outFileName = "$id.mp3"
   }
 
 }
 else {
-   write-host -foreGroundColor red "$url is neither a youtube nor a bitchute url"
+   write-host -foreGroundColor red "$url is not recognized"
    return
 }
 
