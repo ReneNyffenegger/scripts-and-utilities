@@ -129,3 +129,5 @@ function admin() {
 
 # vi editing mode;
 set-psReadLineOption -editMode vi
+
+$errorActionPreference = 'stop'
