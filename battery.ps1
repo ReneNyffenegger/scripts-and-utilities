@@ -1,7 +1,7 @@
 $b = get-cimInstance Win32_Battery
 
 $batteryStatus =( @{
-    1 = 'Discharing'
+    1 = 'Discharging'
     2 = 'Connected to AC' # 'Unknown'
     3 = 'Fully charged'
     4 = 'Low'
