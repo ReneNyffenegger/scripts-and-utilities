@@ -59,18 +59,17 @@ elseif (
 
    $download_with_ytdl = $true
 }
-elseif ( $url -match '^(https://media2.kgov.com/audio/(\d{8}-BEL\d{3}).mp3)' ) {
-
-
-  $url        = $matches[1]
-  $id         = $matches[2]
-  $download_with_ytdl = $false
-
-  if (! $outFileName) {
-     $outFileName = "$id.mp3"
-  }
-
-}
+#q elseif ( $url -match '^(https://media2.kgov.com/audio/(\d{8}-BEL\d{3}).mp3)' ) {
+#q
+#q   $url        = $matches[1]
+#q   $id         = $matches[2]
+#q   $download_with_ytdl = $false
+#q
+#q   if (! $outFileName) {
+#q      $outFileName = "$id.mp3"
+#q   }
+#q
+#q }
 elseif ( $url -match '^(https://.*([^/]+)\.mp3)' ) {
 
   $url        = $matches[1]
@@ -80,13 +79,18 @@ elseif ( $url -match '^(https://.*([^/]+)\.mp3)' ) {
   if (! $outFileName) {
      $outFileName = "$id.mp3"
   }
+  else {
+     if (! $outFileName -notmatch '\.mp3$') {
+        $outFileName = "$outFileName.mp3"
+     }
+  }
+
 
 }
 else {
    write-host -foreGroundColor red "$url is not recognized"
    return
 }
-
 
 # Using fullName because of shortname (aka 8.3) problem (is it the ~?)
 $mp3Dir = (get-item "$env:temp/mp3").fullName
