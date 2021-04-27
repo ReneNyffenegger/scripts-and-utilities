@@ -70,7 +70,7 @@ elseif (
 #q   }
 #q
 #q }
-elseif ( $url -match '^(https://.*([^/]+)\.mp3)' ) {
+elseif ( $url -match '^(https://.*/([^/]+)\.mp3)' ) {
 
   $url        = $matches[1]
   $id         = $matches[2]
@@ -84,8 +84,6 @@ elseif ( $url -match '^(https://.*([^/]+)\.mp3)' ) {
         $outFileName = "$outFileName.mp3"
      }
   }
-
-
 }
 else {
    write-host -foreGroundColor red "$url is not recognized"
