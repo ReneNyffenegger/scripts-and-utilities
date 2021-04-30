@@ -4,8 +4,7 @@ param (
    [parameter()] [string] $outFileName
 )
 
-
-set-strictMode -version 2
+set-strictMode -version latest
 
 if ( $outFileName -eq '') {
    $outFileNameModified = '%(title)s-%(id)s.%(ext)s' # Use the default value
