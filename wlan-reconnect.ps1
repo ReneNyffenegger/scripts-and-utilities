@@ -1,3 +1,5 @@
+set-strictMode -version latest
+
 if ($args.count -lt 1) {
   $ssid = 'oooOOOooo'
 }
@@ -10,7 +12,7 @@ $host.ui.rawUi.windowTitle = "wlan reconnect $ssid"
 while ($true) {
    $now = get-date -format 'HH:mm:ss'
 
-   if (! (test-connection 8.8.8.8 -count 1 -quiet) ) {
+   if (! (test-connection 8.8.8.8 -errorAction continue -count 1 -quiet) ) {
      "$now NOK"
       $null = netsh wlan connect $ssid
       start-sleep 13
