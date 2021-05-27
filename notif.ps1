@@ -1,9 +1,20 @@
 param (
-  [System.DateTime] $when,
-  [String]          $msg
+   [switch]          $g,
+   [System.DateTime] $when,
+   [String]          $msg
 )
 
 set-strictMode -version latest
+
+if ($g) {
+   $actions = get-scheduledTask | where-object taskname -match 'notif_\d{4}-\d{2}-\d{2}_\d{2}-\d{2}' # | select-object actions
+   foreach ($action in $actions) {
+   #  $action | get-member
+     "$($action.taskName)  $($action.actions[0].arguments)"
+   #  $action.triggers[0]
+   }
+   return
+}
 
 $trg = new-ScheduledTaskTrigger   -once -at $when
 
