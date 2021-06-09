@@ -9,6 +9,6 @@ param (
 
 set-strictMode -version latest
 
-foreach ($file in (get-childItem -path $root -recurse -include $suffixes | select-string -list $regex)) {
+foreach ($file in (get-childItem -path $root -attributes !directory -recurse -include $suffixes | select-string -list $regex)) {
    $file.path
 }
