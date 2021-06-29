@@ -72,6 +72,7 @@ foreach ($if in $typeObj.ImplementedInterfaces) {
   write-host ''
 
   write-host "Class             $($typeObj.IsClass              )"
+  write-host "ValueType         $($typeObj.IsValueType          )"
   write-host "Enum              $($typeObj.IsEnum               )"
   write-host "Interface         $($typeObj.IsInterface          )"
   write-host "COMObject         $($typeObj.IsCOMObject          )"
@@ -91,7 +92,6 @@ foreach ($if in $typeObj.ImplementedInterfaces) {
   write-host "LayoutSequential  $($typeObj.IsLayoutSequential   )"
 # write-host "ExplicitLayout    $($typeObj.IsExplicitLayout     )"
 
-# write-host "ValueType         $($typeObj.IsValueType          )"
   write-host "Abstract          $($typeObj.IsAbstract           )"
   write-host "Sealed            $($typeObj.IsSealed             )"
 # write-host "SpecialName       $($typeObj.IsSpecialName        )"
