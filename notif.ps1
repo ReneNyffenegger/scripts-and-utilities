@@ -16,7 +16,7 @@ if ($g) {
    return
 }
 
-$trg = new-ScheduledTaskTrigger   -once -at $when
+$trg = new-scheduledTaskTrigger   -once -at $when
 
 $trg.endBoundary = $when.addSeconds(1).toString('s')
 
