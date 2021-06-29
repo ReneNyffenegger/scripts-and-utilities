@@ -1,10 +1,19 @@
 param (
    [switch]          $g,
-   [System.DateTime] $when,
-   [String]          $msg
+   [string]          $when,
+   [string]          $msg
 )
 
 set-strictMode -version latest
+
+if ($when.substring(0, 1) -eq '+') {
+  [timespan] $span = $when.substring(1)
+  [datetime] $dtWhen = (get-date) + $span
+}
+else {
+  [datetime] $dtWhen = $when
+}
+
 
 if ($g) {
    $actions = get-scheduledTask | where-object taskname -match 'notif_\d{4}-\d{2}-\d{2}_\d{2}-\d{2}' # | select-object actions
@@ -16,9 +25,9 @@ if ($g) {
    return
 }
 
-$trg = new-scheduledTaskTrigger   -once -at $when
+$trg = new-scheduledTaskTrigger   -once -at $dtWhen
 
-$trg.endBoundary = $when.addSeconds(1).toString('s')
+$trg.endBoundary = $dtWhen.addSeconds(1).toString('s')
 
 $set = new-scheduledTaskSettingsSet  `
    -deleteExpiredTaskAfter    00:00:01    `
@@ -28,7 +37,7 @@ $act = new-scheduledTaskAction -execute "cmd" -argument "/c msg $env:username $m
 
 $tsk = register-scheduledTask                              `
    -force                                                  `
-   -taskName "notif_$($when.toString('yyyy-MM-dd_HH-mm'))" `
+   -taskName "notif_$($dtWhen.toString('yyyy-MM-dd_HH-mm'))" `
    -Trigger    $trg                                        `
    -action     $act                                        `
    -settings   $set
