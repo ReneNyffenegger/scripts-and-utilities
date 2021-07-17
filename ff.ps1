@@ -1,3 +1,6 @@
+#
+#   V0.2
+#
 param (
     [parameter(mandatory=$true) ]
     [string                     ] $regex,
@@ -9,6 +12,8 @@ param (
 
 set-strictMode -version latest
 
-foreach ($file in (get-childItem -path $root -attributes !directory -recurse -include $suffixes | select-string -list $regex)) {
+foreach ($file in (get-childItem -errorAction ignore -path $root -attributes !directory -recurse -include $suffixes |
+                   select-string -errorAction ignore -list $regex
+         )) {
    $file.path
 }
