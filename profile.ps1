@@ -1,3 +1,4 @@
+#  V0.10
 #
 #  Note to self: create file %userprofile%\psh.bat with following content:
 #
@@ -11,6 +12,16 @@ function update-profile { invoke-webRequest https://raw.githubusercontent.com/Re
 
 function prompt {
 
+   #
+   # V0.10: Use prompt to write lastExitCode in red if lastExitCode <> 0
+   #
+   if ($lastExitCode) {
+      $error = "$([char]0x1b)[91mlastExitCode = $lastExitCode$([char]0x1b)[0m`n"
+   }
+   else {
+      $error = ''
+   }
+
    # Get the built-in prompt function (before overriding it)
    # with
    #   (get-command prompt).ScriptBlock
@@ -18,7 +29,7 @@ function prompt {
    # It is:
    #   "PS $($executionContext.SessionState.Path.CurrentLocation)$('>' * ($nestedPromptLevel + 1)) ";
 
-   # @( … ) creates array even if get-history returns 0 or 1 elements.
+   # @( … ) creates an array even if get-history returns 0 or 1 elements.
    $hist = @( get-history )
    $thisId = 0
    if ($hist.count -gt 0) {
@@ -35,7 +46,9 @@ function prompt {
 
    $brackets = '>' * ($nestedPromptLevel + 1)
 
-   return "PS: $($thisId+1) $curDir$brackets "
+   $prompt = "PS: $($thisId+1) $curDir$brackets "
+
+  "$error$prompt"
 }
 
 # { Set default colors for console
