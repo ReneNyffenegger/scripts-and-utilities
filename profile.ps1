@@ -178,13 +178,13 @@ Function global:TabExpansion2 {
 
     End
     {
-        $source = $null
+       [System.Management.Automation.CommandCompletion] $cmdCompletion = $null
         if ($psCmdlet.ParameterSetName -eq 'ScriptInputSet')
         {
           #
-          # Changed original source here: return -> $source =
+          # Changed original source here: return -> $cmdCompletion =
           #
-            $source = [System.Management.Automation.CommandCompletion]::CompleteInput(
+            $cmdCompletion = [System.Management.Automation.CommandCompletion]::CompleteInput(
                 <#inputScript#>  $inputScript,
                 <#cursorColumn#> $cursorColumn,
                 <#options#>      $options)
@@ -192,32 +192,29 @@ Function global:TabExpansion2 {
         else
         {
           #
-          # Changed original source here: return -> $source =
+          # Changed original source here: return -> $cmdCompletion =
           #
-            $source = [System.Management.Automation.CommandCompletion]::CompleteInput(
+            $cmdCompletion = [System.Management.Automation.CommandCompletion]::CompleteInput(
                 <#ast#>              $ast,
                 <#tokens#>           $tokens,
                 <#positionOfCursor#> $positionOfCursor,
                 <#options#>          $options)
         }
-        $field = [System.Management.Automation.CompletionResult].GetField('completionText', 'Instance, NonPublic')
 
-      #
-      # The following code was added to filter *.swp files.
-      #
-      # The type of $source is System.Management.Automation.CommandCompletion
-      #
-        $source.CompletionMatches = $source.CompletionMatches | where-object {
-      #
-      #     The type of $_ is System.Management.Automation.CompletionResult.
-      #
-      #     Only return file names that don't end in *.swp
-      #
-            $_.CompletionText -notMatch '\.swp$'
-        }
+       [System.Management.Automation.CompletionResult[]] $filtered = @( $cmdCompletion.CompletionMatches | where-object {
+    #
+    #     The type of $_ is System.Management.Automation.CompletionResult.
+    #
+    #     Only return file names that don't end in *.swp
+    #
+              $_.CompletionText -notMatch '\.swp$'
+          } )
 
-        return $source
-    }    
+       [System.Collections.ObjectModel.Collection`1[System.Management.Automation.CompletionResult]] $res = $filtered
+
+        $cmdCompletion= new-object System.Management.Automation.CommandCompletion $res, $cmdCompletion.currentmatchIndex, $cmdCompletion.replacementIndex, $cmdCompletion.replacementLength
+        return $cmdCompletion
+    }
 }
 
 $errorActionPreference = 'stop'
