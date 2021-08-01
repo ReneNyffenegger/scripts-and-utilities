@@ -1,9 +1,11 @@
-#  V0.11
+#  V0.12
 #
 #  Note to self: create file %userprofile%\psh.bat with following content:
 #
 #    @powershell -executionpolicy bypass -noExit -file c:\lib\Scripts\profile.ps1
 #
+
+set-strictMode -version 3
 
 #
 #  Update «this» profile script from github
@@ -15,8 +17,9 @@ function prompt {
    #
    # V0.10: Use prompt to write lastExitCode in red if lastExitCode <> 0
    #
-   if ($lastExitCode) {
-      $error = "$([char]0x1b)[91mlastExitCode = $lastExitCode$([char]0x1b)[0m`n"
+   if ( (test-path variable:lastExitCode) -and $global:lastExitCode) {
+      $error = "$([char]0x1b)[91mlastExitCode = $global:lastExitCode$([char]0x1b)[0m`n"
+      $global:lastExitCode = 0
    }
    else {
       $error = ''
