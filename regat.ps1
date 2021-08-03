@@ -1,5 +1,5 @@
 #
-#   V0.1
+#   V0.2
 #
 
 param (
@@ -15,6 +15,10 @@ elseif ($regkey -eq 'machineenv') {
     $regkeyNoColon = 'hklm\SYSTEM\CurrentControlSet\Control\Session Manager\Environment'
 }
 else {
+
+   $regKey = $regKey -replace '^hkey_local_machine\b', 'hklm'
+   $regKey = $regKey -replace '^hkey_current_uer\b'  , 'hkcu'
+
    $regKey = $regKey -replace '\\$', ''
    $regKey = $regKey -replace '/$' , ''
 
