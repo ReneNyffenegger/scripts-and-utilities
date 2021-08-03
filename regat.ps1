@@ -17,7 +17,7 @@ elseif ($regkey -eq 'machineenv') {
 else {
 
    $regKey = $regKey -replace '^hkey_local_machine\b', 'hklm'
-   $regKey = $regKey -replace '^hkey_current_uer\b'  , 'hkcu'
+   $regKey = $regKey -replace '^hkey_current_user\b' , 'hkcu'
 
    $regKey = $regKey -replace '\\$', ''
    $regKey = $regKey -replace '/$' , ''
