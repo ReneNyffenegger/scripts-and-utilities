@@ -1,4 +1,4 @@
-#  V0.13
+#  V0.14
 #
 #  Note to self: create file %userprofile%\psh.bat with following content:
 #
@@ -129,11 +129,6 @@ function cd($newPWD) {
 }
 # }
 
-# Start same powershell executable as administrator
-function admin() {
-   $ps_exe = (get-process -pid $pid).path
-   start-process $ps_exe -verb runAs
-}
 
 # vi editing mode;
 set-psReadLineOption -editMode vi
