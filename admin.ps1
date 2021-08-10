@@ -18,4 +18,3 @@ function admin() {
    $ps_exe = (get-process -pid $pid).path
    start-process $ps_exe -verb runAs
 }
-
