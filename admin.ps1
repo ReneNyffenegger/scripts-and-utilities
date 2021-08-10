@@ -14,7 +14,5 @@ if ($amI) {
 }
 
 # Start same powershell executable as administrator
-function admin() {
-   $ps_exe = (get-process -pid $pid).path
-   start-process $ps_exe -verb runAs
-}
+$ps_exe = (get-process -pid $pid).path
+start-process $ps_exe -verb runAs
