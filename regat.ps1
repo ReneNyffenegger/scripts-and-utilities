@@ -25,11 +25,11 @@ else {
 
    $regkeyColon   = $regKey        -replace '^hkcu:?'  , 'hkcu:'
    $regKeyColon   = $regKeyColon   -replace '^hklm:?'  , 'hklm:'
-   $regKeyColon   = $regKeyColon   -replace '^hklr:?'  , 'hklr:'
+   $regKeyColon   = $regKeyColon   -replace '^hkcr:?'  , 'hkcr:'
 
    $regKeyNoColon = $regKeyColon   -replace '^hkcu:'   , 'hkcu'
    $regKeyNoColon = $regKeyNoColon -replace '^hklm:'   , 'hklm'
-   $regKeyNoColon = $regKeyNoColon -replace '^hklr:'   , 'hklr'
+   $regKeyNoColon = $regKeyNoColon -replace '^hkcr:'   , 'hkcr'
 
    if ($regKeyColon -match '^hkcr') {
       $null = new-psDrive -name hkcr -psProvider registry -root HKEY_CLASSES_ROOT
