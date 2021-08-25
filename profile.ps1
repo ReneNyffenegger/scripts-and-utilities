@@ -1,4 +1,4 @@
-#  V0.14
+#  V0.15
 #
 #  Note to self: create file %userprofile%\psh.bat with following content:
 #
@@ -130,8 +130,9 @@ function cd($newPWD) {
 # }
 
 
-# vi editing mode;
-set-psReadLineOption -editMode vi
+
+set-psReadLineOption -editMode  vi    # vi editing mode;
+set-psReadLineOption -bellStyle none  # no more distracting beeps
 
 Function global:TabExpansion2 {
 #
