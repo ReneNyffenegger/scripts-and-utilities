@@ -1,12 +1,31 @@
 #
 #        https://renenyffenegger.ch/notes/Microsoft/dot-net/namespaces-classes/System/Reflection/reflect_ps1
 #
+#        V.2
+#
 
 param (
    $type
 )
 
 set-strictMode -version latest
+
+function method-specifiers {
+   param (
+      [System.Reflection.MethodBase] $method
+   )
+
+   $ret = @()
+
+   if ($method.isAbstract) {$ret += 'abstract'}
+   if ($method.isStatic  ) {$ret += 'static'  }
+   if ($method.isFinal   ) {$ret += 'final'   }
+   if ($method.isPrivate ) {$ret += 'private' }
+   if ($method.isPublic  ) {$ret += 'public'  }
+   if ($method.isVirtual ) {$ret += 'virtual' }
+
+   return $ret
+}
 
 
 if ($type -is [string]) {
@@ -111,9 +130,10 @@ foreach ($if in $typeObj.ImplementedInterfaces) {
 write-host ''
 write-host 'Constructors'
 foreach ($ctor in $typeObj.DeclaredConstructors) {
-   write-host "  -"
+
+   write-host " $( (method-specifiers $ctor) -join ' ' ) -"
    foreach ($param in $ctor.GetParameters()) {
-      write-host ('     {0,-40} {1}'  -f  $($param.name), $($param.parameterType))
+      write-host ("    {0,-40} {1}"  -f  $($param.name), $($param.parameterType))
    }
 }
 
@@ -121,7 +141,8 @@ foreach ($ctor in $typeObj.DeclaredConstructors) {
 write-host ''
 write-host 'Methods'
 foreach ($meth in $typeObj.DeclaredMethods) {
-   write-host ('   {0,-30} {1}' -f $meth.name, $meth.ReturnType)
+
+   write-host ("   $( (method-specifiers $meth) ) {0,-30} {1}" -f $meth.name, $meth.ReturnType)
 
    $writeNewLine = $false
    foreach ($param in $meth.GetParameters()) {
