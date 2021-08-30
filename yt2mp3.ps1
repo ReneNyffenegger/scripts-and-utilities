@@ -43,7 +43,8 @@ else {
 
 
 if ($noUrlCheck) {
-  $id = $outFileName
+   $id                 = $outFileName
+   $download_with_ytdl = $true
 }
 elseif (
          ( $url -match '^https://www\.youtube\.com/watch\?v=(.{11})' )   -or
