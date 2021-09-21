@@ -1,20 +1,23 @@
 #
-# Show individual path-components of the PATH environment variable, each on its own line:
+# Show individual path-components of the PATH or PSModulePath environment variable, each on its own line:
 #
-# V0.2
+# V0.3
 #
+param (
+   [switch] $psModulePath
+)
 
 set-strictMode -version 3
 
-
 function showPaths {
    param (
-      [System.EnvironmentVariableTarget] $tgt
+      [System.EnvironmentVariableTarget] $tgt,
+      [string]                           $var
    )
 
    write-host $tgt
 
-   foreach ($p in [System.Environment]::GetEnvironmentVariable('PATH', $tgt) -split ';' ) {
+   foreach ($p in [System.Environment]::GetEnvironmentVariable($var, $tgt) -split ';' ) {
       if ($p -eq '') {
          write-host "   ! <empty>"
       }
@@ -27,5 +30,10 @@ function showPaths {
    }
 }
 
-showPaths machine
-showPaths user
+$envVar = 'PATH'
+if ($psModulePath) {
+   $envVar = 'PSModulePath'
+}
+
+showPaths machine $envVar
+showPaths user    $envVar
