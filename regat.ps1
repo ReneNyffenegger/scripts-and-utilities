@@ -1,12 +1,18 @@
 #
-#   V0.3
+#   V0.4
 #
 
 param (
-   [string] $regKey
+   [parameter(
+        mandatory                  =$true,
+        valueFromRemainingArguments=$true
+   )]
+   [string[]] $regKeyParts
 )
 
 set-strictMode -version 3
+
+$regKey = $regKeyParts -join ' '
 
 if ($regKey -eq 'userenv') {
     $regkeyNoColon = 'hkcu\environment'
