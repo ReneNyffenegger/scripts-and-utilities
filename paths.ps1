@@ -1,13 +1,15 @@
 #
 # Show individual path-components of the PATH or PSModulePath environment variable, each on its own line:
 #
-# V0.4
+# V0.5
 #
 param (
    [switch] $psModulePath
 )
 
 set-strictMode -version 3
+
+$pathsSeen = @{}
 
 function showPaths {
    param (
@@ -31,12 +33,25 @@ function showPaths {
       if ($p -eq '') {
          write-host "   ! <empty>"
       }
-      elseif (test-path -pathType container $p_) {
-         write-host "     $p"
-      }
       else {
-         write-host "   ! $p"
+
+         if (test-path -pathType container $p_) {
+             $flagExists = ' '
+         }
+         else {
+             $flagExists = '!'
+         }
+
+         if ($pathsSeen[$p_]) {
+             $flagSeen = 'x'
+         }
+         else {
+             $flagSeen = ' '
+         }
+          write-host "  $flagSeen$flagExists $p"
       }
+
+      $pathsSeen[$p_] = $true
    }
 }
 
