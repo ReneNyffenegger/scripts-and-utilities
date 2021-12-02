@@ -1,5 +1,5 @@
 #
-#  V0.4
+#  V0.5
 #
 [cmdletBinding(defaultParameterSetName = 'set')]
 param (
@@ -24,8 +24,11 @@ param (
 
 set-strictMode -version latest
 
+#  How long the message box is shown, in seconds.
+$msgBoxShownSecs = 10000
+
 if ($g) {
-   $actions = get-scheduledTask | where-object taskname -match 'notif_\d{4}-\d{2}-\d{2}_\d{2}-\d{2}' # | select-object actions
+   $actions = get-scheduledTask | where-object taskname -match 'notif_\d{4}-\d{2}-\d{2}_\d{2}-\d{2}'
    foreach ($action in $actions) {
       "$($action.taskName)  $($action.actions[0].arguments)"
    }
@@ -44,11 +47,12 @@ $trg = new-scheduledTaskTrigger   -once -at $dtWhen
 
 $trg.endBoundary = $dtWhen.addSeconds(1).toString('s')
 
-$set = new-scheduledTaskSettingsSet  `
-   -deleteExpiredTaskAfter    00:00:01    `
+$set = new-scheduledTaskSettingsSet    `
+   -deleteExpiredTaskAfter    00:00:01 `
    -allowStartIfOnBatteries
 
-$act = new-scheduledTaskAction -execute "cmd" -argument "/c msg $env:username $msg"
+
+$act = new-scheduledTaskAction -execute "cmd" -argument "/c msg $env:username /time:$msgBoxShownSecs $msg"
 
 $null = register-scheduledTask                               `
    -force                                                    `
