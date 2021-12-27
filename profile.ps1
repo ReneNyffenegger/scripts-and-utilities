@@ -1,4 +1,4 @@
-#  V0.15
+#  V0.16
 #
 #  Note to self: create file %userprofile%\psh.bat with following content:
 #
@@ -78,14 +78,6 @@ function dod {
 function dsb($pattern) { get-childItem -filter $pattern  -recurse -force | select-object -expandProperty fullName }
 
 
-if ($psEdition -eq 'Desktop') {
-  function pc() { (get-item .).ToString() | set-clipboard }
-}
-else {
-# clipboardText needs to be installed:
-#    install-module -name ClipboardText
-  function pc() { (get-item .).ToString() | set-clipboardText }
-}
 
 # Find below
 # use fullName to emulate "dir /b /s"
