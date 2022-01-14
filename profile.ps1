@@ -79,12 +79,6 @@ function dsb($pattern) { get-childItem -filter $pattern  -recurse -force | selec
 
 
 
-# Find below
-# use fullName to emulate "dir /b /s"
-function fb($wildcard) {
-  get-childItem -errorAction silentlyContinue -recurse -filter $wildcard |
-  select-object fullName
-}
 
 function cdnot() {
    cd $env:github_top_root/github/notes/notes
