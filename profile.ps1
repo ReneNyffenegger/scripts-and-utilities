@@ -1,4 +1,4 @@
-#  V0.16
+#  V0.17
 #
 #  Note to self: create file %userprofile%\psh.bat with following content:
 #
