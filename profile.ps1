@@ -1,4 +1,4 @@
-#  V0.17
+#  V0.18
 #
 #  Note to self: create file %userprofile%\psh.bat with following content:
 #
@@ -77,9 +77,6 @@ function dod {
 # Equivalent of «dir /s /b» in cmd.exe  ( http://stackoverflow.com/a/1479683/180275 )
 function dsb($pattern) { get-childItem -filter $pattern  -recurse -force | select-object -expandProperty fullName }
 
-
-
-
 function cdnot() {
    cd $env:github_top_root/github/notes/notes
 }
@@ -114,7 +111,6 @@ function cd($newPWD) {
   $global:oldPWD = $curPWD
 }
 # }
-
 
 
 set-psReadLineOption -editMode  vi    # vi editing mode;
@@ -192,3 +188,5 @@ Function global:TabExpansion2 {
 }
 
 $errorActionPreference = 'stop'
+
+$psDefaultParameterValues['*:encoding'] = 'utf8'
