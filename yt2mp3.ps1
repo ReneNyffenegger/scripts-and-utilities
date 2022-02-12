@@ -50,8 +50,8 @@ elseif (
          ( $url -match '^https://www\.youtube\.com/watch\?v=(.{11})' )   -or
          ( $url -match '^https://youtu\.be/(.{11})'                  )   -or
          ( $url -match '^https://www.bitchute.com/video/(.{12})'     )   -or
-         ( $url -match '^https://lbry.tv/@(.+)'                      ) # -or
-#        ( $url -match '^https://rumble.com/.*?mref=(.{13})'         ) # Unsupported URL: rumble
+         ( $url -match '^https://lbry.tv/@(.+)'                      )   -or
+         ( $url -match '^https://rumble.com/(.*).html'               )
        )
 {
    $id = $matches[1]
@@ -90,6 +90,12 @@ else {
    return
 }
 
+if ($url -match 'rumble\.com') {
+   $rumble_response =  invoke-webRequest $url
+   $rumble_response.content -match '(https://rumble.com/embed/[^"]+)'
+   $url = $matches[1]
+}
+
 # Using fullName because of shortname (aka 8.3) problem (is it the ~?)
 $mp3Dir = (get-item "$env:temp/mp3").fullName
 if (-not (test-path $mp3Dir)) {
@@ -109,7 +115,7 @@ if ($noJob) {
    set-location $mp3Dir
 
    if ($download_with_ytdl) {
-     youtube-dl --extract-audio --audio-format mp3 $url -o $outFileNameModified
+     youtube-dl --no-check-certificate --extract-audio --audio-format mp3 $url -o $outFileNameModified
    }
    else {
      invoke-webRequest $url -outfile $outFileName
@@ -120,7 +126,7 @@ else {
        set-location $using:mp3Dir
 
        if ($using:download_with_ytdl) {
-          youtube-dl --extract-audio --audio-format mp3 $using:url -o $using:outFileNameModified
+          youtube-dl --no-check-certificate --extract-audio --audio-format mp3 $using:url -o $using:outFileNameModified
        }
        else {
           invoke-webRequest $url -outfile $using:outFileNameModified
