@@ -1,3 +1,6 @@
+#
+#  2022-05-27: download to ~/mp3 rather than to the temp directory
+#
 param (
    [parameter()] [switch] $noJob,
    [parameter()] [switch] $noUrlCheck,
@@ -97,7 +100,8 @@ if ($url -match 'rumble\.com') {
 }
 
 # Using fullName because of shortname (aka 8.3) problem (is it the ~?)
-$mp3Dir = (get-item "$env:temp/mp3").fullName
+# $mp3Dir = (get-item "$env:temp/mp3").fullName
+$mp3Dir   = (get-item         "~/mp3").fullName
 if (-not (test-path $mp3Dir)) {
    write-error "mp3Dir $mp3Dir does not exist"
 }
