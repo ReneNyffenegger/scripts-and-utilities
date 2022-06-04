@@ -11,6 +11,6 @@ foreach ($fileName in $fileList) {
       $file.lastWriteTime  = $file.lastAccessTime
    }
    else {
-      new-item $fileName
+      $null = new-item $fileName
    }
 }
