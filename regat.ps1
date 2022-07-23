@@ -1,5 +1,5 @@
 #
-#   V0.5
+#   V0.6
 #
 
 param (
@@ -49,7 +49,13 @@ else {
    }
 }
 
+
+
 write-host "open registry at $regKeyNoColon"
+if (! (test-path HKCU:\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit)) {
+   write-host "HKCU:\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit does not exit, creating it"
+   $null = new-item HKCU:\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit
+}
 set-itemProperty HKCU:\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit  LastKey $regKeyNoColon
 
 & regedit -m
