@@ -1,4 +1,4 @@
-#  V0.18
+#  V0.19
 #
 #  Note to self: create file %userprofile%\psh.bat with following content:
 #
@@ -78,7 +78,7 @@ function dod {
 function dsb($pattern) { get-childItem -filter $pattern  -recurse -force | select-object -expandProperty fullName }
 
 function cdnot() {
-   cd $env:github_top_root/github/notes/notes
+   cd $env:notes_dir/notes
 }
 
 # Change behaviour of cd {
