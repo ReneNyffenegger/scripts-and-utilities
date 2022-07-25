@@ -1,4 +1,4 @@
-#  V0.19
+#  V0.20
 #
 #  Note to self: create file %userprofile%\psh.bat with following content:
 #
@@ -49,7 +49,15 @@ function prompt {
 
    $brackets = '>' * ($nestedPromptLevel + 1)
 
-   $prompt = "PS: $($thisId+1) $curDir$brackets "
+   if ((get-wmiObject win32_computersystem).model -eq 'VirtualBox') {
+    #
+    # V.20: Include computername (hostname) if running in a VirtualBox
+    #
+      $prompt = "$($thisId+1) $env:computername $curDir$brackets "
+   }
+   else {
+      $prompt = "PS: $($thisId+1) $curDir$brackets "
+   }
 
   "$error$prompt"
 }
