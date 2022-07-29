@@ -1,4 +1,4 @@
-#  V0.20
+#  V0.21
 #
 #  Note to self: create file %userprofile%\psh.bat with following content:
 #
@@ -6,6 +6,9 @@
 #
 
 set-strictMode -version 3
+
+# V.21: use script variable for hostname:
+$script:hostname = $(hostname)
 
 #
 #  Update «this» profile script from github
@@ -53,7 +56,7 @@ function prompt {
     #
     # V.20: Include computername (hostname) if running in a VirtualBox
     #
-      $prompt = "$($thisId+1) $env:computername $curDir$brackets "
+      $prompt = "$($thisId+1) $script:hostname $curDir$brackets "
    }
    else {
       $prompt = "PS: $($thisId+1) $curDir$brackets "
