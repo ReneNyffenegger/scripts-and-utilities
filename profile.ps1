@@ -1,4 +1,4 @@
-#  V0.21
+#  V0.22
 #
 #  Note to self: create file %userprofile%\psh.bat with following content:
 #
@@ -9,6 +9,9 @@ set-strictMode -version 3
 
 # V.21: use script variable for hostname:
 $script:hostname = hostname.exe
+
+# v.22: Add global variable PPID (parent process id)
+$global:PPID     = (get-cimInstance -className win32_process  -filter "processId = $PID").parentProcessId
 
 #
 #  Update «this» profile script from github
