@@ -1,4 +1,4 @@
-#  V0.22
+#  V0.23
 #
 #  Note to self: create file %userprofile%\psh.bat with following content:
 #
@@ -68,14 +68,25 @@ function prompt {
   "$error$prompt"
 }
 
-# { Set default colors for console
-$host.ui.rawUI.backgroundColor = 'black'
-$host.ui.rawUI.foregroundColor = 'white'
-  # Change error colors etc. via
-  #   $host.privateData.…
-  # Get a list of possible values
-  #   [enum]::GetValues([consoleColor])
-clear-host
+# { V.23: Different actions if started from cmd.exe
+
+if ( (get-process -id $PPID).name -eq 'cmd') { # If started from cmd.exe: Set default colors for console
+
+   $host.ui.rawUI.backgroundColor = 'black'
+   $host.ui.rawUI.foregroundColor = 'white'
+     # Change error colors etc. via
+     #   $host.privateData.…
+     # Get a list of possible values
+     #   [enum]::GetValues([consoleColor])
+   clear-host
+
+}
+else {
+   if ($pwd -match 'system32$') {
+     cd $home
+   }
+}
+
 # }
 
 # Equivalent of «dir /od» in cmd.exe
