@@ -8,7 +8,7 @@
 set-strictMode -version 3
 
 # V.21: use script variable for hostname:
-$script:hostname = $(hostname)
+$script:hostname = hostname.exe
 
 #
 #  Update «this» profile script from github
