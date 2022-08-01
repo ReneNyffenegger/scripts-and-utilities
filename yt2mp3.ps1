@@ -1,5 +1,6 @@
 #
 #  2022-05-27: download to ~/mp3 rather than to the temp directory
+#  2022-08-01: include kgov again
 #
 param (
    [parameter()] [switch] $noJob,
@@ -62,17 +63,20 @@ elseif (
 
    $download_with_ytdl = $true
 }
-#q elseif ( $url -match '^(https://media2.kgov.com/audio/(\d{8}-BEL\d{3}).mp3)' ) {
-#q
-#q   $url        = $matches[1]
-#q   $id         = $matches[2]
-#q   $download_with_ytdl = $false
-#q
-#q   if (! $outFileName) {
-#q      $outFileName = "$id.mp3"
-#q   }
-#q
-#q }
+elseif ( $url -match '^(https://media2.kgov.com/audio/(\d{8}-BEL\d{3}).mp3)' ) {
+
+  $url        = $matches[1]
+  $id         = $matches[2]
+  $download_with_ytdl = $false
+
+  if (! $outFileName) {
+     $outFileName = "$id.mp3"
+  }
+  else {
+     $outFileName = "$outFileName.mp3"
+  }
+
+}
 elseif ( $url -match '^(https://.*/([^/]+)\.mp3)' ) {
 
   $url        = $matches[1]
@@ -90,7 +94,6 @@ elseif ( $url -match '^(https://.*/([^/]+)\.mp3)' ) {
 }
 else {
    write-host -foreGroundColor red "$url is not recognized"
-   return
 }
 
 if ($url -match 'rumble\.com') {
@@ -133,7 +136,8 @@ else {
           youtube-dl --no-check-certificate --extract-audio --audio-format mp3 $using:url -o $using:outFileNameModified
        }
        else {
-          invoke-webRequest $url -outfile $using:outFileNameModified
+#         invoke-webRequest       $url -outfile $using:outFileNameModified
+          invoke-webRequest $using:url -outfile $using:outFileName
        }
    }
 
