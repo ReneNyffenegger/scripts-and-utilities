@@ -1,4 +1,4 @@
-#  V0.20
+#  V0.23
 #
 #  Note to self: create file %userprofile%\psh.bat with following content:
 #
@@ -6,6 +6,12 @@
 #
 
 set-strictMode -version 3
+
+# V.21: use script variable for hostname:
+$script:hostname = hostname.exe
+
+# v.22: Add global variable PPID (parent process id)
+$global:PPID     = (get-cimInstance -className win32_process  -filter "processId = $PID").parentProcessId
 
 #
 #  Update «this» profile script from github
@@ -53,7 +59,7 @@ function prompt {
     #
     # V.20: Include computername (hostname) if running in a VirtualBox
     #
-      $prompt = "$($thisId+1) $env:computername $curDir$brackets "
+      $prompt = "$($thisId+1) $script:hostname $curDir$brackets "
    }
    else {
       $prompt = "PS: $($thisId+1) $curDir$brackets "
@@ -62,14 +68,25 @@ function prompt {
   "$error$prompt"
 }
 
-# { Set default colors for console
-$host.ui.rawUI.backgroundColor = 'black'
-$host.ui.rawUI.foregroundColor = 'white'
-  # Change error colors etc. via
-  #   $host.privateData.…
-  # Get a list of possible values
-  #   [enum]::GetValues([consoleColor])
-clear-host
+# { V.23: Different actions if started from cmd.exe
+
+if ( (get-process -id $PPID).name -eq 'cmd') { # If started from cmd.exe: Set default colors for console
+
+   $host.ui.rawUI.backgroundColor = 'black'
+   $host.ui.rawUI.foregroundColor = 'white'
+     # Change error colors etc. via
+     #   $host.privateData.…
+     # Get a list of possible values
+     #   [enum]::GetValues([consoleColor])
+   clear-host
+
+}
+else {
+   if ($pwd -match 'system32$') {
+     cd $home
+   }
+}
+
 # }
 
 # Equivalent of «dir /od» in cmd.exe
