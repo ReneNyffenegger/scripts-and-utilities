@@ -1,3 +1,6 @@
+#
+#  V.2
+#
 param (
    [alias('?')] [switch] $amI
 )
@@ -14,5 +17,6 @@ if ($amI) {
 }
 
 # Start same powershell executable as administrator
+# in the current directory.
 $ps_exe = (get-process -pid $pid).path
-start-process $ps_exe -verb runAs
+start-process $ps_exe -verb runAs -argumentList '-noExit', '-command', 'cd', "'$pwd'"
