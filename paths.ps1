@@ -1,7 +1,7 @@
 #
 # Show individual path-components of the PATH or PSModulePath environment variable, each on its own line:
 #
-# V0.5
+# V0.6
 #
 param (
    [switch] $psModulePath
@@ -29,6 +29,19 @@ function showPaths {
         invoke-expression "`$env:$($match.Groups[1].Value)"
       })
 
+      if ($tgt -eq 'process' -and $pathsSeen[$p_]) {
+        #
+        # Special case for paths in process environment because
+        # this environment also contains the variables of machine and
+        # user.
+        # These paths need only be shown if they weren't already
+        # shown.
+        # Unfortunately, this solution also prevents a path
+        # that occurs multiple times in the process environment
+        # only from being reported multiple times.
+        # 
+          continue
+      }
 
       if ($p -eq '') {
          write-host "   ! <empty>"
@@ -62,3 +75,4 @@ if ($psModulePath) {
 
 showPaths machine $envVar
 showPaths user    $envVar
+showPaths process $envVar
