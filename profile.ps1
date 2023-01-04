@@ -62,11 +62,15 @@ function prompt {
 
    $brackets = '>' * ($nestedPromptLevel + 1)
 
+
    $virtEnv = $false
-   if ([System.OperatingSystem]::IsWindows() -and (get-wmiObject win32_computersystem).model -eq 'VirtualBox') {
+#  if ([System.OperatingSystem]::IsWindows()                  -and (get-wmiObject win32_computersystem).model -eq 'VirtualBox')
+   if ([System.Environment]::OSVersion.Platform -eq 'Win32NT' -and (get-wmiObject win32_computersystem).model -eq 'VirtualBox')
+   {
       $virtEnv = $true
    }
-   elseif ([System.OperatingSystem]::IsLinux()) {
+#  elseif ([System.OperatingSystem]::IsLinux())
+   else {
       systemd-detect-virt --quiet
       if (-not $lastExitCode) {
          $virtEnv = $true
