@@ -16,7 +16,7 @@ if ($psVersionTable.psEdition -eq 'Desktop') {
    $global:PPID = (get-cimInstance -className win32_process  -filter "processId = $PID").parentProcessId
 }
 else {
-   $global:PPID = (get-process | where-object id -eq $pid).parent.id
+   $global:PPID = (get-process | where-object id -eq $pid).parent.id # | select-object {  $_.parent.id })
 }
 
 #
@@ -52,7 +52,8 @@ function prompt {
    }
 
 #  $curDir = get-location
-   $curDir = $executionContext.sessionState.path.currentLocation
+#  $curDir = $executionContext.sessionState.path.currentLocation
+   $curDir = $pwd
 
 
  # 2021-02-26: Print current directory with forward slashes instead
@@ -61,7 +62,18 @@ function prompt {
 
    $brackets = '>' * ($nestedPromptLevel + 1)
 
-   if ((get-wmiObject win32_computersystem).model -eq 'VirtualBox') {
+   $virtEnv = $false
+   if ([System.OperatingSystem]::IsWindows() -and (get-wmiObject win32_computersystem).model -eq 'VirtualBox') {
+      $virtEnv = $true
+   }
+   elseif ([System.OperatingSystem]::IsLinux()) {
+      systemd-detect-virt --quiet
+      if (-not $lastExitCode) {
+         $virtEnv = $true
+      }
+   }
+
+   if ($virtEnv) {
     #
     # V.20: Include computername (hostname) if running in a VirtualBox
     #
