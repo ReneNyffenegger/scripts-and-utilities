@@ -1,6 +1,7 @@
 #
 #  2022-05-27: download to ~/mp3 rather than to the temp directory
 #  2022-08-01: include kgov again
+#  2023-02-25: use yt-dlp instead of youtube-dl (because of "Unable to extract uploader id" error)
 #
 param (
    [parameter()] [switch] $noJob,
@@ -122,7 +123,7 @@ if ($noJob) {
    set-location $mp3Dir
 
    if ($download_with_ytdl) {
-     youtube-dl --no-check-certificate --extract-audio --audio-format mp3 $url -o $outFileNameModified
+     yt-dlp --no-check-certificate --extract-audio --audio-format mp3 $url -o $outFileNameModified
    }
    else {
      invoke-webRequest $url -outfile $outFileName
@@ -133,7 +134,7 @@ else {
        set-location $using:mp3Dir
 
        if ($using:download_with_ytdl) {
-          youtube-dl --no-check-certificate --extract-audio --audio-format mp3 $using:url -o $using:outFileNameModified
+          yt-dlp --no-check-certificate --extract-audio --audio-format mp3 $using:url -o $using:outFileNameModified
        }
        else {
 #         invoke-webRequest       $url -outfile $using:outFileNameModified
