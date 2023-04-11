@@ -1,15 +1,1 @@
-#!/usr/bin/perl
-# vim ft=perl
-#
-#   Clipboard depends on an xclip script which seems
-#   to be at https://github.com/astrand/xclip (previously
-#   at http://sourceforge.net/projects/xclip/)
-#   On Ubuntu, this xclip can be installed with
-#     sudo apt-get install xclip
-
-use warnings;
-use strict;
-
-use Clipboard;
-
-Clipboard->copy($ENV{'PWD'});
+xclip -selection clipboard <<<$PWD
