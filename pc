@@ -1,1 +1,1 @@
-xclip -selection clipboard <<<$PWD
+echo -n $PWD | xclip -selection clipboard
