@@ -5,6 +5,21 @@ if [ $# -lt 1 ]; then
   exit 1
 fi
 
+if ! command -v xclip >/dev/null 2>&1; then
+  echo xclip is not available
+  exit 1
+fi
+
+if ! command -v ffmpeg >/dev/null 2>&1; then
+  echo ffmpeg is not available
+  exit 1
+fi
+
+if [ ! -d ~/mp3 ]; then
+   mkdir ~/mp3
+fi
+  
+
 url=$(xclip -o)
 title="$1"
 
