@@ -4,4 +4,18 @@
 #    in the destination directory
 #
 #                     Source                 Destination
-rsync -av --delete    ~/Digitales-Backup/    ~/.Digitales-Backup.safe
+
+srcDir=/mnt/e/Digitales-Backup
+destDir=/mnt/f/Digitales-Backup
+
+if [ ! -d $srcDir ]; then
+   echo Source directory $srcDir does not exist
+   exit 1
+fi
+
+if [ ! -d $destDir ]; then
+   echo Destination directory $destDir does not exist
+   exit 1
+fi
+
+rsync -av --delete  $srcDir    $destDir
