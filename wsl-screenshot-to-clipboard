@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# /mnt/c/Users/Rene/AppData/Local/Microsoft/WindowsApps/SnippingTool.exe
+
+most_recent_file=$( ls -tr1 /mnt/c/Users/Rene/Pictures/Screenshots/*.png | tail -1)
+
+echo most_recent_file = $most_recent_file
+xclip -i -selection clipboard -t image/png "$most_recent_file"
+rm "$most_recent_file"
