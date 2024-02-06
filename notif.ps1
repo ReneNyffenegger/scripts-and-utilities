@@ -1,11 +1,11 @@
 #
-#  V0.5
+#  V0.6
 #
 [cmdletBinding(defaultParameterSetName = 'set')]
 param (
 
    [parameter(
-        mandatory = $false,
+        mandatory        = $false,
         parameterSetName = '-g')]
        [switch]                       $g,
 
@@ -41,6 +41,10 @@ if ($when.substring(0, 1) -eq '+') {
 }
 else {
   [datetime] $dtWhen = $when
+  if ($dtWhen -lt (get-date)) {
+    write-textInConsoleErrorColor "specified date $dtWhen is in the past"
+    return
+  }
 }
 
 $trg = new-scheduledTaskTrigger   -once -at $dtWhen
