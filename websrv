@@ -1,2 +1,9 @@
-# ${github_root}PerlModules/HTTP/Server/Simple/CGI/webserver.pl
-sudo python3 -m http.server 80 &
+port=${1:-80}
+
+if [ $port -lt 1024 ]; then
+  sudo=sudo
+else
+  local sudo=""
+fi
+
+$sudo python3 -m http.server $port
