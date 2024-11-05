@@ -5,8 +5,12 @@
 #
 #                     Source                 Destination
 
-srcDir=/mnt/e/Digitales-Backup
-destDir=/mnt/f/Digitales-Backup
+# start with slash if used
+# subdir=/Fotos/2024/11/01-Saentis
+  subdir=
+
+srcDir=/mnt/f/Digitales-Backup
+destDir=/mnt/e/Digitales-Backup.safe
 
 if [ ! -d $srcDir ]; then
    echo Source directory $srcDir does not exist
@@ -18,4 +22,7 @@ if [ ! -d $destDir ]; then
    exit 1
 fi
 
-rsync -av --delete  $srcDir    $destDir
+rsync -av --delete  $srcDir$subdir/    $destDir$subdir
+
+echo are there diffs?
+diff -qr $srcDir$subdir    $destDir$subdir
