@@ -9,20 +9,33 @@
 # subdir=/Fotos/2024/11/01-Saentis
   subdir=
 
-srcDir=/mnt/f/Digitales-Backup
-destDir=/mnt/e/Digitales-Backup.safe
+mntE=/mnt/e
+mntF=/mnt/f
 
-if [ ! -d $srcDir ]; then
-   echo Source directory $srcDir does not exist
+if [ ! -d $mntE ]; then
+   echo E directory $mntE does not exist
    exit 1
 fi
 
-if [ ! -d $destDir ]; then
-   echo Destination directory $destDir does not exist
+if [ ! -d $mntF ]; then
+   echo F directory $mntF does not exist
    exit 1
 fi
 
-rsync -av --delete  $srcDir$subdir/    $destDir$subdir
+if   [ -d $mntE/Digitales-Backup      ] && [ -d $mntF/Digitales-Backup.safe ]; then
+    srcDir=$mntE/Digitales-Backup
+    dstDir=$mntF/Digitales-Backup.safe
+elif [ -d $mntE/Digitales-Backup.safe ] && [ -d $mntF/Digitales-Backup      ]; then
+    srcDir=$mntF/Digitales-Backup
+    dstDir=$mntE/Digitales-Backup.safe
+
+else
+    echo necessary directories do not exist
+    exit
+fi
+
+echo rsync -av --delete  $srcDir$subdir/   $dstDir$subdir
+     rsync -av --delete  $srcDir$subdir/   $dstDir$subdir
 
 echo are there diffs?
-diff -qr $srcDir$subdir    $destDir$subdir
+diff -qr $srcDir$subdir    $dstDir$subdir
