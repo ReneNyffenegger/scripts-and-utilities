@@ -1,4 +1,4 @@
-#  V0.24
+#  V0.25
 #
 #  Note to self: create file %userprofile%\psh.bat with following content:
 #
@@ -65,9 +65,10 @@ function prompt {
 
    $virtEnv = $false
 #  if ([System.OperatingSystem]::IsWindows()                  -and (get-wmiObject win32_computersystem).model -eq 'VirtualBox')
-   if ([System.Environment]::OSVersion.Platform -eq 'Win32NT' -and (get-wmiObject win32_computersystem).model -eq 'VirtualBox')
-   {
-      $virtEnv = $true
+   if ([System.Environment]::OSVersion.Platform -eq 'Win32NT') {
+      if ((get-wmiObject win32_computersystem).model -eq 'VirtualBox') {
+         $virtEnv = $true
+      }
    }
 #  elseif ([System.OperatingSystem]::IsLinux())
    else {
