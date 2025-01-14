@@ -1,7 +1,7 @@
 #
 # Show individual path-components of the PATH or PSModulePath environment variable, each on its own line:
 #
-# V0.6
+# V0.7
 #
 param (
    [switch] $psModulePath
@@ -48,11 +48,20 @@ function showPaths {
       }
       else {
 
-         if (test-path -pathType container $p_) {
-             $flagExists = ' '
+         try {
+            $err = $null
+            if (test-path -pathType container $p_ -ev err) {
+                $flagExists = ' '
+            }
+            else {
+                $flagExists = '!'
+            }
          }
-         else {
-             $flagExists = '!'
+         catch [System.UnauthorizedAccessException] {
+            $flagExists = 'A'
+         }
+         catch {
+            write-host $err
          }
 
          if ($pathsSeen[$p_]) {
