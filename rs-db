@@ -9,25 +9,25 @@
 # subdir=/Fotos/2024/11/01-Saentis
   subdir=
 
-mntE=/mnt/e
-mntF=/mnt/f
+mntSrc=/mnt/digital-backup
+mntDst=/mnt/safe.digital-backup
 
-if [ ! -d $mntE ]; then
-   echo E directory $mntE does not exist
+if [ ! -d $mntSrc ]; then
+   echo E directory $mntSrc does not exist
    exit 1
 fi
 
-if [ ! -d $mntF ]; then
-   echo F directory $mntF does not exist
+if [ ! -d $mntDst ]; then
+   echo F directory $mntDst does not exist
    exit 1
 fi
 
-if   [ -d $mntE/Digitales-Backup      ] && [ -d $mntF/Digitales-Backup.safe ]; then
-    srcDir=$mntE/Digitales-Backup
-    dstDir=$mntF/Digitales-Backup.safe
-elif [ -d $mntE/Digitales-Backup.safe ] && [ -d $mntF/Digitales-Backup      ]; then
-    srcDir=$mntF/Digitales-Backup
-    dstDir=$mntE/Digitales-Backup.safe
+if   [ -d $mntSrc/Digitales-Backup      ] && [ -d $mntDst/Digitales-Backup.safe ]; then
+    srcDir=$mntSrc/Digitales-Backup
+    dstDir=$mntDst/Digitales-Backup.safe
+elif [ -d $mntSrc/Digitales-Backup.safe ] && [ -d $mntDst/Digitales-Backup      ]; then
+    srcDir=$mntDst/Digitales-Backup
+    dstDir=$mntSrc/Digitales-Backup.safe
 
 else
     echo necessary directories do not exist
