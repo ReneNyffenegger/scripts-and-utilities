@@ -1,3 +1,8 @@
+#
+# V.2: set-clipboard can be run in PS Core and Desktop, no need for set-clipboardText anymore.
+#      Note, PS Desktop would have a `set-clipboard -path .` commant
+#
+#
 param (
    [switch] $forwardSlashes
 );
@@ -8,13 +13,4 @@ if ($forwardSlashes) {
    $dir = $dir -replace '\\', '/'
 }
 
-if ($psEdition -eq 'Desktop') {
-
-  $dir | set-clipboard
-
-}
-else {
-# clipboardText needs to be installed:
-#    install-module -name ClipboardText
-  $dir | set-clipboardText
-}
+set-clipboard $dir
