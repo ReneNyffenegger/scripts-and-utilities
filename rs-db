@@ -25,10 +25,6 @@ fi
 if   [ -d $mntSrc/Digitales-Backup      ] && [ -d $mntDst/Digitales-Backup.safe ]; then
     srcDir=$mntSrc/Digitales-Backup
     dstDir=$mntDst/Digitales-Backup.safe
-elif [ -d $mntSrc/Digitales-Backup.safe ] && [ -d $mntDst/Digitales-Backup      ]; then
-    srcDir=$mntDst/Digitales-Backup
-    dstDir=$mntSrc/Digitales-Backup.safe
-
 else
     echo necessary directories do not exist
     exit
