@@ -1,7 +1,7 @@
 #
 # Show individual path-components of the PATH or PSModulePath environment variable, each on its own line:
 #
-# V0.7
+# V0.7a
 #
 param (
    [switch] $psModulePath
@@ -58,6 +58,11 @@ function showPaths {
             }
          }
          catch [System.UnauthorizedAccessException] {
+	 #
+	 #  TODO: in Powershell 7, this does not work anymore as intended.
+	 #  Rather, it pollutes the output with a message like
+	 #      Access to the path 'C:\Users\xyz\AppData\Local\Microsoft\WindowsApps' is denied.
+	 #
             $flagExists = 'A'
          }
          catch {
