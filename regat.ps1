@@ -26,7 +26,7 @@ else {
    $regKey = $regKey -replace '^Computer\\'          , ''
 
    $regKey = $regKey -replace '^hkey_local_machine\b', 'hklm'
-   $regKey = $regKey -replace '^hkey_current_us r\b' , 'hkcu'
+   $regKey = $regKey -replace '^hkey_current_user\b' , 'hkcu'
    $regKey = $regKey -replace '^hkey_classes_root\b' , 'hkcr'
 
    $regKey = $regKey -replace '\\$', ''
